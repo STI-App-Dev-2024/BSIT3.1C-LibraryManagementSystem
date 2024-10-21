@@ -1,0 +1,38 @@
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.exe
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.deps.json
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.runtimeconfig.json
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfo.cs
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\refint\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.genruntimeconfig.cache
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\ref\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.LBMSSidebarForm.resources
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControlDashboardWindow.resources
+C:\Users\Admin\Documents\Visual Studio Files\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControlLogin.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.exe
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.deps.json
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.runtimeconfig.json
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.LBMSSidebarForm.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.Transac_window.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControlDashboardWindow.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControlLogin.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControlTransac.resources
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.GenerateResource.cache
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfo.cs
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\refint\LibraryManagementSystem.dll
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.genruntimeconfig.cache
+C:\Users\Dante N. Odesa\Downloads\LibraryManagementSystem 1\LibraryManagementSystem\obj\Debug\net8.0-windows\ref\LibraryManagementSystem.dll

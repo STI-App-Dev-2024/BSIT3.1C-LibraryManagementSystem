@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\usercontrollogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrollogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\usercontroldashboardwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontroldashboardwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formadminarchives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formadminarchives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formsloginhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formsloginhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formadminresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formadminresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\usercontroltransac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontroltransac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\usercontrolarchive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrolarchive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\usercontrolbookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrolbookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\lbmssidebarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:lbmssidebarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formlibrarianresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formlibrarianresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formsadminoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formsadminoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formadminsidelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formadminsidelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\dante n. odesa\\downloads\\librarymanagementsystem 1\\librarymanagementsystem\\formslibrarianlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:formslibrarianlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormsLibrarianLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsLibrarianLogin.cs",
+              "RelativeDocumentMoniker": "FormsLibrarianLogin.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsLibrarianLogin.cs [Design]",
+              "RelativeToolTip": "FormsLibrarianLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T23:37:59.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormLibrarianResetPass.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormLibrarianResetPass.cs",
+              "RelativeDocumentMoniker": "FormLibrarianResetPass.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormLibrarianResetPass.cs [Design]",
+              "RelativeToolTip": "FormLibrarianResetPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:12:20.865Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserControlBookInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlBookInventory.cs",
+              "RelativeDocumentMoniker": "UserControlBookInventory.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlBookInventory.cs [Design]",
+              "RelativeToolTip": "UserControlBookInventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:10:05.275Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserControlArchive.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlArchive.cs",
+              "RelativeDocumentMoniker": "UserControlArchive.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlArchive.cs [Design]",
+              "RelativeToolTip": "UserControlArchive.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:33:09.093Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControlTransac.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlTransac.cs",
+              "RelativeDocumentMoniker": "UserControlTransac.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlTransac.cs [Design]",
+              "RelativeToolTip": "UserControlTransac.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:23:35.184Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControlDashboardWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlDashboardWindow.cs",
+              "RelativeDocumentMoniker": "UserControlDashboardWindow.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlDashboardWindow.cs [Design]",
+              "RelativeToolTip": "UserControlDashboardWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T08:59:48.673Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControlLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlLogin.cs",
+              "RelativeDocumentMoniker": "UserControlLogin.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\UserControlLogin.cs [Design]",
+              "RelativeToolTip": "UserControlLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T09:27:13.65Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LBMSSidebarForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\LBMSSidebarForm.cs",
+              "RelativeDocumentMoniker": "LBMSSidebarForm.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\LBMSSidebarForm.cs [Design]",
+              "RelativeToolTip": "LBMSSidebarForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T07:35:37.494Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormAdminSideLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminSideLogin.cs",
+              "RelativeDocumentMoniker": "FormAdminSideLogin.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminSideLogin.cs [Design]",
+              "RelativeToolTip": "FormAdminSideLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T23:48:13.649Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAdminResetPass.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminResetPass.cs",
+              "RelativeDocumentMoniker": "FormAdminResetPass.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminResetPass.cs [Design]",
+              "RelativeToolTip": "FormAdminResetPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T23:54:55.273Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormsAdminOverview.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsAdminOverview.cs",
+              "RelativeDocumentMoniker": "FormsAdminOverview.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsAdminOverview.cs [Design]",
+              "RelativeToolTip": "FormsAdminOverview.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:03:37.493Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormsLoginHistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsLoginHistory.cs",
+              "RelativeDocumentMoniker": "FormsLoginHistory.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormsLoginHistory.cs [Design]",
+              "RelativeToolTip": "FormsLoginHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:21:25.348Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAdminArchives.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminArchives.cs",
+              "RelativeDocumentMoniker": "FormAdminArchives.cs",
+              "ToolTip": "C:\\Users\\Dante N. Odesa\\Downloads\\LibraryManagementSystem 1\\LibraryManagementSystem\\FormAdminArchives.cs [Design]",
+              "RelativeToolTip": "FormAdminArchives.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:24:34.244Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
