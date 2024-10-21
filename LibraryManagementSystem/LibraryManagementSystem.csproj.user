@@ -43,9 +43,6 @@
     <Compile Update="LBMSSidebarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControlLogin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="UserControlTransac.cs">
       <SubType>UserControl</SubType>
     </Compile>
