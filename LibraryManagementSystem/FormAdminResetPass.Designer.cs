@@ -45,7 +45,7 @@
             // 
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(138, 128);
+            textBox1.Location = new Point(94, 115);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(708, 43);
@@ -56,7 +56,7 @@
             // 
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox3.ForeColor = SystemColors.InactiveCaption;
-            textBox3.Location = new Point(138, 331);
+            textBox3.Location = new Point(94, 318);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(708, 43);
@@ -67,7 +67,7 @@
             // 
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox4.ForeColor = SystemColors.InactiveCaption;
-            textBox4.Location = new Point(138, 229);
+            textBox4.Location = new Point(94, 216);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(708, 43);
@@ -78,7 +78,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(138, 174);
+            label1.Location = new Point(94, 161);
             label1.Name = "label1";
             label1.Size = new Size(216, 30);
             label1.TabIndex = 6;
@@ -88,7 +88,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(138, 275);
+            label2.Location = new Point(94, 262);
             label2.Name = "label2";
             label2.Size = new Size(157, 30);
             label2.TabIndex = 7;
@@ -98,7 +98,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(138, 377);
+            label3.Location = new Point(94, 364);
             label3.Name = "label3";
             label3.Size = new Size(189, 30);
             label3.TabIndex = 8;
@@ -107,7 +107,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(138, 481);
+            button1.Location = new Point(94, 468);
             button1.Name = "button1";
             button1.Size = new Size(254, 46);
             button1.TabIndex = 9;
@@ -117,7 +117,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(587, 481);
+            button2.Location = new Point(543, 468);
             button2.Name = "button2";
             button2.Size = new Size(259, 46);
             button2.TabIndex = 10;
@@ -126,7 +126,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(991, 128);
+            pictureBox1.Location = new Point(924, 115);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(217, 189);
             pictureBox1.TabIndex = 11;
@@ -136,17 +136,17 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label4.Location = new Point(1011, 331);
+            label4.Location = new Point(944, 318);
             label4.Name = "label4";
             label4.Size = new Size(181, 30);
             label4.TabIndex = 12;
             label4.Text = "Edit Profile Photo";
             // 
-            // AdminResetPass
+            // FormAdminResetPass
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1264, 681);
             Controls.Add(label4);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
@@ -157,7 +157,7 @@
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
-            Name = "AdminResetPass";
+            Name = "FormAdminResetPass";
             Text = "AdminResetPass";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

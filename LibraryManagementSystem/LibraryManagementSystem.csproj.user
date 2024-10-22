@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="filterbyitems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FormAdminArchives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdminResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdminSideLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLibrarianResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsAdminOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsLibrarianLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsLoginHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LBMSSidebarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Transac window.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlArchive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlBookInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlDashboardWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlTransac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

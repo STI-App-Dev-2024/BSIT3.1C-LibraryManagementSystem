@@ -103,7 +103,7 @@
             panel2.Controls.Add(lblDescription2);
             panel2.Controls.Add(lblCount2);
             panel2.Controls.Add(lblImageIcon2);
-            panel2.Location = new Point(775, 75);
+            panel2.Location = new Point(510, 75);
             panel2.Name = "panel2";
             panel2.Size = new Size(259, 173);
             panel2.TabIndex = 2;
@@ -141,7 +141,7 @@
             panel3.Controls.Add(lblDescription3);
             panel3.Controls.Add(lblCount3);
             panel3.Controls.Add(lblImageIcon3);
-            panel3.Location = new Point(1529, 75);
+            panel3.Location = new Point(961, 75);
             panel3.Name = "panel3";
             panel3.Size = new Size(259, 173);
             panel3.TabIndex = 3;
@@ -186,7 +186,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(1183, 352);
+            textBox1.Location = new Point(1025, 349);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(605, 31);
             textBox1.TabIndex = 5;

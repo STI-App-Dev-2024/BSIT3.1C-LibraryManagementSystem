@@ -55,7 +55,7 @@
             panel1.Controls.Add(lblDescription1);
             panel1.Controls.Add(lblCount1);
             panel1.Controls.Add(lblImageIcon1);
-            panel1.Location = new Point(41, 45);
+            panel1.Location = new Point(110, 25);
             panel1.Name = "panel1";
             panel1.Size = new Size(259, 173);
             panel1.TabIndex = 2;
@@ -93,7 +93,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(674, 45);
+            panel2.Location = new Point(873, 25);
             panel2.Name = "panel2";
             panel2.Size = new Size(259, 173);
             panel2.TabIndex = 3;
@@ -131,7 +131,7 @@
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label6);
-            panel3.Location = new Point(356, 45);
+            panel3.Location = new Point(493, 25);
             panel3.Name = "panel3";
             panel3.Size = new Size(259, 173);
             panel3.TabIndex = 3;
@@ -165,18 +165,19 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(41, 237);
+            button1.Location = new Point(62, 237);
             button1.Name = "button1";
-            button1.Size = new Size(699, 283);
+            button1.Size = new Size(639, 283);
             button1.TabIndex = 4;
-            button1.Text = "Manage\r\nLibrarian\r\nAccount";
+            button1.Text = "Manage \nLibrarian \r\nAccount";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(94, 593);
+            button2.Location = new Point(104, 545);
             button2.Name = "button2";
             button2.Size = new Size(544, 70);
             button2.TabIndex = 5;
@@ -188,7 +189,7 @@
             button3.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.Location = new Point(759, 237);
             button3.Name = "button3";
-            button3.Size = new Size(592, 223);
+            button3.Size = new Size(455, 223);
             button3.TabIndex = 6;
             button3.Text = "Archives";
             button3.UseVisualStyleBackColor = true;
@@ -198,7 +199,7 @@
             button4.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.Location = new Point(759, 491);
             button4.Name = "button4";
-            button4.Size = new Size(592, 223);
+            button4.Size = new Size(455, 159);
             button4.TabIndex = 7;
             button4.Text = "Check\r\nLogin\r\nHistory";
             button4.UseVisualStyleBackColor = true;
@@ -207,7 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1264, 681);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
