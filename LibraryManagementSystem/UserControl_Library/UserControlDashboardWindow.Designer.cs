@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblDashboard = new Label();
             panel1 = new Panel();
             lblDescription1 = new Label();
             lblCount1 = new Label();
@@ -44,28 +43,18 @@
             lblAvailableBooks = new Label();
             textBox1 = new TextBox();
             listBox1 = new ListBox();
+            btnSearch = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
             // 
-            // lblDashboard
-            // 
-            lblDashboard.AutoSize = true;
-            lblDashboard.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDashboard.Location = new Point(33, 21);
-            lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(136, 33);
-            lblDashboard.TabIndex = 0;
-            lblDashboard.Text = "Dashboard";
-            // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Left;
             panel1.Controls.Add(lblDescription1);
             panel1.Controls.Add(lblCount1);
             panel1.Controls.Add(lblImageIcon1);
-            panel1.Location = new Point(29, 75);
+            panel1.Location = new Point(56, 75);
             panel1.Name = "panel1";
             panel1.Size = new Size(259, 173);
             panel1.TabIndex = 1;
@@ -99,11 +88,10 @@
             // 
             // panel2
             // 
-            panel2.Anchor = AnchorStyles.None;
             panel2.Controls.Add(lblDescription2);
             panel2.Controls.Add(lblCount2);
             panel2.Controls.Add(lblImageIcon2);
-            panel2.Location = new Point(510, 75);
+            panel2.Location = new Point(321, 75);
             panel2.Name = "panel2";
             panel2.Size = new Size(259, 173);
             panel2.TabIndex = 2;
@@ -137,14 +125,14 @@
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.Right;
             panel3.Controls.Add(lblDescription3);
             panel3.Controls.Add(lblCount3);
             panel3.Controls.Add(lblImageIcon3);
-            panel3.Location = new Point(961, 75);
+            panel3.Location = new Point(586, 75);
             panel3.Name = "panel3";
-            panel3.Size = new Size(259, 173);
+            panel3.Size = new Size(246, 173);
             panel3.TabIndex = 3;
+            panel3.Paint += panel3_Paint;
             // 
             // lblDescription3
             // 
@@ -177,7 +165,7 @@
             // 
             lblAvailableBooks.AutoSize = true;
             lblAvailableBooks.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAvailableBooks.Location = new Point(29, 344);
+            lblAvailableBooks.Location = new Point(49, 327);
             lblAvailableBooks.Name = "lblAvailableBooks";
             lblAvailableBooks.Size = new Size(237, 33);
             lblAvailableBooks.TabIndex = 4;
@@ -186,9 +174,9 @@
             // textBox1
             // 
             textBox1.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(1025, 349);
+            textBox1.Location = new Point(406, 327);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(605, 31);
+            textBox1.Size = new Size(257, 31);
             textBox1.TabIndex = 5;
             textBox1.Text = "Search Book";
             // 
@@ -198,26 +186,35 @@
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 29;
             listBox1.Items.AddRange(new object[] { "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle", "BookTitle" });
-            listBox1.Location = new Point(33, 411);
+            listBox1.Location = new Point(49, 363);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(1600, 874);
+            listBox1.Size = new Size(796, 265);
             listBox1.TabIndex = 6;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(671, 327);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(174, 31);
+            btnSearch.TabIndex = 7;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
             // 
             // UserControlDashboardWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnSearch);
             Controls.Add(listBox1);
             Controls.Add(textBox1);
             Controls.Add(lblAvailableBooks);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(lblDashboard);
             Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 4, 3, 4);
             Name = "UserControlDashboardWindow";
-            Size = new Size(1829, 1140);
+            Size = new Size(895, 681);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -229,8 +226,6 @@
         }
 
         #endregion
-
-        private Label lblDashboard;
         private Panel panel1;
         private Label lblCount1;
         private Label lblImageIcon1;
@@ -246,5 +241,6 @@
         private Label lblAvailableBooks;
         private TextBox textBox1;
         private ListBox listBox1;
+        private Button btnSearch;
     }
 }

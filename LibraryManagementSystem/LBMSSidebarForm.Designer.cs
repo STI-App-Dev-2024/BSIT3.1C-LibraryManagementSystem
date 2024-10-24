@@ -35,6 +35,7 @@
             btnDashboard = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
+            userControlTransac1 = new UserControlTransac();
             userControlArchive1 = new UserControlArchive();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -49,6 +50,7 @@
             btnTransaction.TabIndex = 0;
             btnTransaction.Text = "Transaction";
             btnTransaction.UseVisualStyleBackColor = true;
+            btnTransaction.Click += btnTransaction_Click;
             // 
             // btnBookInventory
             // 
@@ -69,6 +71,7 @@
             btnArchive.TabIndex = 3;
             btnArchive.Text = "Archive";
             btnArchive.UseVisualStyleBackColor = true;
+            btnArchive.Click += btnArchive_Click;
             // 
             // btnLogOut
             // 
@@ -107,6 +110,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(userControlTransac1);
             panel2.Controls.Add(userControlArchive1);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(369, 0);
@@ -114,11 +118,19 @@
             panel2.Size = new Size(895, 681);
             panel2.TabIndex = 7;
             // 
+            // userControlTransac1
+            // 
+            userControlTransac1.Location = new Point(0, 0);
+            userControlTransac1.Name = "userControlTransac1";
+            userControlTransac1.Size = new Size(895, 681);
+            userControlTransac1.TabIndex = 1;
+            // 
             // userControlArchive1
             // 
-            userControlArchive1.Location = new Point(0, 0);
+            userControlArchive1.Location = new Point(3, 2);
+            userControlArchive1.Margin = new Padding(3, 2, 3, 2);
             userControlArchive1.Name = "userControlArchive1";
-            userControlArchive1.Size = new Size(895, 681);
+            userControlArchive1.Size = new Size(892, 677);
             userControlArchive1.TabIndex = 0;
             // 
             // LBMSSidebarForm
@@ -132,6 +144,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "LBMSSidebarForm";
             Text = "Library Management System";
+            Load += LBMSSidebarForm_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ResumeLayout(false);
@@ -147,5 +160,6 @@
         private Panel panel1;
         private Panel panel2;
         private UserControlArchive userControlArchive1;
+        private UserControlTransac userControlTransac1;
     }
 }

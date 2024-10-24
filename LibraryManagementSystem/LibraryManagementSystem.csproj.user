@@ -32,19 +32,16 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Transac window.cs">
+    <Compile Update="UserControl_Library\UserControlArchive.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControlArchive.cs">
+    <Compile Update="UserControl_Library\UserControlBookInventory.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControlBookInventory.cs">
+    <Compile Update="UserControl_Library\UserControlDashboardWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControlDashboardWindow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControlTransac.cs">
+    <Compile Update="UserControl_Library\UserControlTransac.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
