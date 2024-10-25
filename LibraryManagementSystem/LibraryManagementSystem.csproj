@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="UserControl_Login\" />
     <Folder Include="UserControl_Admin\" />
   </ItemGroup>
 

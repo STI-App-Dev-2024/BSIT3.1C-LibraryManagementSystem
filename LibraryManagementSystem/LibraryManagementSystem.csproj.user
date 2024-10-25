@@ -2,46 +2,28 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="filterbyitems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="FormAdminArchives.cs">
+    <Compile Update="F_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormAdminResetPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormAdminSideLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormLibrarianResetPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsAdminOverview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsLibrarianLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsLoginHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="LBMSSidebarForm.cs">
+    <Compile Update="F_Library.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControl_Library\UserControlArchive.cs">
+    <Compile Update="UserControl_Library\UC_Archive_Books.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl_Library\UserControlBookInventory.cs">
+    <Compile Update="UserControl_Library\UC_Archive_Student.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl_Library\UserControlDashboardWindow.cs">
+    <Compile Update="UserControl_Library\UC_Books.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl_Library\UserControlTransac.cs">
+    <Compile Update="UserControl_Library\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl_Library\UC_Transaction.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
