@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LibraryManagementSystem
-build_property.ProjectDir = C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management System\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\
+build_property.ProjectDir = C:\Users\admin\Documents\GitHub\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
