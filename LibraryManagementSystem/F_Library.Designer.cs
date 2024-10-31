@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Library));
             btnTransaction = new Button();
             btnBookInventory = new Button();
             btnArchive = new Button();
@@ -77,6 +78,7 @@
             // btnLogOut
             // 
             btnLogOut.Font = new Font("Bookman Old Style", 12F);
+            btnLogOut.ForeColor = SystemColors.ActiveCaptionText;
             btnLogOut.Location = new Point(14, 563);
             btnLogOut.Margin = new Padding(5, 10, 5, 10);
             btnLogOut.Name = "btnLogOut";
@@ -98,6 +100,7 @@
             // 
             // panel1
             // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(btnLogOut);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(btnDashboard);
@@ -125,7 +128,7 @@
             // 
             // panel2
             // 
-            panel2.Dock = DockStyle.Right;
+            panel2.BackColor = Color.Transparent;
             panel2.Location = new Point(369, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(895, 681);
@@ -135,9 +138,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1264, 681);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            DoubleBuffered = true;
             Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 4, 3, 4);
             Name = "F_Library";

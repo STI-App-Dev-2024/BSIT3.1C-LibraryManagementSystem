@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSystem
+namespace LibraryManagementSystem.UserControl_Library
 {
-    public partial class Login : Form
+    public partial class UC_StudentTransacHistory : UserControl
     {
-        public Login()
+        public UC_StudentTransacHistory()
         {
             InitializeComponent();
         }

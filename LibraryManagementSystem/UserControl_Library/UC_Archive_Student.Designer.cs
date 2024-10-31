@@ -28,53 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            SystemPanel2 = new Panel();
             label1 = new Label();
-            panel2 = new Panel();
+            TransacPanel = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel3 = new Panel();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            Filterbtn = new Button();
+            searchBtxt = new TextBox();
             panel4 = new Panel();
-            dataGridView1 = new DataGridView();
+            TransacGrid = new DataGridView();
             StuNo = new DataGridViewTextBoxColumn();
             StuName = new DataGridViewTextBoxColumn();
             dateBorrow = new DataGridViewTextBoxColumn();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            SystemPanel2.SuspendLayout();
+            TransacPanel.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TransacGrid).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // SystemPanel2
             // 
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(895, 70);
-            panel1.TabIndex = 0;
+            SystemPanel2.Controls.Add(label1);
+            SystemPanel2.Dock = DockStyle.Top;
+            SystemPanel2.Location = new Point(0, 0);
+            SystemPanel2.Name = "SystemPanel2";
+            SystemPanel2.Size = new Size(895, 70);
+            SystemPanel2.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.Location = new Point(34, 25);
             label1.Name = "label1";
-            label1.Size = new Size(209, 21);
+            label1.Size = new Size(276, 21);
             label1.TabIndex = 0;
-            label1.Text = "Transactions Archive";
+            label1.Text = "Student Transaction History";
             // 
-            // panel2
+            // TransacPanel
             // 
-            panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 70);
-            panel2.Margin = new Padding(0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(895, 611);
-            panel2.TabIndex = 1;
+            TransacPanel.Controls.Add(tableLayoutPanel1);
+            TransacPanel.Dock = DockStyle.Fill;
+            TransacPanel.Location = new Point(0, 70);
+            TransacPanel.Margin = new Padding(0);
+            TransacPanel.Name = "TransacPanel";
+            TransacPanel.Size = new Size(895, 611);
+            TransacPanel.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -92,52 +93,52 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(Filterbtn);
+            panel3.Controls.Add(searchBtxt);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(3, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(754, 65);
             panel3.TabIndex = 0;
             // 
-            // button1
+            // Filterbtn
             // 
-            button1.Location = new Point(623, 18);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 30);
-            button1.TabIndex = 1;
-            button1.Text = "Filter by";
-            button1.UseVisualStyleBackColor = true;
+            Filterbtn.Location = new Point(623, 18);
+            Filterbtn.Name = "Filterbtn";
+            Filterbtn.Size = new Size(128, 30);
+            Filterbtn.TabIndex = 1;
+            Filterbtn.Text = "Filter by";
+            Filterbtn.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // searchBtxt
             // 
-            textBox1.Location = new Point(3, 18);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(489, 30);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Enter Student Number or Name";
+            searchBtxt.Location = new Point(3, 18);
+            searchBtxt.Name = "searchBtxt";
+            searchBtxt.Size = new Size(489, 30);
+            searchBtxt.TabIndex = 0;
+            searchBtxt.Text = "Enter Student Number or Name";
             // 
             // panel4
             // 
-            panel4.Controls.Add(dataGridView1);
+            panel4.Controls.Add(TransacGrid);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(3, 74);
             panel4.Name = "panel4";
             panel4.Size = new Size(754, 469);
             panel4.TabIndex = 1;
             // 
-            // dataGridView1
+            // TransacGrid
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(754, 469);
-            dataGridView1.TabIndex = 0;
+            TransacGrid.AllowUserToAddRows = false;
+            TransacGrid.AllowUserToDeleteRows = false;
+            TransacGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TransacGrid.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow });
+            TransacGrid.Dock = DockStyle.Fill;
+            TransacGrid.Location = new Point(0, 0);
+            TransacGrid.Name = "TransacGrid";
+            TransacGrid.ReadOnly = true;
+            TransacGrid.Size = new Size(754, 469);
+            TransacGrid.TabIndex = 0;
             // 
             // StuNo
             // 
@@ -164,34 +165,34 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(TransacPanel);
+            Controls.Add(SystemPanel2);
             Font = new Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Archive_Student";
             Size = new Size(895, 681);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            SystemPanel2.ResumeLayout(false);
+            SystemPanel2.PerformLayout();
+            TransacPanel.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TransacGrid).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel SystemPanel2;
         private Label label1;
-        private Panel panel2;
+        private Panel TransacPanel;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel3;
-        private Button button1;
-        private TextBox textBox1;
+        private Button Filterbtn;
+        private TextBox searchBtxt;
         private Panel panel4;
-        private DataGridView dataGridView1;
+        private DataGridView TransacGrid;
         private DataGridViewTextBoxColumn StuNo;
         private DataGridViewTextBoxColumn StuName;
         private DataGridViewTextBoxColumn dateBorrow;

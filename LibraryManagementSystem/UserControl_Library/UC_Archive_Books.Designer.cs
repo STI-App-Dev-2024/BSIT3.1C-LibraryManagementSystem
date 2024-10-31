@@ -28,35 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel2 = new Panel();
+            BookArchPanel = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel3 = new Panel();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            Filterbtn = new Button();
+            searchBtxt = new TextBox();
             panel4 = new Panel();
-            dataGridView1 = new DataGridView();
-            panel1 = new Panel();
-            label1 = new Label();
+            BookArchGrid = new DataGridView();
             bookTitle = new DataGridViewTextBoxColumn();
             bookAuthor = new DataGridViewTextBoxColumn();
             bookDatePublished = new DataGridViewTextBoxColumn();
-            panel2.SuspendLayout();
+            SystemPanel = new Panel();
+            label1 = new Label();
+            BookArchPanel.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BookArchGrid).BeginInit();
+            SystemPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // panel2
+            // BookArchPanel
             // 
-            panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 70);
-            panel2.Margin = new Padding(0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(895, 611);
-            panel2.TabIndex = 3;
+            BookArchPanel.Controls.Add(tableLayoutPanel1);
+            BookArchPanel.Dock = DockStyle.Fill;
+            BookArchPanel.Location = new Point(0, 70);
+            BookArchPanel.Margin = new Padding(0);
+            BookArchPanel.Name = "BookArchPanel";
+            BookArchPanel.Size = new Size(895, 611);
+            BookArchPanel.TabIndex = 3;
+            BookArchPanel.Paint += panel2_Paint;
             // 
             // tableLayoutPanel1
             // 
@@ -75,70 +76,52 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(Filterbtn);
+            panel3.Controls.Add(searchBtxt);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(3, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(754, 65);
             panel3.TabIndex = 0;
             // 
-            // button1
+            // Filterbtn
             // 
-            button1.Location = new Point(623, 18);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 30);
-            button1.TabIndex = 1;
-            button1.Text = "Filter by";
-            button1.UseVisualStyleBackColor = true;
+            Filterbtn.Location = new Point(623, 18);
+            Filterbtn.Name = "Filterbtn";
+            Filterbtn.Size = new Size(128, 30);
+            Filterbtn.TabIndex = 1;
+            Filterbtn.Text = "Filter by";
+            Filterbtn.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // searchBtxt
             // 
-            textBox1.Location = new Point(3, 18);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(489, 30);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Enter Title or Author";
+            searchBtxt.Location = new Point(3, 18);
+            searchBtxt.Name = "searchBtxt";
+            searchBtxt.Size = new Size(489, 30);
+            searchBtxt.TabIndex = 0;
+            searchBtxt.Text = "Enter Title or Author";
             // 
             // panel4
             // 
-            panel4.Controls.Add(dataGridView1);
+            panel4.Controls.Add(BookArchGrid);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(3, 74);
             panel4.Name = "panel4";
             panel4.Size = new Size(754, 469);
             panel4.TabIndex = 1;
             // 
-            // dataGridView1
+            // BookArchGrid
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { bookTitle, bookAuthor, bookDatePublished });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(754, 469);
-            dataGridView1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(895, 70);
-            panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(34, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(135, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Book Archive";
+            BookArchGrid.AllowUserToAddRows = false;
+            BookArchGrid.AllowUserToDeleteRows = false;
+            BookArchGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            BookArchGrid.Columns.AddRange(new DataGridViewColumn[] { bookTitle, bookAuthor, bookDatePublished });
+            BookArchGrid.Dock = DockStyle.Fill;
+            BookArchGrid.Location = new Point(0, 0);
+            BookArchGrid.Name = "BookArchGrid";
+            BookArchGrid.ReadOnly = true;
+            BookArchGrid.Size = new Size(754, 469);
+            BookArchGrid.TabIndex = 0;
             // 
             // bookTitle
             // 
@@ -161,37 +144,55 @@
             bookDatePublished.Name = "bookDatePublished";
             bookDatePublished.ReadOnly = true;
             // 
+            // SystemPanel
+            // 
+            SystemPanel.Controls.Add(label1);
+            SystemPanel.Dock = DockStyle.Top;
+            SystemPanel.Location = new Point(0, 0);
+            SystemPanel.Name = "SystemPanel";
+            SystemPanel.Size = new Size(895, 70);
+            SystemPanel.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(34, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(135, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Book Archive";
+            // 
             // UC_Archive_Books
             // 
             AutoScaleDimensions = new SizeF(12F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(BookArchPanel);
+            Controls.Add(SystemPanel);
             Font = new Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Archive_Books";
             Size = new Size(895, 681);
-            panel2.ResumeLayout(false);
+            BookArchPanel.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)BookArchGrid).EndInit();
+            SystemPanel.ResumeLayout(false);
+            SystemPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel2;
+        private Panel BookArchPanel;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel3;
-        private Button button1;
-        private TextBox textBox1;
+        private Button Filterbtn;
+        private TextBox searchBtxt;
         private Panel panel4;
-        private DataGridView dataGridView1;
-        private Panel panel1;
+        private DataGridView BookArchGrid;
+        private Panel SystemPanel;
         private Label label1;
         private DataGridViewTextBoxColumn bookTitle;
         private DataGridViewTextBoxColumn bookAuthor;

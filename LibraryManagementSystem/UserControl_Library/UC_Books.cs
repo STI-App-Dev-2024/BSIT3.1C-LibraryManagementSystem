@@ -16,5 +16,10 @@ namespace LibraryManagementSystem.UserControl_Library
         {
             InitializeComponent();
         }
+
+        private void grid_Inventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

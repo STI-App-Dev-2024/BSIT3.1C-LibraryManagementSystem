@@ -8,9 +8,6 @@
     <Compile Update="F_Library.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="UserControl_Library\UC_Archive_Books.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -21,6 +18,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControl_Library\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl_Library\UC_StudentTransacHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControl_Library\UC_Transaction.cs">

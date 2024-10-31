@@ -1,37 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_archive_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_archive_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_archive_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_archive_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\f_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\documents\\github\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:f_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\f_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:f_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\usercontrol_library\\uc_archive_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_archive_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\usercontrol_library\\uc_archive_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_archive_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\usercontrol_library\\uc_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\usercontrol_library\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2377506E-4559-49B8-BD4E-C82485CAD5E3}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,8 +46,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -59,98 +67,104 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "F_Admin.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs",
+              "RelativeDocumentMoniker": "F_Admin.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs",
+              "RelativeToolTip": "F_Admin.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T00:49:41.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UC_Archive_Books.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Books.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Books.cs",
               "RelativeDocumentMoniker": "UserControl_Library\\UC_Archive_Books.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Books.cs [Design]*",
-              "RelativeToolTip": "UserControl_Library\\UC_Archive_Books.cs [Design]*",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Books.cs [Design]",
+              "RelativeToolTip": "UserControl_Library\\UC_Archive_Books.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T08:04:50.499Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_Archive_Student.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Student.cs",
-              "RelativeDocumentMoniker": "UserControl_Library\\UC_Archive_Student.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Student.cs [Design]*",
-              "RelativeToolTip": "UserControl_Library\\UC_Archive_Student.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T07:18:52.732Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UC_Dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Dashboard.cs",
-              "RelativeDocumentMoniker": "UserControl_Library\\UC_Dashboard.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Dashboard.cs [Design]",
-              "RelativeToolTip": "UserControl_Library\\UC_Dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T06:33:16.067Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T08:04:50.499Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UC_Archive_Student.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Student.cs",
+              "RelativeDocumentMoniker": "UserControl_Library\\UC_Archive_Student.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Archive_Student.cs [Design]",
+              "RelativeToolTip": "UserControl_Library\\UC_Archive_Student.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T07:18:52.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UC_Transaction.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Transaction.cs",
               "RelativeDocumentMoniker": "UserControl_Library\\UC_Transaction.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Transaction.cs [Design]",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Transaction.cs [Design]",
               "RelativeToolTip": "UserControl_Library\\UC_Transaction.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:01:20.457Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T05:01:20.457Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UC_Books.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs",
               "RelativeDocumentMoniker": "UserControl_Library\\UC_Books.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs [Design]",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs [Design]",
               "RelativeToolTip": "UserControl_Library\\UC_Books.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T04:57:11.142Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T04:57:11.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "F_Library.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs",
               "RelativeDocumentMoniker": "F_Library.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs [Design]",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs [Design]",
               "RelativeToolTip": "F_Library.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T04:49:35.877Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T04:49:35.877Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\Login.cs [Design]",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:01:31.205Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-22T11:01:31.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "F_Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs",
               "RelativeDocumentMoniker": "F_Admin.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs [Design]",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Admin.cs [Design]",
               "RelativeToolTip": "F_Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T00:03:37.493Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Dashboard.cs",
+              "RelativeDocumentMoniker": "UserControl_Library\\UC_Dashboard.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Dashboard.cs [Design]",
+              "RelativeToolTip": "UserControl_Library\\UC_Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T06:33:16.067Z"
             }
           ]
         }
