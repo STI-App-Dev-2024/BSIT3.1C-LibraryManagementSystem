@@ -28,61 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
-            panel1 = new Panel();
+            DashboardStatusPanel = new TableLayoutPanel();
+            StudentBorrowedPanel = new Panel();
             label2 = new Label();
             label1 = new Label();
-            panel2 = new Panel();
+            NearDueDatePanel = new Panel();
             label3 = new Label();
             label4 = new Label();
-            panel3 = new Panel();
+            OverdueStudentsPanel = new Panel();
             label5 = new Label();
             label6 = new Label();
-            dataGridView1 = new DataGridView();
+            DataGridViewBookAvailable = new DataGridView();
             Category = new DataGridViewTextBoxColumn();
             Title = new DataGridViewTextBoxColumn();
-            label7 = new Label();
-            textBox1 = new TextBox();
-            tableLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            DBUpperContentPanel = new Panel();
+            AvailableBooksPanel = new Panel();
+            AvailableBookLabel = new Label();
+            AvailableBookSearch = new TextBox();
+            DBMiddleContentContainerPanel = new TableLayoutPanel();
+            AvailableBookLabelPanel = new Panel();
+            AvailableBookSearchPanel = new Panel();
+            DashboardStatusPanel.SuspendLayout();
+            StudentBorrowedPanel.SuspendLayout();
+            NearDueDatePanel.SuspendLayout();
+            OverdueStudentsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DataGridViewBookAvailable).BeginInit();
+            DBUpperContentPanel.SuspendLayout();
+            DBMiddleContentContainerPanel.SuspendLayout();
+            AvailableBookLabelPanel.SuspendLayout();
+            AvailableBookSearchPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // DashboardStatusPanel
             // 
-            tableLayoutPanel1.Anchor = AnchorStyles.None;
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel2, 1, 0);
-            tableLayoutPanel1.Controls.Add(panel3, 2, 0);
-            tableLayoutPanel1.Location = new Point(110, 70);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(657, 147);
-            tableLayoutPanel1.TabIndex = 0;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            DashboardStatusPanel.Anchor = AnchorStyles.None;
+            DashboardStatusPanel.AutoSize = true;
+            DashboardStatusPanel.ColumnCount = 3;
+            DashboardStatusPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            DashboardStatusPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            DashboardStatusPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            DashboardStatusPanel.Controls.Add(StudentBorrowedPanel, 0, 0);
+            DashboardStatusPanel.Controls.Add(NearDueDatePanel, 1, 0);
+            DashboardStatusPanel.Controls.Add(OverdueStudentsPanel, 2, 0);
+            DashboardStatusPanel.Location = new Point(96, 24);
+            DashboardStatusPanel.Margin = new Padding(5);
+            DashboardStatusPanel.Name = "DashboardStatusPanel";
+            DashboardStatusPanel.Padding = new Padding(5);
+            DashboardStatusPanel.RowCount = 1;
+            DashboardStatusPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            DashboardStatusPanel.Size = new Size(697, 161);
+            DashboardStatusPanel.TabIndex = 0;
+            DashboardStatusPanel.Paint += tableLayoutPanel1_Paint;
             // 
-            // panel1
+            // StudentBorrowedPanel
             // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(213, 141);
-            panel1.TabIndex = 0;
+            StudentBorrowedPanel.Controls.Add(label2);
+            StudentBorrowedPanel.Controls.Add(label1);
+            StudentBorrowedPanel.Dock = DockStyle.Fill;
+            StudentBorrowedPanel.Location = new Point(8, 8);
+            StudentBorrowedPanel.Name = "StudentBorrowedPanel";
+            StudentBorrowedPanel.Size = new Size(223, 145);
+            StudentBorrowedPanel.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 105);
+            label2.Location = new Point(36, 108);
             label2.Margin = new Padding(3, 0, 3, 15);
             label2.Name = "label2";
             label2.Size = new Size(161, 24);
@@ -92,27 +103,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(84, 69);
+            label1.Location = new Point(96, 69);
             label1.Margin = new Padding(3, 0, 3, 15);
             label1.Name = "label1";
             label1.Size = new Size(40, 24);
             label1.TabIndex = 0;
             label1.Text = "100";
             // 
-            // panel2
+            // NearDueDatePanel
             // 
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label4);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(222, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(213, 141);
-            panel2.TabIndex = 0;
+            NearDueDatePanel.Controls.Add(label3);
+            NearDueDatePanel.Controls.Add(label4);
+            NearDueDatePanel.Dock = DockStyle.Fill;
+            NearDueDatePanel.Location = new Point(237, 8);
+            NearDueDatePanel.Name = "NearDueDatePanel";
+            NearDueDatePanel.Size = new Size(223, 145);
+            NearDueDatePanel.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 105);
+            label3.Location = new Point(33, 108);
             label3.Margin = new Padding(3, 0, 3, 15);
             label3.Name = "label3";
             label3.Size = new Size(160, 24);
@@ -122,27 +133,30 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(81, 69);
+            label4.Location = new Point(95, 69);
             label4.Margin = new Padding(3, 0, 3, 15);
             label4.Name = "label4";
             label4.Size = new Size(40, 24);
             label4.TabIndex = 0;
             label4.Text = "100";
             // 
-            // panel3
+            // OverdueStudentsPanel
             // 
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label6);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(441, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(213, 141);
-            panel3.TabIndex = 0;
+            OverdueStudentsPanel.Controls.Add(label5);
+            OverdueStudentsPanel.Controls.Add(label6);
+            OverdueStudentsPanel.Dock = DockStyle.Fill;
+            OverdueStudentsPanel.Location = new Point(468, 10);
+            OverdueStudentsPanel.Margin = new Padding(5);
+            OverdueStudentsPanel.Name = "OverdueStudentsPanel";
+            OverdueStudentsPanel.Padding = new Padding(5);
+            OverdueStudentsPanel.Size = new Size(219, 141);
+            OverdueStudentsPanel.TabIndex = 0;
+            OverdueStudentsPanel.Paint += panel3_Paint;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(15, 105);
+            label5.Location = new Point(30, 106);
             label5.Margin = new Padding(3, 0, 3, 15);
             label5.Name = "label5";
             label5.Size = new Size(162, 24);
@@ -152,22 +166,22 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(79, 69);
+            label6.Location = new Point(92, 67);
             label6.Margin = new Padding(3, 0, 3, 15);
             label6.Name = "label6";
             label6.Size = new Size(40, 24);
             label6.TabIndex = 0;
             label6.Text = "100";
             // 
-            // dataGridView1
+            // DataGridViewBookAvailable
             // 
-            dataGridView1.Anchor = AnchorStyles.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
-            dataGridView1.Location = new Point(45, 332);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(797, 302);
-            dataGridView1.TabIndex = 1;
+            DataGridViewBookAvailable.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DataGridViewBookAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DataGridViewBookAvailable.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
+            DataGridViewBookAvailable.Location = new Point(13, 247);
+            DataGridViewBookAvailable.Name = "DataGridViewBookAvailable";
+            DataGridViewBookAvailable.Size = new Size(870, 431);
+            DataGridViewBookAvailable.TabIndex = 1;
             // 
             // Category
             // 
@@ -181,66 +195,133 @@
             Title.HeaderText = "Title";
             Title.Name = "Title";
             // 
-            // label7
+            // DBUpperContentPanel
             // 
-            label7.Anchor = AnchorStyles.None;
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label7.Location = new Point(45, 308);
-            label7.Name = "label7";
-            label7.Size = new Size(143, 24);
-            label7.TabIndex = 2;
-            label7.Text = "Available Books";
+            DBUpperContentPanel.AutoSize = true;
+            DBUpperContentPanel.Controls.Add(DashboardStatusPanel);
+            DBUpperContentPanel.Dock = DockStyle.Top;
+            DBUpperContentPanel.Location = new Point(0, 0);
+            DBUpperContentPanel.Name = "DBUpperContentPanel";
+            DBUpperContentPanel.Size = new Size(895, 190);
+            DBUpperContentPanel.TabIndex = 4;
             // 
-            // textBox1
+            // AvailableBooksPanel
             // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(474, 296);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(368, 29);
-            textBox1.TabIndex = 3;
-            textBox1.Text = "Search Book";
+            AvailableBooksPanel.AutoSize = true;
+            AvailableBooksPanel.Dock = DockStyle.Bottom;
+            AvailableBooksPanel.Location = new Point(0, 681);
+            AvailableBooksPanel.Name = "AvailableBooksPanel";
+            AvailableBooksPanel.Size = new Size(895, 0);
+            AvailableBooksPanel.TabIndex = 6;
+            // 
+            // AvailableBookLabel
+            // 
+            AvailableBookLabel.Anchor = AnchorStyles.None;
+            AvailableBookLabel.AutoSize = true;
+            AvailableBookLabel.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            AvailableBookLabel.Location = new Point(5, 15);
+            AvailableBookLabel.Name = "AvailableBookLabel";
+            AvailableBookLabel.Size = new Size(143, 24);
+            AvailableBookLabel.TabIndex = 2;
+            AvailableBookLabel.Text = "Available Books";
+            // 
+            // AvailableBookSearch
+            // 
+            AvailableBookSearch.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            AvailableBookSearch.Location = new Point(4, 12);
+            AvailableBookSearch.Multiline = true;
+            AvailableBookSearch.Name = "AvailableBookSearch";
+            AvailableBookSearch.Size = new Size(411, 29);
+            AvailableBookSearch.TabIndex = 3;
+            AvailableBookSearch.Text = "Search Book";
+            // 
+            // DBMiddleContentContainerPanel
+            // 
+            DBMiddleContentContainerPanel.ColumnCount = 2;
+            DBMiddleContentContainerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 52.08099F));
+            DBMiddleContentContainerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.91901F));
+            DBMiddleContentContainerPanel.Controls.Add(AvailableBookLabelPanel, 0, 0);
+            DBMiddleContentContainerPanel.Controls.Add(AvailableBookSearchPanel, 1, 0);
+            DBMiddleContentContainerPanel.Dock = DockStyle.Top;
+            DBMiddleContentContainerPanel.Location = new Point(0, 190);
+            DBMiddleContentContainerPanel.Margin = new Padding(5, 5, 5, 0);
+            DBMiddleContentContainerPanel.Name = "DBMiddleContentContainerPanel";
+            DBMiddleContentContainerPanel.Padding = new Padding(5, 5, 5, 0);
+            DBMiddleContentContainerPanel.RowCount = 1;
+            DBMiddleContentContainerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            DBMiddleContentContainerPanel.Size = new Size(895, 54);
+            DBMiddleContentContainerPanel.TabIndex = 7;
+            // 
+            // AvailableBookLabelPanel
+            // 
+            AvailableBookLabelPanel.Anchor = AnchorStyles.Left;
+            AvailableBookLabelPanel.Controls.Add(AvailableBookLabel);
+            AvailableBookLabelPanel.Location = new Point(8, 8);
+            AvailableBookLabelPanel.Name = "AvailableBookLabelPanel";
+            AvailableBookLabelPanel.Size = new Size(454, 43);
+            AvailableBookLabelPanel.TabIndex = 0;
+            // 
+            // AvailableBookSearchPanel
+            // 
+            AvailableBookSearchPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            AvailableBookSearchPanel.Controls.Add(AvailableBookSearch);
+            AvailableBookSearchPanel.Location = new Point(468, 8);
+            AvailableBookSearchPanel.Name = "AvailableBookSearchPanel";
+            AvailableBookSearchPanel.Size = new Size(419, 43);
+            AvailableBookSearchPanel.TabIndex = 1;
             // 
             // UC_Dashboard
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(textBox1);
-            Controls.Add(label7);
-            Controls.Add(dataGridView1);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(DataGridViewBookAvailable);
+            Controls.Add(AvailableBooksPanel);
+            Controls.Add(DBMiddleContentContainerPanel);
+            Controls.Add(DBUpperContentPanel);
             Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Dashboard";
             Size = new Size(895, 681);
-            tableLayoutPanel1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            DashboardStatusPanel.ResumeLayout(false);
+            StudentBorrowedPanel.ResumeLayout(false);
+            StudentBorrowedPanel.PerformLayout();
+            NearDueDatePanel.ResumeLayout(false);
+            NearDueDatePanel.PerformLayout();
+            OverdueStudentsPanel.ResumeLayout(false);
+            OverdueStudentsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DataGridViewBookAvailable).EndInit();
+            DBUpperContentPanel.ResumeLayout(false);
+            DBUpperContentPanel.PerformLayout();
+            DBMiddleContentContainerPanel.ResumeLayout(false);
+            AvailableBookLabelPanel.ResumeLayout(false);
+            AvailableBookLabelPanel.PerformLayout();
+            AvailableBookSearchPanel.ResumeLayout(false);
+            AvailableBookSearchPanel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel1;
+        private TableLayoutPanel DashboardStatusPanel;
+        private Panel StudentBorrowedPanel;
         private Label label2;
         private Label label1;
-        private Panel panel2;
+        private Panel NearDueDatePanel;
         private Label label3;
         private Label label4;
-        private Panel panel3;
+        private Panel OverdueStudentsPanel;
         private Label label5;
         private Label label6;
-        private DataGridView dataGridView1;
+        private DataGridView DataGridViewBookAvailable;
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn Title;
-        private Label label7;
-        private TextBox textBox1;
+        private Panel DBUpperContentPanel;
+        private Panel AvailableBooksPanel;
+        private Label AvailableBookLabel;
+        private TextBox AvailableBookSearch;
+        private TableLayoutPanel DBMiddleContentContainerPanel;
+        private Panel AvailableBookLabelPanel;
+        private Panel AvailableBookSearchPanel;
     }
 }

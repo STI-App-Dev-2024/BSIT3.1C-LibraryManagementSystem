@@ -42,7 +42,7 @@
             // 
             // btnTransaction
             // 
-            btnTransaction.Font = new Font("Bookman Old Style", 12F);
+            btnTransaction.Font = new Font("Microsoft Sans Serif", 12F);
             btnTransaction.Location = new Point(14, 244);
             btnTransaction.Margin = new Padding(5, 10, 5, 10);
             btnTransaction.Name = "btnTransaction";
@@ -54,7 +54,7 @@
             // 
             // btnBookInventory
             // 
-            btnBookInventory.Font = new Font("Bookman Old Style", 12F);
+            btnBookInventory.Font = new Font("Microsoft Sans Serif", 12F);
             btnBookInventory.Location = new Point(14, 321);
             btnBookInventory.Margin = new Padding(5, 10, 5, 10);
             btnBookInventory.Name = "btnBookInventory";
@@ -62,10 +62,11 @@
             btnBookInventory.TabIndex = 2;
             btnBookInventory.Text = "Book Inventory";
             btnBookInventory.UseVisualStyleBackColor = true;
+            btnBookInventory.Click += btnBookInventory_Click;
             // 
             // btnArchive
             // 
-            btnArchive.Font = new Font("Bookman Old Style", 12F);
+            btnArchive.Font = new Font("Microsoft Sans Serif", 12F);
             btnArchive.Location = new Point(14, 398);
             btnArchive.Margin = new Padding(5, 10, 5, 10);
             btnArchive.Name = "btnArchive";
@@ -77,7 +78,7 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.Font = new Font("Bookman Old Style", 12F);
+            btnLogOut.Font = new Font("Microsoft Sans Serif", 12F);
             btnLogOut.ForeColor = SystemColors.ActiveCaptionText;
             btnLogOut.Location = new Point(14, 563);
             btnLogOut.Margin = new Padding(5, 10, 5, 10);
@@ -89,7 +90,7 @@
             // 
             // btnDashboard
             // 
-            btnDashboard.Font = new Font("Bookman Old Style", 12F);
+            btnDashboard.Font = new Font("Microsoft Sans Serif", 12F);
             btnDashboard.Location = new Point(14, 167);
             btnDashboard.Margin = new Padding(5, 10, 5, 10);
             btnDashboard.Name = "btnDashboard";
@@ -97,6 +98,7 @@
             btnDashboard.TabIndex = 5;
             btnDashboard.Text = "Dashboard";
             btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // panel1
             // 
@@ -117,7 +119,7 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Bookman Old Style", 12F);
+            button1.Font = new Font("Microsoft Sans Serif", 12F);
             button1.Location = new Point(15, 30);
             button1.Margin = new Padding(5, 10, 5, 10);
             button1.Name = "button1";
@@ -128,10 +130,12 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.AutoSize = true;
             panel2.BackColor = Color.Transparent;
-            panel2.Location = new Point(369, 0);
+            panel2.Location = new Point(361, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(895, 681);
+            panel2.Size = new Size(903, 681);
             panel2.TabIndex = 0;
             // 
             // F_Library
@@ -151,6 +155,7 @@
             Load += LBMSSidebarForm_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

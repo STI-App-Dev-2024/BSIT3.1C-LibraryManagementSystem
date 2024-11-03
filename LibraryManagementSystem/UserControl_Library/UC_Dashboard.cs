@@ -21,5 +21,10 @@ namespace LibraryManagementSystem.UserControl_Library
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

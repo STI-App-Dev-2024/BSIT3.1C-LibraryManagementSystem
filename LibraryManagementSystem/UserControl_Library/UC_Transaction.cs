@@ -21,5 +21,10 @@ namespace LibraryManagementSystem.UserControl_Library
         {
 
         }
+
+        private void txt_Fullname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
