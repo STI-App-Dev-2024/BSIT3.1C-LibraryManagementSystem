@@ -20,7 +20,7 @@
     <Compile Update="UserControl_Library\UC_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl_Library\UC_StudentTransacHistory.cs">
+    <Compile Update="UserControl_Library\UC_CheckPreviousRecords.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControl_Library\UC_Transaction.cs">
