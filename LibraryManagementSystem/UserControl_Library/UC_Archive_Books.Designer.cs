@@ -52,10 +52,10 @@
             // 
             BookArchPanel.Controls.Add(tableLayoutPanel1);
             BookArchPanel.Dock = DockStyle.Fill;
-            BookArchPanel.Location = new Point(0, 70);
+            BookArchPanel.Location = new Point(0, 81);
             BookArchPanel.Margin = new Padding(0);
             BookArchPanel.Name = "BookArchPanel";
-            BookArchPanel.Size = new Size(895, 611);
+            BookArchPanel.Size = new Size(930, 621);
             BookArchPanel.TabIndex = 3;
             BookArchPanel.Paint += panel2_Paint;
             // 
@@ -66,7 +66,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(panel3, 0, 0);
             tableLayoutPanel1.Controls.Add(panel4, 0, 1);
-            tableLayoutPanel1.Location = new Point(64, 33);
+            tableLayoutPanel1.Location = new Point(82, 38);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 13.1059246F));
@@ -86,6 +86,7 @@
             // 
             // Filterbtn
             // 
+            Filterbtn.Anchor = AnchorStyles.None;
             Filterbtn.Location = new Point(623, 18);
             Filterbtn.Name = "Filterbtn";
             Filterbtn.Size = new Size(128, 30);
@@ -95,9 +96,10 @@
             // 
             // searchBtxt
             // 
+            searchBtxt.Anchor = AnchorStyles.None;
             searchBtxt.Location = new Point(3, 18);
             searchBtxt.Name = "searchBtxt";
-            searchBtxt.Size = new Size(489, 30);
+            searchBtxt.Size = new Size(489, 29);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Title or Author";
             // 
@@ -114,9 +116,9 @@
             // 
             BookArchGrid.AllowUserToAddRows = false;
             BookArchGrid.AllowUserToDeleteRows = false;
+            BookArchGrid.Anchor = AnchorStyles.None;
             BookArchGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BookArchGrid.Columns.AddRange(new DataGridViewColumn[] { bookTitle, bookAuthor, bookDatePublished });
-            BookArchGrid.Dock = DockStyle.Fill;
             BookArchGrid.Location = new Point(0, 0);
             BookArchGrid.Name = "BookArchGrid";
             BookArchGrid.ReadOnly = true;
@@ -150,28 +152,29 @@
             SystemPanel.Dock = DockStyle.Top;
             SystemPanel.Location = new Point(0, 0);
             SystemPanel.Name = "SystemPanel";
-            SystemPanel.Size = new Size(895, 70);
+            SystemPanel.Size = new Size(930, 81);
             SystemPanel.TabIndex = 2;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Location = new Point(34, 25);
+            label1.Location = new Point(70, 30);
             label1.Name = "label1";
-            label1.Size = new Size(135, 21);
+            label1.Size = new Size(122, 24);
             label1.TabIndex = 0;
             label1.Text = "Book Archive";
             // 
             // UC_Archive_Books
             // 
-            AutoScaleDimensions = new SizeF(12F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(BookArchPanel);
             Controls.Add(SystemPanel);
-            Font = new Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Archive_Books";
-            Size = new Size(895, 681);
+            Size = new Size(930, 702);
             BookArchPanel.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);

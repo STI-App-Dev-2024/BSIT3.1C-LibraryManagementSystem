@@ -54,16 +54,17 @@
             SystemPanel2.Dock = DockStyle.Top;
             SystemPanel2.Location = new Point(0, 0);
             SystemPanel2.Name = "SystemPanel2";
-            SystemPanel2.Size = new Size(895, 70);
+            SystemPanel2.Size = new Size(912, 70);
             SystemPanel2.TabIndex = 0;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(34, 25);
+            label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.Location = new Point(19, 25);
             label1.Name = "label1";
-            label1.Size = new Size(276, 21);
+            label1.Size = new Size(239, 24);
             label1.TabIndex = 0;
             label1.Text = "Student Transaction History";
             // 
@@ -74,16 +75,17 @@
             TransacPanel.Location = new Point(0, 70);
             TransacPanel.Margin = new Padding(0);
             TransacPanel.Name = "TransacPanel";
-            TransacPanel.Size = new Size(895, 611);
+            TransacPanel.Size = new Size(912, 641);
             TransacPanel.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.Anchor = AnchorStyles.None;
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(panel3, 0, 0);
             tableLayoutPanel1.Controls.Add(panel4, 0, 1);
-            tableLayoutPanel1.Location = new Point(64, 33);
+            tableLayoutPanel1.Location = new Point(57, 37);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 13.1059246F));
@@ -93,9 +95,9 @@
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.None;
             panel3.Controls.Add(Filterbtn);
             panel3.Controls.Add(searchBtxt);
-            panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(3, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(754, 65);
@@ -103,6 +105,7 @@
             // 
             // Filterbtn
             // 
+            Filterbtn.Anchor = AnchorStyles.None;
             Filterbtn.Location = new Point(623, 18);
             Filterbtn.Name = "Filterbtn";
             Filterbtn.Size = new Size(128, 30);
@@ -112,9 +115,10 @@
             // 
             // searchBtxt
             // 
+            searchBtxt.Anchor = AnchorStyles.None;
             searchBtxt.Location = new Point(3, 18);
             searchBtxt.Name = "searchBtxt";
-            searchBtxt.Size = new Size(489, 30);
+            searchBtxt.Size = new Size(489, 29);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Student Number or Name";
             // 
@@ -131,9 +135,9 @@
             // 
             TransacGrid.AllowUserToAddRows = false;
             TransacGrid.AllowUserToDeleteRows = false;
+            TransacGrid.Anchor = AnchorStyles.None;
             TransacGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TransacGrid.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow });
-            TransacGrid.Dock = DockStyle.Fill;
             TransacGrid.Location = new Point(0, 0);
             TransacGrid.Name = "TransacGrid";
             TransacGrid.ReadOnly = true;
@@ -163,14 +167,14 @@
             // 
             // UC_Archive_Student
             // 
-            AutoScaleDimensions = new SizeF(12F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(TransacPanel);
             Controls.Add(SystemPanel2);
-            Font = new Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Archive_Student";
-            Size = new Size(895, 681);
+            Size = new Size(912, 711);
             SystemPanel2.ResumeLayout(false);
             SystemPanel2.PerformLayout();
             TransacPanel.ResumeLayout(false);

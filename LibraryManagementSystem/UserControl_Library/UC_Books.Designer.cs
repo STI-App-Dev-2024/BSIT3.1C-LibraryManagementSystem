@@ -46,11 +46,13 @@
             // 
             // btn_Search
             // 
-            btn_Search.Font = new Font("Bookman Old Style", 14.25F);
-            btn_Search.Location = new Point(566, 55);
+            btn_Search.Anchor = AnchorStyles.None;
+            btn_Search.AutoSize = true;
+            btn_Search.Font = new Font("Microsoft Sans Serif", 14.25F);
+            btn_Search.Location = new Point(583, 55);
             btn_Search.Margin = new Padding(5);
             btn_Search.Name = "btn_Search";
-            btn_Search.Size = new Size(241, 30);
+            btn_Search.Size = new Size(241, 34);
             btn_Search.TabIndex = 58;
             btn_Search.Text = "Search";
             btn_Search.UseVisualStyleBackColor = true;
@@ -62,7 +64,7 @@
             grid_Inventory.Anchor = AnchorStyles.None;
             grid_Inventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grid_Inventory.Columns.AddRange(new DataGridViewColumn[] { Title, Author, Category });
-            grid_Inventory.Location = new Point(79, 96);
+            grid_Inventory.Location = new Point(96, 96);
             grid_Inventory.Margin = new Padding(4);
             grid_Inventory.Name = "grid_Inventory";
             grid_Inventory.ReadOnly = true;
@@ -94,19 +96,20 @@
             // txt_SearchBar
             // 
             txt_SearchBar.Anchor = AnchorStyles.None;
-            txt_SearchBar.Font = new Font("Bookman Old Style", 14.25F);
-            txt_SearchBar.Location = new Point(79, 57);
+            txt_SearchBar.Font = new Font("Microsoft Sans Serif", 14.25F);
+            txt_SearchBar.Location = new Point(96, 57);
             txt_SearchBar.Margin = new Padding(5);
             txt_SearchBar.Name = "txt_SearchBar";
-            txt_SearchBar.Size = new Size(473, 30);
+            txt_SearchBar.Size = new Size(473, 29);
             txt_SearchBar.TabIndex = 56;
             txt_SearchBar.Text = "Search Book Title";
             // 
             // btn_DelBook
             // 
             btn_DelBook.Anchor = AnchorStyles.None;
-            btn_DelBook.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold);
-            btn_DelBook.Location = new Point(566, 37);
+            btn_DelBook.AutoSize = true;
+            btn_DelBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            btn_DelBook.Location = new Point(583, 37);
             btn_DelBook.Margin = new Padding(5);
             btn_DelBook.Name = "btn_DelBook";
             btn_DelBook.Size = new Size(241, 64);
@@ -117,8 +120,9 @@
             // btn_EditBook
             // 
             btn_EditBook.Anchor = AnchorStyles.None;
-            btn_EditBook.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold);
-            btn_EditBook.Location = new Point(317, 37);
+            btn_EditBook.AutoSize = true;
+            btn_EditBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            btn_EditBook.Location = new Point(334, 37);
             btn_EditBook.Margin = new Padding(5);
             btn_EditBook.Name = "btn_EditBook";
             btn_EditBook.Size = new Size(239, 64);
@@ -129,9 +133,10 @@
             // btn_AddBook
             // 
             btn_AddBook.Anchor = AnchorStyles.None;
-            btn_AddBook.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold);
+            btn_AddBook.AutoSize = true;
+            btn_AddBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             btn_AddBook.ForeColor = Color.Black;
-            btn_AddBook.Location = new Point(63, 37);
+            btn_AddBook.Location = new Point(80, 37);
             btn_AddBook.Margin = new Padding(5);
             btn_AddBook.Name = "btn_AddBook";
             btn_AddBook.Size = new Size(244, 64);
@@ -148,7 +153,7 @@
             ButtonsPanel.Location = new Point(0, 0);
             ButtonsPanel.Margin = new Padding(3, 10, 3, 3);
             ButtonsPanel.Name = "ButtonsPanel";
-            ButtonsPanel.Size = new Size(895, 154);
+            ButtonsPanel.Size = new Size(927, 154);
             ButtonsPanel.TabIndex = 59;
             // 
             // panel1
@@ -159,21 +164,22 @@
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 160);
             panel1.Name = "panel1";
-            panel1.Size = new Size(895, 521);
+            panel1.Size = new Size(927, 521);
             panel1.TabIndex = 60;
             // 
             // UC_Books
             // 
-            AutoScaleDimensions = new SizeF(10F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ButtonsPanel);
             Controls.Add(panel1);
-            Font = new Font("Bookman Old Style", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "UC_Books";
-            Size = new Size(895, 681);
+            Size = new Size(927, 681);
             ((System.ComponentModel.ISupportInitialize)grid_Inventory).EndInit();
             ButtonsPanel.ResumeLayout(false);
+            ButtonsPanel.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

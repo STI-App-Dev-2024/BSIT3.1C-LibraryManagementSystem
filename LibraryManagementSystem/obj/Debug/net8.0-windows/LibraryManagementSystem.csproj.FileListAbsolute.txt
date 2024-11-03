@@ -86,3 +86,28 @@ C:\Users\admin\Documents\GitHub\BSIT3.1C-LibraryManagementSystem\LibraryManageme
 C:\Users\admin\Documents\GitHub\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.pdb
 C:\Users\admin\Documents\GitHub\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 C:\Users\admin\Documents\GitHub\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\ref\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.F_Admin.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.F_Library.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.Properties.Resources.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_Archive_Books.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_Archive_Student.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_Books.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_Dashboard.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_StudentTransacHistory.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.UserControl_Library.UC_Transaction.resources
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfo.cs
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.sourcelink.json
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\refint\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.exe
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.deps.json
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.runtimeconfig.json
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.dll
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.pdb
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.genruntimeconfig.cache
+C:\Users\Admin\Documents\Github Repositories\GithubRepo\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\ref\LibraryManagementSystem.dll

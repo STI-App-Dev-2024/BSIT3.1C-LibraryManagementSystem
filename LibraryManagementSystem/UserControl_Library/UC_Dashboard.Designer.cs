@@ -85,7 +85,7 @@
             label2.Location = new Point(15, 105);
             label2.Margin = new Padding(3, 0, 3, 15);
             label2.Name = "label2";
-            label2.Size = new Size(180, 21);
+            label2.Size = new Size(161, 24);
             label2.TabIndex = 1;
             label2.Text = "Student Borrowed";
             // 
@@ -95,7 +95,7 @@
             label1.Location = new Point(84, 69);
             label1.Margin = new Padding(3, 0, 3, 15);
             label1.Name = "label1";
-            label1.Size = new Size(46, 21);
+            label1.Size = new Size(40, 24);
             label1.TabIndex = 0;
             label1.Text = "100";
             // 
@@ -115,7 +115,7 @@
             label3.Location = new Point(17, 105);
             label3.Margin = new Padding(3, 0, 3, 15);
             label3.Name = "label3";
-            label3.Size = new Size(175, 21);
+            label3.Size = new Size(160, 24);
             label3.TabIndex = 1;
             label3.Text = "Nearing Due Date";
             // 
@@ -125,7 +125,7 @@
             label4.Location = new Point(81, 69);
             label4.Margin = new Padding(3, 0, 3, 15);
             label4.Name = "label4";
-            label4.Size = new Size(46, 21);
+            label4.Size = new Size(40, 24);
             label4.TabIndex = 0;
             label4.Text = "100";
             // 
@@ -145,7 +145,7 @@
             label5.Location = new Point(15, 105);
             label5.Margin = new Padding(3, 0, 3, 15);
             label5.Name = "label5";
-            label5.Size = new Size(180, 21);
+            label5.Size = new Size(162, 24);
             label5.TabIndex = 1;
             label5.Text = "Overdue Students";
             // 
@@ -155,12 +155,13 @@
             label6.Location = new Point(79, 69);
             label6.Margin = new Padding(3, 0, 3, 15);
             label6.Name = "label6";
-            label6.Size = new Size(46, 21);
+            label6.Size = new Size(40, 24);
             label6.TabIndex = 0;
             label6.Text = "100";
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
             dataGridView1.Location = new Point(45, 332);
@@ -182,11 +183,12 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
-            label7.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label7.Location = new Point(45, 308);
             label7.Name = "label7";
-            label7.Size = new Size(162, 23);
+            label7.Size = new Size(143, 24);
             label7.TabIndex = 2;
             label7.Text = "Available Books";
             // 
@@ -195,19 +197,19 @@
             textBox1.Anchor = AnchorStyles.None;
             textBox1.Location = new Point(474, 296);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(368, 30);
+            textBox1.Size = new Size(368, 29);
             textBox1.TabIndex = 3;
             textBox1.Text = "Search Book";
             // 
             // UC_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(12F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(textBox1);
             Controls.Add(label7);
             Controls.Add(dataGridView1);
             Controls.Add(tableLayoutPanel1);
-            Font = new Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             Name = "UC_Dashboard";
             Size = new Size(895, 681);
