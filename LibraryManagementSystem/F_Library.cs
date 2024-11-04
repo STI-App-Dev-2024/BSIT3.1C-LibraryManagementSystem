@@ -1,57 +1,101 @@
 using LibraryManagementSystem.UserControl_Library;
+using System.IO.Compression;
+using System.Security.AccessControl;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
     public partial class F_Library : Form
     {
-
+        private bool _isResized = false;
+        UC_Dashboard dashboard;
+        UC_Transaction transaction;
+        UC_Books book;
+        UC_Archive_Books books;
+        UC_Archive_Student student;
 
         public F_Library()
         {
             InitializeComponent();
-            panel2.Controls.Clear();
+            dashboard = new UC_Dashboard();
+            addUserControl(dashboard);
         }
 
-
+        //This method allows the selected user control to show and place in the panel
         private void addUserControl(UserControl usercontrol)
         {
+            
             usercontrol.Dock = DockStyle.Fill;
             panel2.Controls.Clear();
             panel2.Controls.Add(usercontrol);
             usercontrol.BringToFront();
         }
+        //Loading dashboard first
         private void LBMSSidebarForm_Load(object sender, EventArgs e)
         {
-            UC_Dashboard dashboard = new UC_Dashboard();
-            addUserControl(dashboard);
+            
         }
-
+        //When clicked, it shows the transaction page
         private void btnTransaction_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            UC_Transaction transaction = new UC_Transaction();
+            transaction = new UC_Transaction();
             addUserControl(transaction);
         }
-
+        //When clicked, it shows a submenu, Book Archive and Transaction Archive
         private void btnArchive_Click(object sender, EventArgs e)
         {
-            
-
+            archiveTimer.Start();
         }
-
+        //When clicked, it shows the book inventory page
         private void btnBookInventory_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            UC_Books book = new UC_Books();
+            book = new UC_Books();
             addUserControl(book);
         }
-
+        //When clicked, it shows the dashboard page
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            UC_Dashboard dashboard = new UC_Dashboard();
+            dashboard = new UC_Dashboard();
             addUserControl(dashboard);
+        }
+        //This is the transition for submenu in Archive. It also move the location of the Logout button
+        private void archiveTimer_Tick(object sender, EventArgs e)
+        {
+            if (_isResized == false)
+            {
+                flowArchivePanel.Height += 10;
+                btnLogOut.Location = new Point(14, btnLogOut.Location.Y + 3);
+                if (flowArchivePanel.Height >= 171)
+                {
+                    archiveTimer.Stop();
+                    _isResized = true;
+                }
+            }
+            else
+            {
+                flowArchivePanel.Height -= 10;
+                btnLogOut.Location = new Point(14, btnLogOut.Location.Y - 3);
+                if (flowArchivePanel.Height <= 57)
+                {
+                    archiveTimer.Stop();
+                    _isResized = false;
+                }
+            }
+        }
+        //When clicked, it shows the Book Archive page
+        private void btnBookArchive_Click(object sender, EventArgs e)
+        {
+            books = new UC_Archive_Books();
+            addUserControl(books);
+        }
+        //When clicked, it shows the Transaction Archive page
+        private void btnTransactArchive_Click(object sender, EventArgs e)
+        {
+            student = new UC_Archive_Student();
+            addUserControl(student);
         }
     }
 }

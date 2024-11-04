@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Library));
             btnTransaction = new Button();
             btnBookInventory = new Button();
@@ -35,9 +36,14 @@
             btnLogOut = new Button();
             btnDashboard = new Button();
             panel1 = new Panel();
+            flowArchivePanel = new FlowLayoutPanel();
+            btnBookArchive = new Button();
+            btnTransactArchive = new Button();
             button1 = new Button();
             panel2 = new Panel();
+            archiveTimer = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
+            flowArchivePanel.SuspendLayout();
             SuspendLayout();
             // 
             // btnTransaction
@@ -67,8 +73,8 @@
             // btnArchive
             // 
             btnArchive.Font = new Font("Microsoft Sans Serif", 12F);
-            btnArchive.Location = new Point(14, 398);
-            btnArchive.Margin = new Padding(5, 10, 5, 10);
+            btnArchive.Location = new Point(0, 0);
+            btnArchive.Margin = new Padding(0);
             btnArchive.Name = "btnArchive";
             btnArchive.Size = new Size(327, 57);
             btnArchive.TabIndex = 3;
@@ -103,10 +109,10 @@
             // panel1
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Controls.Add(flowArchivePanel);
             panel1.Controls.Add(btnLogOut);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(btnDashboard);
-            panel1.Controls.Add(btnArchive);
             panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(btnBookInventory);
             panel1.Dock = DockStyle.Left;
@@ -116,6 +122,42 @@
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(356, 681);
             panel1.TabIndex = 6;
+            // 
+            // flowArchivePanel
+            // 
+            flowArchivePanel.BackColor = Color.Transparent;
+            flowArchivePanel.Controls.Add(btnArchive);
+            flowArchivePanel.Controls.Add(btnBookArchive);
+            flowArchivePanel.Controls.Add(btnTransactArchive);
+            flowArchivePanel.Location = new Point(15, 398);
+            flowArchivePanel.Margin = new Padding(5, 10, 5, 10);
+            flowArchivePanel.Name = "flowArchivePanel";
+            flowArchivePanel.Size = new Size(327, 57);
+            flowArchivePanel.TabIndex = 0;
+            // 
+            // btnBookArchive
+            // 
+            btnBookArchive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBookArchive.Location = new Point(0, 57);
+            btnBookArchive.Margin = new Padding(0);
+            btnBookArchive.Name = "btnBookArchive";
+            btnBookArchive.Size = new Size(327, 57);
+            btnBookArchive.TabIndex = 0;
+            btnBookArchive.Text = "Book";
+            btnBookArchive.UseVisualStyleBackColor = true;
+            btnBookArchive.Click += btnBookArchive_Click;
+            // 
+            // btnTransactArchive
+            // 
+            btnTransactArchive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTransactArchive.Location = new Point(0, 114);
+            btnTransactArchive.Margin = new Padding(0);
+            btnTransactArchive.Name = "btnTransactArchive";
+            btnTransactArchive.Size = new Size(327, 57);
+            btnTransactArchive.TabIndex = 1;
+            btnTransactArchive.Text = "Transaction";
+            btnTransactArchive.UseVisualStyleBackColor = true;
+            btnTransactArchive.Click += btnTransactArchive_Click;
             // 
             // button1
             // 
@@ -138,6 +180,11 @@
             panel2.Size = new Size(903, 681);
             panel2.TabIndex = 0;
             // 
+            // archiveTimer
+            // 
+            archiveTimer.Interval = 20;
+            archiveTimer.Tick += archiveTimer_Tick;
+            // 
             // F_Library
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
@@ -154,6 +201,7 @@
             Text = "Library Management System";
             Load += LBMSSidebarForm_Load;
             panel1.ResumeLayout(false);
+            flowArchivePanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,5 +216,9 @@
         private Panel panel1;
         private Panel panel2;
         private Button button1;
+        private System.Windows.Forms.Timer archiveTimer;
+        private FlowLayoutPanel flowArchivePanel;
+        private Button btnTransactArchive;
+        private Button btnBookArchive;
     }
 }

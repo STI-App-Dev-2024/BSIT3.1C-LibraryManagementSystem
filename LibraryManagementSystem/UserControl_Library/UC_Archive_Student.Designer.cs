@@ -70,6 +70,7 @@
             // 
             // TransacPanel
             // 
+            TransacPanel.AutoSize = true;
             TransacPanel.Controls.Add(tableLayoutPanel1);
             TransacPanel.Dock = DockStyle.Fill;
             TransacPanel.Location = new Point(0, 70);
@@ -116,11 +117,14 @@
             // searchBtxt
             // 
             searchBtxt.Anchor = AnchorStyles.None;
+            searchBtxt.ForeColor = Color.LightGray;
             searchBtxt.Location = new Point(3, 18);
             searchBtxt.Name = "searchBtxt";
             searchBtxt.Size = new Size(489, 29);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Student Number or Name";
+            searchBtxt.Enter += searchBtxt_Enter;
+            searchBtxt.Leave += searchBtxt_Leave;
             // 
             // panel4
             // 
@@ -184,6 +188,7 @@
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)TransacGrid).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

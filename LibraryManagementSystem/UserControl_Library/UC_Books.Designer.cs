@@ -59,6 +59,7 @@
             btn_Search.TabIndex = 58;
             btn_Search.Text = "Search";
             btn_Search.UseVisualStyleBackColor = true;
+            btn_Search.Click += btn_Search_Click;
             // 
             // grid_Inventory
             // 

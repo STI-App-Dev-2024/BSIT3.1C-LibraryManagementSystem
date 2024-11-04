@@ -16,5 +16,23 @@ namespace LibraryManagementSystem.UserControl_Library
         {
             InitializeComponent();
         }
+
+        private void searchBtxt_Enter(object sender, EventArgs e)
+        {
+            if (searchBtxt.Text.Equals("Enter Student Number or Name"))
+            {
+                searchBtxt.Text = "";
+                searchBtxt.ForeColor = Color.Black;
+            }
+        }
+
+        private void searchBtxt_Leave(object sender, EventArgs e)
+        {
+            if (searchBtxt.Text.Equals(""))
+            {
+                searchBtxt.Text = "Enter Student Number or Name";
+                searchBtxt.ForeColor = Color.LightGray;
+            }
+        }
     }
 }
