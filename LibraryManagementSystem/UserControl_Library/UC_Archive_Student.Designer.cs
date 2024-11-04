@@ -31,21 +31,17 @@
             SystemPanel2 = new Panel();
             label1 = new Label();
             TransacPanel = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            panel3 = new Panel();
-            Filterbtn = new Button();
-            searchBtxt = new TextBox();
-            panel4 = new Panel();
             TransacGrid = new DataGridView();
             StuNo = new DataGridViewTextBoxColumn();
             StuName = new DataGridViewTextBoxColumn();
             dateBorrow = new DataGridViewTextBoxColumn();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            Filterbtn = new Button();
+            searchBtxt = new TextBox();
             SystemPanel2.SuspendLayout();
             TransacPanel.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TransacGrid).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // SystemPanel2
@@ -54,15 +50,15 @@
             SystemPanel2.Dock = DockStyle.Top;
             SystemPanel2.Location = new Point(0, 0);
             SystemPanel2.Name = "SystemPanel2";
-            SystemPanel2.Size = new Size(912, 70);
+            SystemPanel2.Size = new Size(912, 134);
             SystemPanel2.TabIndex = 0;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
+            label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(19, 25);
+            label1.Location = new Point(22, 58);
             label1.Name = "label1";
             label1.Size = new Size(239, 24);
             label1.TabIndex = 0;
@@ -71,81 +67,26 @@
             // TransacPanel
             // 
             TransacPanel.AutoSize = true;
+            TransacPanel.Controls.Add(TransacGrid);
             TransacPanel.Controls.Add(tableLayoutPanel1);
             TransacPanel.Dock = DockStyle.Fill;
-            TransacPanel.Location = new Point(0, 70);
+            TransacPanel.Location = new Point(0, 134);
             TransacPanel.Margin = new Padding(0);
             TransacPanel.Name = "TransacPanel";
-            TransacPanel.Size = new Size(912, 641);
+            TransacPanel.Size = new Size(912, 577);
             TransacPanel.TabIndex = 1;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.Anchor = AnchorStyles.None;
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(panel3, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel4, 0, 1);
-            tableLayoutPanel1.Location = new Point(57, 37);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 13.1059246F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 86.89407F));
-            tableLayoutPanel1.Size = new Size(760, 546);
-            tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.Anchor = AnchorStyles.None;
-            panel3.Controls.Add(Filterbtn);
-            panel3.Controls.Add(searchBtxt);
-            panel3.Location = new Point(3, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(754, 65);
-            panel3.TabIndex = 0;
-            // 
-            // Filterbtn
-            // 
-            Filterbtn.Anchor = AnchorStyles.None;
-            Filterbtn.Location = new Point(623, 18);
-            Filterbtn.Name = "Filterbtn";
-            Filterbtn.Size = new Size(128, 30);
-            Filterbtn.TabIndex = 1;
-            Filterbtn.Text = "Filter by";
-            Filterbtn.UseVisualStyleBackColor = true;
-            // 
-            // searchBtxt
-            // 
-            searchBtxt.Anchor = AnchorStyles.None;
-            searchBtxt.ForeColor = Color.LightGray;
-            searchBtxt.Location = new Point(3, 18);
-            searchBtxt.Name = "searchBtxt";
-            searchBtxt.Size = new Size(489, 29);
-            searchBtxt.TabIndex = 0;
-            searchBtxt.Text = "Enter Student Number or Name";
-            searchBtxt.Enter += searchBtxt_Enter;
-            searchBtxt.Leave += searchBtxt_Leave;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(TransacGrid);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(3, 74);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(754, 469);
-            panel4.TabIndex = 1;
             // 
             // TransacGrid
             // 
             TransacGrid.AllowUserToAddRows = false;
             TransacGrid.AllowUserToDeleteRows = false;
-            TransacGrid.Anchor = AnchorStyles.None;
             TransacGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TransacGrid.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow });
-            TransacGrid.Location = new Point(0, 0);
+            TransacGrid.Dock = DockStyle.Fill;
+            TransacGrid.Location = new Point(0, 43);
             TransacGrid.Name = "TransacGrid";
             TransacGrid.ReadOnly = true;
-            TransacGrid.Size = new Size(754, 469);
+            TransacGrid.Size = new Size(912, 534);
             TransacGrid.TabIndex = 0;
             // 
             // StuNo
@@ -169,6 +110,43 @@
             dateBorrow.Name = "dateBorrow";
             dateBorrow.ReadOnly = true;
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.41228F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.587719F));
+            tableLayoutPanel1.Controls.Add(Filterbtn, 1, 0);
+            tableLayoutPanel1.Controls.Add(searchBtxt, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Size = new Size(912, 43);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // Filterbtn
+            // 
+            Filterbtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            Filterbtn.Location = new Point(709, 6);
+            Filterbtn.Name = "Filterbtn";
+            Filterbtn.Size = new Size(200, 30);
+            Filterbtn.TabIndex = 1;
+            Filterbtn.Text = "Filter by";
+            Filterbtn.UseVisualStyleBackColor = true;
+            // 
+            // searchBtxt
+            // 
+            searchBtxt.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            searchBtxt.ForeColor = SystemColors.WindowText;
+            searchBtxt.Location = new Point(3, 7);
+            searchBtxt.Name = "searchBtxt";
+            searchBtxt.Size = new Size(700, 29);
+            searchBtxt.TabIndex = 0;
+            searchBtxt.Text = "Enter Student Number or Name";
+            searchBtxt.Enter += searchBtxt_Enter;
+            searchBtxt.Leave += searchBtxt_Leave;
+            // 
             // UC_Archive_Student
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -182,11 +160,9 @@
             SystemPanel2.ResumeLayout(false);
             SystemPanel2.PerformLayout();
             TransacPanel.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)TransacGrid).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -196,14 +172,12 @@
         private Panel SystemPanel2;
         private Label label1;
         private Panel TransacPanel;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel3;
         private Button Filterbtn;
         private TextBox searchBtxt;
-        private Panel panel4;
         private DataGridView TransacGrid;
         private DataGridViewTextBoxColumn StuNo;
         private DataGridViewTextBoxColumn StuName;
         private DataGridViewTextBoxColumn dateBorrow;
+        private TableLayoutPanel tableLayoutPanel1;
     }
 }

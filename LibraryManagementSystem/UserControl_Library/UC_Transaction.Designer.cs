@@ -65,33 +65,36 @@
             // label4
             // 
             label4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 14F);
             label4.Location = new Point(16, 6);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(152, 24);
+            label4.Size = new Size(148, 24);
             label4.TabIndex = 15;
             label4.Text = "Student Number";
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 14F);
-            label3.Location = new Point(226, 26);
+            label3.Location = new Point(127, 13);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(137, 24);
+            label3.Size = new Size(126, 24);
             label3.TabIndex = 14;
             label3.Text = "Student Email";
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 14F);
-            label2.Location = new Point(40, 9);
+            label2.Location = new Point(16, 5);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(107, 24);
+            label2.Size = new Size(97, 24);
             label2.TabIndex = 13;
             label2.Text = "Full Name";
             // 
@@ -99,11 +102,11 @@
             // 
             txt_Email.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txt_Email.Font = new Font("Microsoft Sans Serif", 14F);
-            txt_Email.Location = new Point(186, 41);
+            txt_Email.Location = new Point(113, 41);
             txt_Email.Margin = new Padding(4);
             txt_Email.Multiline = true;
             txt_Email.Name = "txt_Email";
-            txt_Email.Size = new Size(399, 43);
+            txt_Email.Size = new Size(607, 43);
             txt_Email.TabIndex = 10;
             // 
             // label1
@@ -132,9 +135,8 @@
             // 
             // StudentEmailContainerPanel
             // 
-            StudentEmailContainerPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            StudentEmailContainerPanel.Anchor = AnchorStyles.None;
             StudentEmailContainerPanel.AutoSize = true;
-            StudentEmailContainerPanel.Controls.Add(label3);
             StudentEmailContainerPanel.Controls.Add(StudentEmailPanel);
             StudentEmailContainerPanel.Location = new Point(3, 137);
             StudentEmailContainerPanel.Margin = new Padding(5);
@@ -146,6 +148,7 @@
             // StudentEmailPanel
             // 
             StudentEmailPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            StudentEmailPanel.Controls.Add(label3);
             StudentEmailPanel.Controls.Add(txt_Email);
             StudentEmailPanel.Location = new Point(21, 16);
             StudentEmailPanel.Name = "StudentEmailPanel";
@@ -167,7 +170,7 @@
             StudentNameAndNumberPanel.Padding = new Padding(0, 0, 5, 5);
             StudentNameAndNumberPanel.RowCount = 1;
             StudentNameAndNumberPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            StudentNameAndNumberPanel.Size = new Size(872, 110);
+            StudentNameAndNumberPanel.Size = new Size(873, 110);
             StudentNameAndNumberPanel.TabIndex = 16;
             // 
             // StudentNumberPanel
@@ -175,7 +178,7 @@
             StudentNumberPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             StudentNumberPanel.Controls.Add(txt_Fullname);
             StudentNumberPanel.Controls.Add(label4);
-            StudentNumberPanel.Location = new Point(438, 9);
+            StudentNumberPanel.Location = new Point(439, 9);
             StudentNumberPanel.Margin = new Padding(5);
             StudentNumberPanel.Name = "StudentNumberPanel";
             StudentNumberPanel.Size = new Size(424, 86);
@@ -185,11 +188,11 @@
             // 
             txt_Fullname.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txt_Fullname.Font = new Font("Microsoft Sans Serif", 14F);
-            txt_Fullname.Location = new Point(16, 34);
+            txt_Fullname.Location = new Point(4, 34);
             txt_Fullname.Margin = new Padding(4);
             txt_Fullname.Multiline = true;
             txt_Fullname.Name = "txt_Fullname";
-            txt_Fullname.Size = new Size(387, 41);
+            txt_Fullname.Size = new Size(416, 41);
             txt_Fullname.TabIndex = 11;
             // 
             // StudentNamePanel
@@ -200,25 +203,25 @@
             StudentNamePanel.Location = new Point(5, 11);
             StudentNamePanel.Margin = new Padding(5);
             StudentNamePanel.Name = "StudentNamePanel";
-            StudentNamePanel.Size = new Size(423, 83);
+            StudentNamePanel.Size = new Size(424, 83);
             StudentNamePanel.TabIndex = 17;
             // 
             // txt_StuNo
             // 
             txt_StuNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txt_StuNo.Font = new Font("Microsoft Sans Serif", 14F);
-            txt_StuNo.Location = new Point(19, 33);
+            txt_StuNo.Location = new Point(4, 33);
             txt_StuNo.Margin = new Padding(4);
             txt_StuNo.Multiline = true;
             txt_StuNo.Name = "txt_StuNo";
-            txt_StuNo.Size = new Size(385, 40);
+            txt_StuNo.Size = new Size(416, 40);
             txt_StuNo.TabIndex = 12;
             // 
             // btn_Checkout
             // 
             btn_Checkout.Anchor = AnchorStyles.None;
             btn_Checkout.Font = new Font("Microsoft Sans Serif", 14F);
-            btn_Checkout.Location = new Point(339, 4);
+            btn_Checkout.Location = new Point(341, 10);
             btn_Checkout.Margin = new Padding(4);
             btn_Checkout.Name = "btn_Checkout";
             btn_Checkout.Size = new Size(215, 37);

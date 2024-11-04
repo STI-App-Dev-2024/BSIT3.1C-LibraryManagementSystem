@@ -175,9 +175,9 @@
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.AutoSize = true;
             panel2.BackColor = Color.Transparent;
-            panel2.Location = new Point(361, 0);
+            panel2.Location = new Point(361, 12);
             panel2.Name = "panel2";
-            panel2.Size = new Size(903, 681);
+            panel2.Size = new Size(898, 657);
             panel2.TabIndex = 0;
             // 
             // archiveTimer

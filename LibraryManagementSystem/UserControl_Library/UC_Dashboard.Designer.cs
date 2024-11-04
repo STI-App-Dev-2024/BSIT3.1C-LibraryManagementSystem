@@ -48,6 +48,7 @@
             DBMiddleContentContainerPanel = new TableLayoutPanel();
             AvailableBookLabelPanel = new Panel();
             AvailableBookSearchPanel = new Panel();
+            DataGridViewAvailableContainerPanel = new Panel();
             DashboardStatusPanel.SuspendLayout();
             StudentBorrowedPanel.SuspendLayout();
             NearDueDatePanel.SuspendLayout();
@@ -57,6 +58,7 @@
             DBMiddleContentContainerPanel.SuspendLayout();
             AvailableBookLabelPanel.SuspendLayout();
             AvailableBookSearchPanel.SuspendLayout();
+            DataGridViewAvailableContainerPanel.SuspendLayout();
             SuspendLayout();
             // 
             // DashboardStatusPanel
@@ -175,12 +177,12 @@
             // 
             // DataGridViewBookAvailable
             // 
-            DataGridViewBookAvailable.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DataGridViewBookAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataGridViewBookAvailable.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
-            DataGridViewBookAvailable.Location = new Point(13, 247);
+            DataGridViewBookAvailable.Dock = DockStyle.Fill;
+            DataGridViewBookAvailable.Location = new Point(0, 0);
             DataGridViewBookAvailable.Name = "DataGridViewBookAvailable";
-            DataGridViewBookAvailable.Size = new Size(870, 431);
+            DataGridViewBookAvailable.Size = new Size(895, 437);
             DataGridViewBookAvailable.TabIndex = 1;
             // 
             // Category
@@ -270,11 +272,20 @@
             AvailableBookSearchPanel.Size = new Size(419, 43);
             AvailableBookSearchPanel.TabIndex = 1;
             // 
+            // DataGridViewAvailableContainerPanel
+            // 
+            DataGridViewAvailableContainerPanel.Controls.Add(DataGridViewBookAvailable);
+            DataGridViewAvailableContainerPanel.Dock = DockStyle.Fill;
+            DataGridViewAvailableContainerPanel.Location = new Point(0, 244);
+            DataGridViewAvailableContainerPanel.Name = "DataGridViewAvailableContainerPanel";
+            DataGridViewAvailableContainerPanel.Size = new Size(895, 437);
+            DataGridViewAvailableContainerPanel.TabIndex = 8;
+            // 
             // UC_Dashboard
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(DataGridViewBookAvailable);
+            Controls.Add(DataGridViewAvailableContainerPanel);
             Controls.Add(AvailableBooksPanel);
             Controls.Add(DBMiddleContentContainerPanel);
             Controls.Add(DBUpperContentPanel);
@@ -297,6 +308,7 @@
             AvailableBookLabelPanel.PerformLayout();
             AvailableBookSearchPanel.ResumeLayout(false);
             AvailableBookSearchPanel.PerformLayout();
+            DataGridViewAvailableContainerPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -323,5 +335,6 @@
         private TableLayoutPanel DBMiddleContentContainerPanel;
         private Panel AvailableBookLabelPanel;
         private Panel AvailableBookSearchPanel;
+        private Panel DataGridViewAvailableContainerPanel;
     }
 }
