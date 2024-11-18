@@ -34,17 +34,17 @@
             pictureBox1 = new PictureBox();
             ButtonsPanel = new TableLayoutPanel();
             panel7 = new Panel();
-            pictureBox7 = new PictureBox();
-            label9 = new Label();
+            picHistory = new PictureBox();
+            lblHistory = new Label();
             panel6 = new Panel();
-            pictureBox5 = new PictureBox();
-            label10 = new Label();
+            picArchive = new PictureBox();
+            lblArchive = new Label();
             panel5 = new Panel();
-            pictureBox6 = new PictureBox();
-            label8 = new Label();
+            picLogout = new PictureBox();
+            lblLogout = new Label();
             panel4 = new Panel();
-            pictureBox4 = new PictureBox();
-            label7 = new Label();
+            picAccnt = new PictureBox();
+            lblAccnt = new Label();
             panel1 = new Panel();
             label6 = new Label();
             label5 = new Label();
@@ -60,13 +60,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ButtonsPanel.SuspendLayout();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picHistory).BeginInit();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picArchive).BeginInit();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picLogout).BeginInit();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picAccnt).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             PendingBarPanel.SuspendLayout();
@@ -129,8 +129,8 @@
             // panel7
             // 
             panel7.BackColor = Color.DarkSeaGreen;
-            panel7.Controls.Add(pictureBox7);
-            panel7.Controls.Add(label9);
+            panel7.Controls.Add(picHistory);
+            panel7.Controls.Add(lblHistory);
             panel7.Dock = DockStyle.Fill;
             panel7.Location = new Point(652, 295);
             panel7.Margin = new Padding(20);
@@ -138,34 +138,35 @@
             panel7.Size = new Size(592, 234);
             panel7.TabIndex = 1;
             // 
-            // pictureBox7
+            // picHistory
             // 
-            pictureBox7.Dock = DockStyle.Bottom;
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(0, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(592, 129);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 3;
-            pictureBox7.TabStop = false;
+            picHistory.Dock = DockStyle.Bottom;
+            picHistory.Image = (Image)resources.GetObject("picHistory.Image");
+            picHistory.Location = new Point(0, 0);
+            picHistory.Name = "picHistory";
+            picHistory.Size = new Size(592, 129);
+            picHistory.SizeMode = PictureBoxSizeMode.Zoom;
+            picHistory.TabIndex = 3;
+            picHistory.TabStop = false;
+            picHistory.Click += picHistory_Click;
             // 
-            // label9
+            // lblHistory
             // 
-            label9.Dock = DockStyle.Bottom;
-            label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(0, 129);
-            label9.Name = "label9";
-            label9.Size = new Size(592, 105);
-            label9.TabIndex = 3;
-            label9.Text = "Log in History";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            label9.Click += label9_Click;
+            lblHistory.Dock = DockStyle.Bottom;
+            lblHistory.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblHistory.Location = new Point(0, 129);
+            lblHistory.Name = "lblHistory";
+            lblHistory.Size = new Size(592, 105);
+            lblHistory.TabIndex = 3;
+            lblHistory.Text = "Log in History";
+            lblHistory.TextAlign = ContentAlignment.MiddleCenter;
+            lblHistory.Click += label9_Click;
             // 
             // panel6
             // 
             panel6.BackColor = Color.DeepSkyBlue;
-            panel6.Controls.Add(pictureBox5);
-            panel6.Controls.Add(label10);
+            panel6.Controls.Add(picArchive);
+            panel6.Controls.Add(lblArchive);
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(652, 20);
             panel6.Margin = new Padding(20);
@@ -173,33 +174,35 @@
             panel6.Size = new Size(592, 235);
             panel6.TabIndex = 1;
             // 
-            // pictureBox5
+            // picArchive
             // 
-            pictureBox5.Dock = DockStyle.Bottom;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(0, 0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(592, 139);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
+            picArchive.Dock = DockStyle.Bottom;
+            picArchive.Image = (Image)resources.GetObject("picArchive.Image");
+            picArchive.Location = new Point(0, 0);
+            picArchive.Name = "picArchive";
+            picArchive.Size = new Size(592, 139);
+            picArchive.SizeMode = PictureBoxSizeMode.Zoom;
+            picArchive.TabIndex = 1;
+            picArchive.TabStop = false;
+            picArchive.Click += picArchive_Click;
             // 
-            // label10
+            // lblArchive
             // 
-            label10.Dock = DockStyle.Bottom;
-            label10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(0, 139);
-            label10.Name = "label10";
-            label10.Size = new Size(592, 96);
-            label10.TabIndex = 4;
-            label10.Text = "Archives";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            lblArchive.Dock = DockStyle.Bottom;
+            lblArchive.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblArchive.Location = new Point(0, 139);
+            lblArchive.Name = "lblArchive";
+            lblArchive.Size = new Size(592, 96);
+            lblArchive.TabIndex = 4;
+            lblArchive.Text = "Archives";
+            lblArchive.TextAlign = ContentAlignment.MiddleCenter;
+            lblArchive.Click += label10_Click;
             // 
             // panel5
             // 
             panel5.BackColor = Color.MediumPurple;
-            panel5.Controls.Add(pictureBox6);
-            panel5.Controls.Add(label8);
+            panel5.Controls.Add(picLogout);
+            panel5.Controls.Add(lblLogout);
             panel5.Dock = DockStyle.Fill;
             panel5.Location = new Point(20, 295);
             panel5.Margin = new Padding(20);
@@ -207,33 +210,35 @@
             panel5.Size = new Size(592, 234);
             panel5.TabIndex = 1;
             // 
-            // pictureBox6
+            // picLogout
             // 
-            pictureBox6.Dock = DockStyle.Bottom;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(0, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(592, 129);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 2;
-            pictureBox6.TabStop = false;
+            picLogout.Dock = DockStyle.Bottom;
+            picLogout.Image = (Image)resources.GetObject("picLogout.Image");
+            picLogout.Location = new Point(0, 0);
+            picLogout.Name = "picLogout";
+            picLogout.Size = new Size(592, 129);
+            picLogout.SizeMode = PictureBoxSizeMode.Zoom;
+            picLogout.TabIndex = 2;
+            picLogout.TabStop = false;
+            picLogout.Click += picLogout_Click;
             // 
-            // label8
+            // lblLogout
             // 
-            label8.Dock = DockStyle.Bottom;
-            label8.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(0, 129);
-            label8.Name = "label8";
-            label8.Size = new Size(592, 105);
-            label8.TabIndex = 2;
-            label8.Text = "Log out";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
+            lblLogout.Dock = DockStyle.Bottom;
+            lblLogout.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblLogout.Location = new Point(0, 129);
+            lblLogout.Name = "lblLogout";
+            lblLogout.Size = new Size(592, 105);
+            lblLogout.TabIndex = 2;
+            lblLogout.Text = "Log out";
+            lblLogout.TextAlign = ContentAlignment.MiddleCenter;
+            lblLogout.Click += lblLogout_Click;
             // 
             // panel4
             // 
             panel4.BackColor = Color.DarkOrange;
-            panel4.Controls.Add(pictureBox4);
-            panel4.Controls.Add(label7);
+            panel4.Controls.Add(picAccnt);
+            panel4.Controls.Add(lblAccnt);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(20, 20);
             panel4.Margin = new Padding(20);
@@ -242,29 +247,29 @@
             panel4.TabIndex = 0;
             panel4.Click += panel4_Click;
             // 
-            // pictureBox4
+            // picAccnt
             // 
-            pictureBox4.Dock = DockStyle.Bottom;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, 0);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(592, 139);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
+            picAccnt.Dock = DockStyle.Bottom;
+            picAccnt.Image = (Image)resources.GetObject("picAccnt.Image");
+            picAccnt.Location = new Point(0, 0);
+            picAccnt.Name = "picAccnt";
+            picAccnt.Size = new Size(592, 139);
+            picAccnt.SizeMode = PictureBoxSizeMode.Zoom;
+            picAccnt.TabIndex = 0;
+            picAccnt.TabStop = false;
+            picAccnt.Click += pictureBox4_Click;
             // 
-            // label7
+            // lblAccnt
             // 
-            label7.Dock = DockStyle.Bottom;
-            label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(0, 139);
-            label7.Name = "label7";
-            label7.Size = new Size(592, 96);
-            label7.TabIndex = 1;
-            label7.Text = "Manage Librarian Account";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            label7.Click += label7_Click;
+            lblAccnt.Dock = DockStyle.Bottom;
+            lblAccnt.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblAccnt.Location = new Point(0, 139);
+            lblAccnt.Name = "lblAccnt";
+            lblAccnt.Size = new Size(592, 96);
+            lblAccnt.TabIndex = 1;
+            lblAccnt.Text = "Manage Librarian Account";
+            lblAccnt.TextAlign = ContentAlignment.MiddleCenter;
+            lblAccnt.Click += label7_Click;
             // 
             // panel1
             // 
@@ -412,13 +417,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ButtonsPanel.ResumeLayout(false);
             panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picHistory).EndInit();
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picArchive).EndInit();
             panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picLogout).EndInit();
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAccnt).EndInit();
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             PendingBarPanel.ResumeLayout(false);
@@ -435,14 +440,14 @@
         private Panel panel6;
         private Panel panel5;
         private Panel panel4;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private Label label7;
-        private Label label9;
-        private Label label10;
-        private Label label8;
+        private PictureBox picAccnt;
+        private PictureBox picHistory;
+        private PictureBox picArchive;
+        private PictureBox picLogout;
+        private Label lblAccnt;
+        private Label lblHistory;
+        private Label lblArchive;
+        private Label lblLogout;
         private Panel panel1;
         private Panel panel3;
         private TableLayoutPanel PendingBarPanel;

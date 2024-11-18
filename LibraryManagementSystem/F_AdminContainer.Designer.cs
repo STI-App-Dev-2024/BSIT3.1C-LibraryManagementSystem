@@ -28,35 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            panelOver = new Panel();
             SuspendLayout();
             // 
-            // panel1
+            // panelOver
             // 
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1264, 718);
-            panel1.TabIndex = 0;
+            panelOver.Dock = DockStyle.Fill;
+            panelOver.Location = new Point(0, 0);
+            panelOver.Name = "panelOver";
+            panelOver.Size = new Size(1264, 718);
+            panelOver.TabIndex = 0;
             // 
             // F_AdminContainer
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 718);
-            Controls.Add(panel1);
+            Controls.Add(panelOver);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5);
             Name = "F_AdminContainer";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "F_AdminContainer";
             WindowState = FormWindowState.Maximized;
+            FormClosing += F_AdminContainer_FormClosing;
             Load += F_AdminContainer_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel panelOver;
     }
 }

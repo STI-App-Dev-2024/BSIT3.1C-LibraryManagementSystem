@@ -22,7 +22,13 @@ namespace LibraryManagementSystem
 
         private void F_AdminContainer_Load(object sender, EventArgs e)
         {
-            connect.adminToUC(panel1);
+            connect.adminToUC(panelOver);
+        }
+
+        private void F_AdminContainer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //e.Cancel = true;
+            //MessageBox.Show("Go back on main menu before closing.");
         }
     }
 }

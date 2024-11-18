@@ -196,7 +196,7 @@
         QmCC
 </value>
   </data>
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picHistory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABUpJREFUeF7t
         Xe1x2zAM9SgdpaN0k47SUTyKfzp2lPMIKUGBNiiBXyJFQg7e3bteU0gE8UgApH3pSaFQKBQKhUKhUCgU
@@ -224,7 +224,7 @@
         wb497CrXoCsUCoVCoVAoFAqFQqFQKOTgdPoP/pwTx7s7H84AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picArchive.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABRhJREFUeF7t
         nOGR2jAUhK+UlJJS0klKSSlXCj/JATcpIZHMGhZ7bWRba3zO+2Z2LsPtaaX3wJYN4S0IgiAIgiAIgiAI
@@ -251,7 +251,7 @@
         aOR+kVXGXDQybcMv7819qB19P3YQBEEQBEEQBEEQBEHg5u3tH+Rn87W+rJprAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAA21JREFUeF7t
         nP2Nm1AQxF1KSkkp6SSlpJSUcn9F2NjWlZB47fGxhkF8yA928+YnjXR3GuHxLJjjgXwQQgghhBBCCCGE
@@ -271,7 +271,7 @@
         hCj1YueEx9Hw7v+OdA4QQgghhBBCCCGEEP8Th8M/qKLKPTnhhhQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picAccnt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABZZJREFUeF7t
         nGGyozYQhN9RcpQcJTfJUXKUPYp/pRz7+dX+zM9EIzV2Az0y2MBsNvNVddVbu0c0khDYXvhIkiRJkiRJ

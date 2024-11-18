@@ -16,5 +16,12 @@ namespace LibraryManagementSystem.UserControl_Admin
         {
             InitializeComponent();
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            F_Admin admin = new F_Admin();
+            admin.Show();
+            this.Hide();
+        }
     }
 }
