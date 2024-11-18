@@ -55,14 +55,14 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(22, 58);
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Segoe UI", 14.25F);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(239, 24);
+            label1.Size = new Size(912, 96);
             label1.TabIndex = 0;
             label1.Text = "Student Transaction History";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // TransacPanel
             // 
@@ -128,6 +128,7 @@
             // Filterbtn
             // 
             Filterbtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            Filterbtn.Font = new Font("Segoe UI", 14.25F);
             Filterbtn.Location = new Point(709, 6);
             Filterbtn.Name = "Filterbtn";
             Filterbtn.Size = new Size(200, 30);
@@ -138,10 +139,11 @@
             // searchBtxt
             // 
             searchBtxt.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            searchBtxt.Font = new Font("Segoe UI", 14.25F);
             searchBtxt.ForeColor = SystemColors.WindowText;
-            searchBtxt.Location = new Point(3, 7);
+            searchBtxt.Location = new Point(3, 5);
             searchBtxt.Name = "searchBtxt";
-            searchBtxt.Size = new Size(700, 29);
+            searchBtxt.Size = new Size(700, 33);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Student Number or Name";
             searchBtxt.Enter += searchBtxt_Enter;
@@ -158,7 +160,6 @@
             Name = "UC_Archive_Student";
             Size = new Size(912, 711);
             SystemPanel2.ResumeLayout(false);
-            SystemPanel2.PerformLayout();
             TransacPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)TransacGrid).EndInit();
             tableLayoutPanel1.ResumeLayout(false);

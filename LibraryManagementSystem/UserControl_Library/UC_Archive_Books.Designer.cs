@@ -108,6 +108,7 @@
             // Filterbtn
             // 
             Filterbtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            Filterbtn.Font = new Font("Segoe UI", 14.25F);
             Filterbtn.Location = new Point(709, 10);
             Filterbtn.Name = "Filterbtn";
             Filterbtn.Size = new Size(168, 30);
@@ -118,6 +119,7 @@
             // searchBtxt
             // 
             searchBtxt.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            searchBtxt.Font = new Font("Segoe UI", 14.25F);
             searchBtxt.Location = new Point(3, 11);
             searchBtxt.Multiline = true;
             searchBtxt.Name = "searchBtxt";
@@ -136,13 +138,14 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Location = new Point(40, 61);
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Segoe UI", 14.25F);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(122, 24);
+            label1.Size = new Size(880, 65);
             label1.TabIndex = 0;
             label1.Text = "Book Archive";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // UC_Archive_Books
             // 
@@ -159,7 +162,6 @@
             BookArchiveSearchAndFilterPanel.ResumeLayout(false);
             BookArchiveSearchAndFilterPanel.PerformLayout();
             SystemPanel.ResumeLayout(false);
-            SystemPanel.PerformLayout();
             ResumeLayout(false);
         }
 

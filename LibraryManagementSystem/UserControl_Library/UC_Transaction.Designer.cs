@@ -66,11 +66,11 @@
             // 
             label4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 14F);
+            label4.Font = new Font("Segoe UI", 14.25F);
             label4.Location = new Point(16, 6);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(148, 24);
+            label4.Size = new Size(150, 25);
             label4.TabIndex = 15;
             label4.Text = "Student Number";
             // 
@@ -78,11 +78,11 @@
             // 
             label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 14F);
+            label3.Font = new Font("Segoe UI", 14.25F);
             label3.Location = new Point(127, 13);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(126, 24);
+            label3.Size = new Size(127, 25);
             label3.TabIndex = 14;
             label3.Text = "Student Email";
             // 
@@ -90,18 +90,18 @@
             // 
             label2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 14F);
+            label2.Font = new Font("Segoe UI", 14.25F);
             label2.Location = new Point(16, 5);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(97, 24);
+            label2.Size = new Size(97, 25);
             label2.TabIndex = 13;
             label2.Text = "Full Name";
             // 
             // txt_Email
             // 
             txt_Email.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_Email.Font = new Font("Microsoft Sans Serif", 14F);
+            txt_Email.Font = new Font("Segoe UI", 14.25F);
             txt_Email.Location = new Point(113, 41);
             txt_Email.Margin = new Padding(4);
             txt_Email.Multiline = true;
@@ -113,11 +113,11 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 14F);
+            label1.Font = new Font("Segoe UI", 14.25F);
             label1.Location = new Point(14, 4);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(62, 24);
+            label1.Size = new Size(62, 25);
             label1.TabIndex = 9;
             label1.Text = "Books";
             label1.Click += label1_Click;
@@ -187,7 +187,7 @@
             // txt_Fullname
             // 
             txt_Fullname.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_Fullname.Font = new Font("Microsoft Sans Serif", 14F);
+            txt_Fullname.Font = new Font("Segoe UI", 14.25F);
             txt_Fullname.Location = new Point(4, 34);
             txt_Fullname.Margin = new Padding(4);
             txt_Fullname.Multiline = true;
@@ -209,7 +209,7 @@
             // txt_StuNo
             // 
             txt_StuNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_StuNo.Font = new Font("Microsoft Sans Serif", 14F);
+            txt_StuNo.Font = new Font("Segoe UI", 14.25F);
             txt_StuNo.Location = new Point(4, 33);
             txt_StuNo.Margin = new Padding(4);
             txt_StuNo.Multiline = true;
@@ -220,7 +220,7 @@
             // btn_Checkout
             // 
             btn_Checkout.Anchor = AnchorStyles.None;
-            btn_Checkout.Font = new Font("Microsoft Sans Serif", 14F);
+            btn_Checkout.Font = new Font("Segoe UI", 14.25F);
             btn_Checkout.Location = new Point(341, 10);
             btn_Checkout.Margin = new Padding(4);
             btn_Checkout.Name = "btn_Checkout";

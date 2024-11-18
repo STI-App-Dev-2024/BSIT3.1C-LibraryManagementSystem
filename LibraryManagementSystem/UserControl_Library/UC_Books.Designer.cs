@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Books));
             btn_Search = new Button();
             grid_Inventory = new DataGridView();
             Title = new DataGridViewTextBoxColumn();
             Author = new DataGridViewTextBoxColumn();
             Category = new DataGridViewTextBoxColumn();
             txt_SearchBar = new TextBox();
-            btn_DelBook = new Button();
             ButtonContainerPanel = new Panel();
             AddEditDeleteButtonPanel = new TableLayoutPanel();
             btn_AddBook = new Button();
-            btn_EditBook = new Button();
             ContentCointainerPanel = new Panel();
             SearchButtonPanel = new TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)grid_Inventory).BeginInit();
@@ -51,7 +50,7 @@
             // btn_Search
             // 
             btn_Search.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btn_Search.Font = new Font("Microsoft Sans Serif", 14.25F);
+            btn_Search.Font = new Font("Segoe UI", 14.25F);
             btn_Search.Location = new Point(650, 9);
             btn_Search.Margin = new Padding(5);
             btn_Search.Name = "btn_Search";
@@ -100,7 +99,7 @@
             // txt_SearchBar
             // 
             txt_SearchBar.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_SearchBar.Font = new Font("Microsoft Sans Serif", 14.25F);
+            txt_SearchBar.Font = new Font("Segoe UI", 14.25F);
             txt_SearchBar.Location = new Point(5, 10);
             txt_SearchBar.Margin = new Padding(5);
             txt_SearchBar.Multiline = true;
@@ -108,18 +107,6 @@
             txt_SearchBar.Size = new Size(635, 32);
             txt_SearchBar.TabIndex = 56;
             txt_SearchBar.Text = "Search Book Title";
-            // 
-            // btn_DelBook
-            // 
-            btn_DelBook.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btn_DelBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            btn_DelBook.Location = new Point(576, 32);
-            btn_DelBook.Margin = new Padding(5);
-            btn_DelBook.Name = "btn_DelBook";
-            btn_DelBook.Size = new Size(274, 64);
-            btn_DelBook.TabIndex = 55;
-            btn_DelBook.Text = "Delete Book";
-            btn_DelBook.UseVisualStyleBackColor = true;
             // 
             // ButtonContainerPanel
             // 
@@ -139,8 +126,6 @@
             AddEditDeleteButtonPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             AddEditDeleteButtonPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             AddEditDeleteButtonPanel.Controls.Add(btn_AddBook, 0, 0);
-            AddEditDeleteButtonPanel.Controls.Add(btn_DelBook, 2, 0);
-            AddEditDeleteButtonPanel.Controls.Add(btn_EditBook, 1, 0);
             AddEditDeleteButtonPanel.Dock = DockStyle.Top;
             AddEditDeleteButtonPanel.Location = new Point(10, 10);
             AddEditDeleteButtonPanel.Name = "AddEditDeleteButtonPanel";
@@ -153,8 +138,10 @@
             // btn_AddBook
             // 
             btn_AddBook.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btn_AddBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            btn_AddBook.Font = new Font("Segoe UI", 14.25F);
             btn_AddBook.ForeColor = Color.Black;
+            btn_AddBook.Image = (Image)resources.GetObject("btn_AddBook.Image");
+            btn_AddBook.ImageAlign = ContentAlignment.MiddleLeft;
             btn_AddBook.Location = new Point(10, 32);
             btn_AddBook.Margin = new Padding(5);
             btn_AddBook.Name = "btn_AddBook";
@@ -162,18 +149,6 @@
             btn_AddBook.TabIndex = 53;
             btn_AddBook.Text = "Add Book";
             btn_AddBook.UseVisualStyleBackColor = true;
-            // 
-            // btn_EditBook
-            // 
-            btn_EditBook.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btn_EditBook.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            btn_EditBook.Location = new Point(293, 32);
-            btn_EditBook.Margin = new Padding(5);
-            btn_EditBook.Name = "btn_EditBook";
-            btn_EditBook.Size = new Size(273, 64);
-            btn_EditBook.TabIndex = 54;
-            btn_EditBook.Text = "Edit Book";
-            btn_EditBook.UseVisualStyleBackColor = true;
             // 
             // ContentCointainerPanel
             // 
@@ -225,14 +200,12 @@
         private Button btn_Search;
         private DataGridView grid_Inventory;
         private TextBox txt_SearchBar;
-        private Button btn_DelBook;
         private DataGridViewTextBoxColumn Title;
         private DataGridViewTextBoxColumn Author;
         private DataGridViewTextBoxColumn Category;
         private Panel ButtonContainerPanel;
         private Panel ContentCointainerPanel;
         private Button btn_AddBook;
-        private Button btn_EditBook;
         private TableLayoutPanel AddEditDeleteButtonPanel;
         private TableLayoutPanel SearchButtonPanel;
     }

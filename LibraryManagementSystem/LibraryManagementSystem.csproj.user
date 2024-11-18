@@ -5,8 +5,20 @@
     <Compile Update="F_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="F_AdminContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="F_Library.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl_Admin\UC_LoginHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl_Admin\UC_ManageLibrarian.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControl_Library\UC_Archive_Books.cs">
       <SubType>UserControl</SubType>
@@ -27,6 +39,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControl_Library\UC_Transaction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl_Login\UC_Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

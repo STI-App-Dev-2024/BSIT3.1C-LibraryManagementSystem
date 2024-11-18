@@ -36,10 +36,10 @@
             btnLogOut = new Button();
             btnDashboard = new Button();
             panel1 = new Panel();
+            label1 = new Label();
             flowArchivePanel = new FlowLayoutPanel();
             btnBookArchive = new Button();
             btnTransactArchive = new Button();
-            button1 = new Button();
             panel2 = new Panel();
             archiveTimer = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
@@ -48,7 +48,9 @@
             // 
             // btnTransaction
             // 
-            btnTransaction.Font = new Font("Microsoft Sans Serif", 12F);
+            btnTransaction.Font = new Font("Segoe UI", 14.25F);
+            btnTransaction.Image = (Image)resources.GetObject("btnTransaction.Image");
+            btnTransaction.ImageAlign = ContentAlignment.MiddleLeft;
             btnTransaction.Location = new Point(14, 244);
             btnTransaction.Margin = new Padding(5, 10, 5, 10);
             btnTransaction.Name = "btnTransaction";
@@ -60,7 +62,9 @@
             // 
             // btnBookInventory
             // 
-            btnBookInventory.Font = new Font("Microsoft Sans Serif", 12F);
+            btnBookInventory.Font = new Font("Segoe UI", 14.25F);
+            btnBookInventory.Image = (Image)resources.GetObject("btnBookInventory.Image");
+            btnBookInventory.ImageAlign = ContentAlignment.MiddleLeft;
             btnBookInventory.Location = new Point(14, 321);
             btnBookInventory.Margin = new Padding(5, 10, 5, 10);
             btnBookInventory.Name = "btnBookInventory";
@@ -72,7 +76,7 @@
             // 
             // btnArchive
             // 
-            btnArchive.Font = new Font("Microsoft Sans Serif", 12F);
+            btnArchive.Font = new Font("Segoe UI", 14.25F);
             btnArchive.Location = new Point(0, 0);
             btnArchive.Margin = new Padding(0);
             btnArchive.Name = "btnArchive";
@@ -84,8 +88,10 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.Font = new Font("Microsoft Sans Serif", 12F);
+            btnLogOut.Font = new Font("Segoe UI", 14.25F);
             btnLogOut.ForeColor = SystemColors.ActiveCaptionText;
+            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
             btnLogOut.Location = new Point(14, 563);
             btnLogOut.Margin = new Padding(5, 10, 5, 10);
             btnLogOut.Name = "btnLogOut";
@@ -96,7 +102,9 @@
             // 
             // btnDashboard
             // 
-            btnDashboard.Font = new Font("Microsoft Sans Serif", 12F);
+            btnDashboard.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDashboard.Image = (Image)resources.GetObject("btnDashboard.Image");
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
             btnDashboard.Location = new Point(14, 167);
             btnDashboard.Margin = new Padding(5, 10, 5, 10);
             btnDashboard.Name = "btnDashboard";
@@ -109,9 +117,9 @@
             // panel1
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(flowArchivePanel);
             panel1.Controls.Add(btnLogOut);
-            panel1.Controls.Add(button1);
             panel1.Controls.Add(btnDashboard);
             panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(btnBookInventory);
@@ -122,6 +130,18 @@
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(356, 681);
             panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.WhiteSmoke;
+            label1.Location = new Point(87, 65);
+            label1.Name = "label1";
+            label1.Size = new Size(175, 25);
+            label1.TabIndex = 6;
+            label1.Text = "Welcome, Mr. Yator";
             // 
             // flowArchivePanel
             // 
@@ -138,6 +158,8 @@
             // btnBookArchive
             // 
             btnBookArchive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBookArchive.Image = (Image)resources.GetObject("btnBookArchive.Image");
+            btnBookArchive.ImageAlign = ContentAlignment.MiddleLeft;
             btnBookArchive.Location = new Point(0, 57);
             btnBookArchive.Margin = new Padding(0);
             btnBookArchive.Name = "btnBookArchive";
@@ -150,6 +172,8 @@
             // btnTransactArchive
             // 
             btnTransactArchive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTransactArchive.Image = (Image)resources.GetObject("btnTransactArchive.Image");
+            btnTransactArchive.ImageAlign = ContentAlignment.MiddleLeft;
             btnTransactArchive.Location = new Point(0, 114);
             btnTransactArchive.Margin = new Padding(0);
             btnTransactArchive.Name = "btnTransactArchive";
@@ -159,24 +183,15 @@
             btnTransactArchive.UseVisualStyleBackColor = true;
             btnTransactArchive.Click += btnTransactArchive_Click;
             // 
-            // button1
-            // 
-            button1.Font = new Font("Microsoft Sans Serif", 12F);
-            button1.Location = new Point(15, 30);
-            button1.Margin = new Padding(5, 10, 5, 10);
-            button1.Name = "button1";
-            button1.Size = new Size(48, 45);
-            button1.TabIndex = 5;
-            button1.Text = "<<";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.AutoSize = true;
             panel2.BackColor = Color.Transparent;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Location = new Point(361, 12);
             panel2.Name = "panel2";
+            panel2.Padding = new Padding(25);
             panel2.Size = new Size(898, 657);
             panel2.TabIndex = 0;
             // 
@@ -198,9 +213,12 @@
             Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 4, 3, 4);
             Name = "F_Library";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Library Management System";
+            WindowState = FormWindowState.Maximized;
             Load += LBMSSidebarForm_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             flowArchivePanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -215,10 +233,10 @@
         private Button btnDashboard;
         private Panel panel1;
         private Panel panel2;
-        private Button button1;
         private System.Windows.Forms.Timer archiveTimer;
         private FlowLayoutPanel flowArchivePanel;
         private Button btnTransactArchive;
         private Button btnBookArchive;
+        private Label label1;
     }
 }

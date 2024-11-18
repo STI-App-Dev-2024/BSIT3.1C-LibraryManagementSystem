@@ -84,6 +84,7 @@
             // 
             // StudentBorrowedPanel
             // 
+            StudentBorrowedPanel.BackColor = Color.FromArgb(128, 255, 128);
             StudentBorrowedPanel.Controls.Add(label2);
             StudentBorrowedPanel.Controls.Add(label1);
             StudentBorrowedPanel.Dock = DockStyle.Fill;
@@ -94,26 +95,31 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(36, 108);
+            label2.Dock = DockStyle.Bottom;
+            label2.Font = new Font("Segoe UI", 14.25F);
+            label2.Location = new Point(0, 84);
             label2.Margin = new Padding(3, 0, 3, 15);
             label2.Name = "label2";
-            label2.Size = new Size(161, 24);
+            label2.Size = new Size(223, 61);
             label2.TabIndex = 1;
             label2.Text = "Student Borrowed";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(96, 69);
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Segoe UI", 14.25F);
+            label1.Location = new Point(0, 0);
             label1.Margin = new Padding(3, 0, 3, 15);
             label1.Name = "label1";
-            label1.Size = new Size(40, 24);
+            label1.Size = new Size(223, 130);
             label1.TabIndex = 0;
             label1.Text = "100";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NearDueDatePanel
             // 
+            NearDueDatePanel.BackColor = Color.FromArgb(255, 255, 192);
             NearDueDatePanel.Controls.Add(label3);
             NearDueDatePanel.Controls.Add(label4);
             NearDueDatePanel.Dock = DockStyle.Fill;
@@ -124,26 +130,31 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(33, 108);
+            label3.Dock = DockStyle.Bottom;
+            label3.Font = new Font("Segoe UI", 14.25F);
+            label3.Location = new Point(0, 84);
             label3.Margin = new Padding(3, 0, 3, 15);
             label3.Name = "label3";
-            label3.Size = new Size(160, 24);
+            label3.Size = new Size(223, 61);
             label3.TabIndex = 1;
-            label3.Text = "Nearing Due Date";
+            label3.Text = "Due Today";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(95, 69);
+            label4.Dock = DockStyle.Top;
+            label4.Font = new Font("Segoe UI", 14.25F);
+            label4.Location = new Point(0, 0);
             label4.Margin = new Padding(3, 0, 3, 15);
             label4.Name = "label4";
-            label4.Size = new Size(40, 24);
+            label4.Size = new Size(223, 130);
             label4.TabIndex = 0;
             label4.Text = "100";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // OverdueStudentsPanel
             // 
+            OverdueStudentsPanel.BackColor = Color.FromArgb(255, 128, 128);
             OverdueStudentsPanel.Controls.Add(label5);
             OverdueStudentsPanel.Controls.Add(label6);
             OverdueStudentsPanel.Dock = DockStyle.Fill;
@@ -157,23 +168,27 @@
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(30, 106);
+            label5.Dock = DockStyle.Bottom;
+            label5.Font = new Font("Segoe UI", 14.25F);
+            label5.Location = new Point(5, 82);
             label5.Margin = new Padding(3, 0, 3, 15);
             label5.Name = "label5";
-            label5.Size = new Size(162, 24);
+            label5.Size = new Size(209, 54);
             label5.TabIndex = 1;
             label5.Text = "Overdue Students";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(92, 67);
+            label6.Dock = DockStyle.Top;
+            label6.Font = new Font("Segoe UI", 14.25F);
+            label6.Location = new Point(5, 5);
             label6.Margin = new Padding(3, 0, 3, 15);
             label6.Name = "label6";
-            label6.Size = new Size(40, 24);
+            label6.Size = new Size(209, 123);
             label6.TabIndex = 0;
             label6.Text = "100";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DataGridViewBookAvailable
             // 
@@ -181,6 +196,7 @@
             DataGridViewBookAvailable.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
             DataGridViewBookAvailable.Dock = DockStyle.Fill;
             DataGridViewBookAvailable.Location = new Point(0, 0);
+            DataGridViewBookAvailable.Margin = new Padding(0);
             DataGridViewBookAvailable.Name = "DataGridViewBookAvailable";
             DataGridViewBookAvailable.Size = new Size(895, 437);
             DataGridViewBookAvailable.TabIndex = 1;
@@ -220,16 +236,17 @@
             // 
             AvailableBookLabel.Anchor = AnchorStyles.None;
             AvailableBookLabel.AutoSize = true;
-            AvailableBookLabel.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            AvailableBookLabel.Font = new Font("Segoe UI", 14.25F);
             AvailableBookLabel.Location = new Point(5, 15);
             AvailableBookLabel.Name = "AvailableBookLabel";
-            AvailableBookLabel.Size = new Size(143, 24);
+            AvailableBookLabel.Size = new Size(144, 25);
             AvailableBookLabel.TabIndex = 2;
             AvailableBookLabel.Text = "Available Books";
             // 
             // AvailableBookSearch
             // 
             AvailableBookSearch.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            AvailableBookSearch.Font = new Font("Segoe UI", 14.25F);
             AvailableBookSearch.Location = new Point(4, 12);
             AvailableBookSearch.Multiline = true;
             AvailableBookSearch.Name = "AvailableBookSearch";
@@ -295,11 +312,8 @@
             Size = new Size(895, 681);
             DashboardStatusPanel.ResumeLayout(false);
             StudentBorrowedPanel.ResumeLayout(false);
-            StudentBorrowedPanel.PerformLayout();
             NearDueDatePanel.ResumeLayout(false);
-            NearDueDatePanel.PerformLayout();
             OverdueStudentsPanel.ResumeLayout(false);
-            OverdueStudentsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridViewBookAvailable).EndInit();
             DBUpperContentPanel.ResumeLayout(false);
             DBUpperContentPanel.PerformLayout();
