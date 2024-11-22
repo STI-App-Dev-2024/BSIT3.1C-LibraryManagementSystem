@@ -1,5 +1,6 @@
 using LibraryManagementSystem.General_Class;
 using LibraryManagementSystem.UserControl_Library;
+using System.Drawing.Drawing2D;
 using System.IO.Compression;
 using System.Security.AccessControl;
 using System.Windows.Forms;
@@ -22,16 +23,8 @@ namespace LibraryManagementSystem
             dashboard = new UC_Dashboard();
             addUC.addUserControl(dashboard, panel2);
         }
+        
 
-        //This method allows the selected user control to show and place in the panel
-        //private void addUserControl(UserControl usercontrol)
-        //{
-            
-        //    usercontrol.Dock = DockStyle.Fill;
-        //    panel2.Controls.Clear();
-        //    panel2.Controls.Add(usercontrol);
-        //    usercontrol.BringToFront();
-        //}
         //This is the transition for submenu in Archive. It also move the location of the Logout button
         private void archiveTimer_Tick(object sender, EventArgs e)
         {
