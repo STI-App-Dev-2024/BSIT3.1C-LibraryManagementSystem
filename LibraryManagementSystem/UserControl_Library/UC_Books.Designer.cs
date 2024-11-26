@@ -33,7 +33,8 @@
             grid_Inventory = new DataGridView();
             Title = new DataGridViewTextBoxColumn();
             Author = new DataGridViewTextBoxColumn();
-            Category = new DataGridViewTextBoxColumn();
+            edit = new DataGridViewButtonColumn();
+            delete = new DataGridViewButtonColumn();
             txt_SearchBar = new TextBox();
             ButtonContainerPanel = new Panel();
             AddEditDeleteButtonPanel = new TableLayoutPanel();
@@ -64,15 +65,16 @@
             // 
             grid_Inventory.AllowUserToAddRows = false;
             grid_Inventory.AllowUserToDeleteRows = false;
-            grid_Inventory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             grid_Inventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grid_Inventory.Columns.AddRange(new DataGridViewColumn[] { Title, Author, Category });
-            grid_Inventory.Location = new Point(10, 70);
+            grid_Inventory.Columns.AddRange(new DataGridViewColumn[] { Title, Author, edit, delete });
+            grid_Inventory.Dock = DockStyle.Fill;
+            grid_Inventory.Location = new Point(10, 63);
             grid_Inventory.Margin = new Padding(4);
             grid_Inventory.Name = "grid_Inventory";
             grid_Inventory.ReadOnly = true;
-            grid_Inventory.Size = new Size(860, 448);
+            grid_Inventory.Size = new Size(860, 455);
             grid_Inventory.TabIndex = 57;
+            grid_Inventory.CellClick += grid_Inventory_CellClick;
             grid_Inventory.CellContentClick += grid_Inventory_CellContentClick;
             // 
             // Title
@@ -89,12 +91,21 @@
             Author.Name = "Author";
             Author.ReadOnly = true;
             // 
-            // Category
+            // edit
             // 
-            Category.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Category.HeaderText = "Category";
-            Category.Name = "Category";
-            Category.ReadOnly = true;
+            edit.HeaderText = "Edit";
+            edit.Name = "edit";
+            edit.ReadOnly = true;
+            edit.Text = "EDIT";
+            edit.UseColumnTextForButtonValue = true;
+            // 
+            // delete
+            // 
+            delete.HeaderText = "Archive";
+            delete.Name = "delete";
+            delete.ReadOnly = true;
+            delete.Text = "ARCHIVE";
+            delete.UseColumnTextForButtonValue = true;
             // 
             // txt_SearchBar
             // 
@@ -149,6 +160,7 @@
             btn_AddBook.TabIndex = 53;
             btn_AddBook.Text = "Add Book";
             btn_AddBook.UseVisualStyleBackColor = true;
+            btn_AddBook.Click += btn_AddBook_Click;
             // 
             // ContentCointainerPanel
             // 
@@ -200,13 +212,14 @@
         private Button btn_Search;
         private DataGridView grid_Inventory;
         private TextBox txt_SearchBar;
-        private DataGridViewTextBoxColumn Title;
-        private DataGridViewTextBoxColumn Author;
-        private DataGridViewTextBoxColumn Category;
         private Panel ButtonContainerPanel;
         private Panel ContentCointainerPanel;
         private Button btn_AddBook;
         private TableLayoutPanel AddEditDeleteButtonPanel;
         private TableLayoutPanel SearchButtonPanel;
+        private DataGridViewTextBoxColumn Title;
+        private DataGridViewTextBoxColumn Author;
+        private DataGridViewButtonColumn edit;
+        private DataGridViewButtonColumn delete;
     }
 }

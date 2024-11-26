@@ -18,31 +18,6 @@ USE `librarymanagement`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `authors`
---
-
-DROP TABLE IF EXISTS `authors`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `authors` (
-  `author_id` int NOT NULL,
-  `author_name` varchar(255) NOT NULL,
-  `created_by` datetime NOT NULL,
-  `updated_by` datetime NOT NULL,
-  PRIMARY KEY (`author_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `authors`
---
-
-LOCK TABLES `authors` WRITE;
-/*!40000 ALTER TABLE `authors` DISABLE KEYS */;
-/*!40000 ALTER TABLE `authors` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `books`
 --
 
@@ -50,24 +25,19 @@ DROP TABLE IF EXISTS `books`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `books` (
-  `book_id` int NOT NULL,
+  `book_id` int NOT NULL AUTO_INCREMENT,
+  `barcode` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
-  `author_id` int NOT NULL,
-  `publisher_id` int NOT NULL,
-  `category_id` int NOT NULL,
-  `isbn` varchar(45) NOT NULL,
-  `year_published` date NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `publisher` varchar(255) NOT NULL,
+  `year_published` int NOT NULL,
+  `isbn` varchar(255) NOT NULL,
+  `category` varchar(45) NOT NULL,
   `edition` varchar(40) NOT NULL,
-  `created_by` datetime NOT NULL,
-  `updated_by` datetime NOT NULL,
-  PRIMARY KEY (`book_id`),
-  KEY `author_id_idx` (`author_id`),
-  KEY `publisher_id_idx` (`publisher_id`),
-  KEY `category_id_idx` (`category_id`),
-  CONSTRAINT `author_id` FOREIGN KEY (`author_id`) REFERENCES `authors` (`author_id`),
-  CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`),
-  CONSTRAINT `publisher_id` FOREIGN KEY (`publisher_id`) REFERENCES `publishers` (`publisher_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`book_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,32 +46,8 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
+INSERT INTO `books` VALUES (1,'2407151779','asdasdasd','asdasdasd','asdasdasd',2020,'6513216546546','asdasd','asdasdasd','2024-11-26 18:32:47','2024-11-26 18:32:47'),(2,'2407151779','asdasdasd','asdasdasd','asdasdasd',2020,'321654321','asdasd','asdasdasdasd','2024-11-26 18:34:54','2024-11-26 18:34:54'),(3,'2407151779','asdasdasd','asdasdasd','asdasdasd',2020,'65465423156','asdasd','asdasdasd','2024-11-26 18:35:46','2024-11-26 18:35:46'),(4,'2407151779','asdasdasd','asdasdasd','asdasdasd',2020,'65465423156','asdasd','asdasdasd','2024-11-26 18:37:14','2024-11-26 18:37:14');
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `categories`
---
-
-DROP TABLE IF EXISTS `categories`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `categories` (
-  `category_id` int NOT NULL,
-  `category_name` varchar(45) NOT NULL,
-  `created_by` datetime NOT NULL,
-  `updated_by` datetime NOT NULL,
-  PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `categories`
---
-
-LOCK TABLES `categories` WRITE;
-/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -112,16 +58,16 @@ DROP TABLE IF EXISTS `copies`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `copies` (
-  `copy_id` int NOT NULL,
+  `copy_id` int NOT NULL AUTO_INCREMENT,
   `book_id` int NOT NULL,
-  `accession_number` varchar(45) NOT NULL,
+  `accession_number` varchar(255) NOT NULL,
   `status` varchar(45) NOT NULL,
   `created_by` datetime NOT NULL,
   `updated_by` datetime NOT NULL,
   PRIMARY KEY (`copy_id`),
   KEY `book_id_idx` (`book_id`),
   CONSTRAINT `book_id` FOREIGN KEY (`book_id`) REFERENCES `books` (`book_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -130,30 +76,8 @@ CREATE TABLE `copies` (
 
 LOCK TABLES `copies` WRITE;
 /*!40000 ALTER TABLE `copies` DISABLE KEYS */;
+INSERT INTO `copies` VALUES (1,1,'A00010000','Available','2024-11-26 18:37:14','2024-11-26 18:37:14'),(2,1,'A00010001','Available','2024-11-26 18:37:14','2024-11-26 18:37:14'),(3,1,'A00010002','Available','2024-11-26 18:37:14','2024-11-26 18:37:14');
 /*!40000 ALTER TABLE `copies` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `publishers`
---
-
-DROP TABLE IF EXISTS `publishers`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `publishers` (
-  `publisher_id` int NOT NULL,
-  `publisher_name` varchar(255) NOT NULL,
-  PRIMARY KEY (`publisher_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `publishers`
---
-
-LOCK TABLES `publishers` WRITE;
-/*!40000 ALTER TABLE `publishers` DISABLE KEYS */;
-/*!40000 ALTER TABLE `publishers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -203,8 +127,8 @@ CREATE TABLE `transactions` (
   `created_by` datetime NOT NULL,
   `updated_by` datetime NOT NULL,
   PRIMARY KEY (`transaction_id`),
-  KEY `copy_id_idx` (`copy_id`),
   KEY `student_id_idx` (`student_id`),
+  KEY `copy_id_idx` (`copy_id`),
   CONSTRAINT `copy_id` FOREIGN KEY (`copy_id`) REFERENCES `copies` (`copy_id`),
   CONSTRAINT `student_id` FOREIGN KEY (`student_id`) REFERENCES `students` (`student_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -265,7 +189,7 @@ CREATE TABLE `user_history` (
   PRIMARY KEY (`history_ID`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `user_history_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_accounts` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -274,7 +198,7 @@ CREATE TABLE `user_history` (
 
 LOCK TABLES `user_history` WRITE;
 /*!40000 ALTER TABLE `user_history` DISABLE KEYS */;
-INSERT INTO `user_history` VALUES (1,323456,'2024-11-22 20:47:57','2024-11-22 20:47:57');
+INSERT INTO `user_history` VALUES (1,323456,'2024-11-22 20:47:57','2024-11-22 20:47:57'),(2,323456,'2024-11-26 18:26:11','2024-11-26 18:26:11'),(3,323456,'2024-11-26 18:30:17','2024-11-26 18:30:17'),(4,323456,'2024-11-26 18:32:07','2024-11-26 18:32:07'),(5,323456,'2024-11-26 19:01:18','2024-11-26 19:01:18'),(6,323456,'2024-11-26 19:18:42','2024-11-26 19:18:42'),(7,323456,'2024-11-26 19:24:25','2024-11-26 19:24:25'),(8,323456,'2024-11-26 19:26:14','2024-11-26 19:26:14'),(9,323456,'2024-11-26 19:27:36','2024-11-26 19:27:36'),(10,323456,'2024-11-26 19:39:51','2024-11-26 19:39:51'),(11,323456,'2024-11-26 19:45:13','2024-11-26 19:45:13'),(12,323456,'2024-11-26 19:46:21','2024-11-26 19:46:21'),(13,323456,'2024-11-26 19:47:37','2024-11-26 19:47:37');
 /*!40000 ALTER TABLE `user_history` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -287,4 +211,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-24 20:58:49
+-- Dump completed on 2024-11-26 20:56:01
