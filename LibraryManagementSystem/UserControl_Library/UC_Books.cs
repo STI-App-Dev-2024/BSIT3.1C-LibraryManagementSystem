@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.General_Class;
+﻿using LibraryManagementSystem.Events;
+using LibraryManagementSystem.General_Class;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace LibraryManagementSystem.UserControl_Library
         {
             InitializeComponent();
             loadGrid();
+            BookNotifier._BookAdded += OnBookAdded;
         }
 
         private void loadGrid()
@@ -29,13 +31,14 @@ namespace LibraryManagementSystem.UserControl_Library
             try
             {
                 connect = new MySqlConnection(conn);
-                string query = "SELECT title, author FROM books";
+                string query = "SELECT book_id, title, author FROM books";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, connect);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
                 foreach (DataRow row in dataTable.Rows)
                 {
                     grid_Inventory.Rows.Add(
+                            row["book_id"],
                             row["title"],
                             row["author"]
                         );
@@ -46,6 +49,11 @@ namespace LibraryManagementSystem.UserControl_Library
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void OnBookAdded()
+        {
+            loadGrid();
         }
 
         private void grid_Inventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -72,9 +80,34 @@ namespace LibraryManagementSystem.UserControl_Library
                 if (grid_Inventory.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
                 {
                     string column = grid_Inventory.Columns[e.ColumnIndex].HeaderText;
-                    int id = Convert.ToInt32(grid_Inventory.Rows[e.RowIndex].Cells[""]);
+                    int id = Convert.ToInt32(grid_Inventory.Rows[e.RowIndex].Cells["bookID"].Value);
+
+                    if (column == "Edit")
+                    {
+                        EditBook(id);
+                    }
+                    else if (column == "Archive")
+                    {
+                        ArchiveBook(id);
+                    }
                 }
             }
+        }
+
+        private void EditBook(int id)
+        {
+            F_EditForm edit = new F_EditForm(id);
+            edit.ShowDialog();
+        }
+
+        private void ArchiveBook(int id)
+        {
+
+        }
+
+        private void UC_Books_Disposed(object sender, EventArgs e)
+        {
+            BookNotifier._BookAdded -= OnBookAdded;
         }
     }
 }

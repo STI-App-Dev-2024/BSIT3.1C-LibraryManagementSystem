@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\general_class\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:general_class\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\general_class\\bookediting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:general_class\\bookediting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\general_class\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:general_class\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\f_addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:usercontrol_library\\uc_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|solutionrelative:f_library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1478EE1-CA3E-4A6D-9998-B217564EBB1F}|LibraryManagementSystem.csproj|c:\\users\\admin\\onedrive - sti college dasmarinas\\desktop\\library management system\\5\\bsit3.1c-librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +70,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "F_EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_EditForm.cs",
+              "RelativeDocumentMoniker": "F_EditForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_EditForm.cs*",
+              "RelativeToolTip": "F_EditForm.cs*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T05:23:12.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "F_AddForm.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_AddForm.cs",
               "RelativeDocumentMoniker": "F_AddForm.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_AddForm.cs",
               "RelativeToolTip": "F_AddForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAvwCYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T06:19:41.162Z",
+              "WhenOpened": "2024-11-28T04:00:57.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "F_EditForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_EditForm.cs",
+              "RelativeDocumentMoniker": "F_EditForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_EditForm.cs [Design]*",
+              "RelativeToolTip": "F_EditForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:20:05.023Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookEditing.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\General_Class\\BookEditing.cs",
+              "RelativeDocumentMoniker": "General_Class\\BookEditing.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\General_Class\\BookEditing.cs",
+              "RelativeToolTip": "General_Class\\BookEditing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:10:51.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "F_AddForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_AddForm.cs",
               "RelativeDocumentMoniker": "F_AddForm.cs",
@@ -83,45 +133,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UC_Books.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs",
               "RelativeDocumentMoniker": "UserControl_Library\\UC_Books.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs*",
-              "RelativeToolTip": "UserControl_Library\\UC_Books.cs*",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwCYAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs",
+              "RelativeToolTip": "UserControl_Library\\UC_Books.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwGMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:02:25.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "UC_Books.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs",
               "RelativeDocumentMoniker": "UserControl_Library\\UC_Books.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs [Design]*",
-              "RelativeToolTip": "UserControl_Library\\UC_Books.cs [Design]*",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\UserControl_Library\\UC_Books.cs [Design]",
+              "RelativeToolTip": "UserControl_Library\\UC_Books.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T03:31:41.18Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SqlConnection.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\General_Class\\SqlConnection.cs",
               "RelativeDocumentMoniker": "General_Class\\SqlConnection.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\General_Class\\SqlConnection.cs",
               "RelativeToolTip": "General_Class\\SqlConnection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBEAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwFoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T08:09:11.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "F_Library.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs",
               "RelativeDocumentMoniker": "F_Library.cs",
@@ -134,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "F_Library.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\F_Library.cs",
               "RelativeDocumentMoniker": "F_Library.cs",
@@ -146,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - STI College Dasmarinas\\Desktop\\Library Management System\\5\\BSIT3.1C-LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

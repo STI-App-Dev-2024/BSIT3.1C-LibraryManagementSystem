@@ -31,16 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Books));
             btn_Search = new Button();
             grid_Inventory = new DataGridView();
-            Title = new DataGridViewTextBoxColumn();
-            Author = new DataGridViewTextBoxColumn();
-            edit = new DataGridViewButtonColumn();
-            delete = new DataGridViewButtonColumn();
             txt_SearchBar = new TextBox();
             ButtonContainerPanel = new Panel();
             AddEditDeleteButtonPanel = new TableLayoutPanel();
             btn_AddBook = new Button();
             ContentCointainerPanel = new Panel();
             SearchButtonPanel = new TableLayoutPanel();
+            bookID = new DataGridViewTextBoxColumn();
+            Title = new DataGridViewTextBoxColumn();
+            Author = new DataGridViewTextBoxColumn();
+            edit = new DataGridViewButtonColumn();
+            delete = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)grid_Inventory).BeginInit();
             ButtonContainerPanel.SuspendLayout();
             AddEditDeleteButtonPanel.SuspendLayout();
@@ -66,7 +67,7 @@
             grid_Inventory.AllowUserToAddRows = false;
             grid_Inventory.AllowUserToDeleteRows = false;
             grid_Inventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grid_Inventory.Columns.AddRange(new DataGridViewColumn[] { Title, Author, edit, delete });
+            grid_Inventory.Columns.AddRange(new DataGridViewColumn[] { bookID, Title, Author, edit, delete });
             grid_Inventory.Dock = DockStyle.Fill;
             grid_Inventory.Location = new Point(10, 63);
             grid_Inventory.Margin = new Padding(4);
@@ -76,36 +77,6 @@
             grid_Inventory.TabIndex = 57;
             grid_Inventory.CellClick += grid_Inventory_CellClick;
             grid_Inventory.CellContentClick += grid_Inventory_CellContentClick;
-            // 
-            // Title
-            // 
-            Title.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Title.HeaderText = "Title";
-            Title.Name = "Title";
-            Title.ReadOnly = true;
-            // 
-            // Author
-            // 
-            Author.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Author.HeaderText = "Author";
-            Author.Name = "Author";
-            Author.ReadOnly = true;
-            // 
-            // edit
-            // 
-            edit.HeaderText = "Edit";
-            edit.Name = "edit";
-            edit.ReadOnly = true;
-            edit.Text = "EDIT";
-            edit.UseColumnTextForButtonValue = true;
-            // 
-            // delete
-            // 
-            delete.HeaderText = "Archive";
-            delete.Name = "delete";
-            delete.ReadOnly = true;
-            delete.Text = "ARCHIVE";
-            delete.UseColumnTextForButtonValue = true;
             // 
             // txt_SearchBar
             // 
@@ -188,6 +159,42 @@
             SearchButtonPanel.Size = new Size(860, 53);
             SearchButtonPanel.TabIndex = 59;
             // 
+            // bookID
+            // 
+            bookID.HeaderText = "Book ID";
+            bookID.Name = "bookID";
+            bookID.ReadOnly = true;
+            // 
+            // Title
+            // 
+            Title.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Title.HeaderText = "Title";
+            Title.Name = "Title";
+            Title.ReadOnly = true;
+            // 
+            // Author
+            // 
+            Author.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Author.HeaderText = "Author";
+            Author.Name = "Author";
+            Author.ReadOnly = true;
+            // 
+            // edit
+            // 
+            edit.HeaderText = "Edit";
+            edit.Name = "edit";
+            edit.ReadOnly = true;
+            edit.Text = "EDIT";
+            edit.UseColumnTextForButtonValue = true;
+            // 
+            // delete
+            // 
+            delete.HeaderText = "Archive";
+            delete.Name = "delete";
+            delete.ReadOnly = true;
+            delete.Text = "ARCHIVE";
+            delete.UseColumnTextForButtonValue = true;
+            // 
             // UC_Books
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -217,6 +224,7 @@
         private Button btn_AddBook;
         private TableLayoutPanel AddEditDeleteButtonPanel;
         private TableLayoutPanel SearchButtonPanel;
+        private DataGridViewTextBoxColumn bookID;
         private DataGridViewTextBoxColumn Title;
         private DataGridViewTextBoxColumn Author;
         private DataGridViewButtonColumn edit;

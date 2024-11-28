@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.General_Class;
+﻿using LibraryManagementSystem.Events;
+using LibraryManagementSystem.General_Class;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace LibraryManagementSystem
 {
     public partial class F_AddForm : Form
     {
-        SqlConnection connect = new SqlConnection();
+        BookAdding add = new BookAdding();
         public F_AddForm()
         {
             InitializeComponent();
@@ -30,13 +31,15 @@ namespace LibraryManagementSystem
                 txtPublisher.Text,
                 txtYear.Text,
                 txtISBN.Text,
-                cbCategory.Text,
+                cbCategory.SelectedItem.ToString(),
                 txtEdition.Text,
                 txtQuantity.Text
             };
             try
             {
-                connect.addBook(record);
+                add.addBook(record);
+                BookNotifier._NewBookAdded();
+                this.Close();
             }
             catch (MySqlException ex)
             {

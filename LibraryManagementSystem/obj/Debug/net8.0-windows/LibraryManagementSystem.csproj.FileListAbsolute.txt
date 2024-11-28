@@ -186,3 +186,4 @@ C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management Syst
 C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management System\5\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.AssemblyReference.cache
 C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management System\5\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryM.4D120AE7.Up2Date
 C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management System\5\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.F_AddForm.resources
+C:\Users\Admin\OneDrive - STI College Dasmarinas\Desktop\Library Management System\5\BSIT3.1C-LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.F_EditForm.resources
