@@ -17,6 +17,7 @@ namespace LibraryManagementSystem.UserControl_Library
     {
         private string conn = "server=localhost;uid=root;password=password;database=librarymanagement";
         MySqlConnection connect;
+        BookArchiving archive;
         public UC_Books()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace LibraryManagementSystem.UserControl_Library
                             row["author"]
                         );
                 }
-
+                connect.Close();
             }
             catch (MySqlException ex)
             {
@@ -102,8 +103,15 @@ namespace LibraryManagementSystem.UserControl_Library
 
         private void ArchiveBook(int id)
         {
-
+            
+            DialogResult result = MessageBox.Show("Archive this book? If yes, it cannot be used for transactions", 
+                "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.OK)
+            {
+                archive = new BookArchiving(id);
+            }
         }
+        
 
         private void UC_Books_Disposed(object sender, EventArgs e)
         {

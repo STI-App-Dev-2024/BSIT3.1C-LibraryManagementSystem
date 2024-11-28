@@ -30,14 +30,16 @@
         {
             BookArchPanel = new Panel();
             BookArchGrid = new DataGridView();
-            bookTitle = new DataGridViewTextBoxColumn();
-            bookAuthor = new DataGridViewTextBoxColumn();
-            bookDatePublished = new DataGridViewTextBoxColumn();
             BookArchiveSearchAndFilterPanel = new TableLayoutPanel();
             Filterbtn = new Button();
             searchBtxt = new TextBox();
             SystemPanel = new Panel();
             label1 = new Label();
+            bookTitle = new DataGridViewTextBoxColumn();
+            bookAuthor = new DataGridViewTextBoxColumn();
+            publisher = new DataGridViewTextBoxColumn();
+            bookDatePublished = new DataGridViewTextBoxColumn();
+            category = new DataGridViewTextBoxColumn();
             BookArchPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BookArchGrid).BeginInit();
             BookArchiveSearchAndFilterPanel.SuspendLayout();
@@ -61,34 +63,13 @@
             BookArchGrid.AllowUserToAddRows = false;
             BookArchGrid.AllowUserToDeleteRows = false;
             BookArchGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BookArchGrid.Columns.AddRange(new DataGridViewColumn[] { bookTitle, bookAuthor, bookDatePublished });
+            BookArchGrid.Columns.AddRange(new DataGridViewColumn[] { bookTitle, bookAuthor, publisher, bookDatePublished, category });
             BookArchGrid.Dock = DockStyle.Fill;
             BookArchGrid.Location = new Point(0, 51);
             BookArchGrid.Name = "BookArchGrid";
             BookArchGrid.ReadOnly = true;
             BookArchGrid.Size = new Size(880, 495);
             BookArchGrid.TabIndex = 0;
-            // 
-            // bookTitle
-            // 
-            bookTitle.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            bookTitle.HeaderText = "Title";
-            bookTitle.Name = "bookTitle";
-            bookTitle.ReadOnly = true;
-            // 
-            // bookAuthor
-            // 
-            bookAuthor.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            bookAuthor.HeaderText = "Author";
-            bookAuthor.Name = "bookAuthor";
-            bookAuthor.ReadOnly = true;
-            // 
-            // bookDatePublished
-            // 
-            bookDatePublished.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            bookDatePublished.HeaderText = "Date Published";
-            bookDatePublished.Name = "bookDatePublished";
-            bookDatePublished.ReadOnly = true;
             // 
             // BookArchiveSearchAndFilterPanel
             // 
@@ -147,6 +128,39 @@
             label1.Text = "Book Archive";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // bookTitle
+            // 
+            bookTitle.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            bookTitle.HeaderText = "Title";
+            bookTitle.Name = "bookTitle";
+            bookTitle.ReadOnly = true;
+            // 
+            // bookAuthor
+            // 
+            bookAuthor.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            bookAuthor.HeaderText = "Author";
+            bookAuthor.Name = "bookAuthor";
+            bookAuthor.ReadOnly = true;
+            // 
+            // publisher
+            // 
+            publisher.HeaderText = "Publisher";
+            publisher.Name = "publisher";
+            publisher.ReadOnly = true;
+            // 
+            // bookDatePublished
+            // 
+            bookDatePublished.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            bookDatePublished.HeaderText = "Year Published";
+            bookDatePublished.Name = "bookDatePublished";
+            bookDatePublished.ReadOnly = true;
+            // 
+            // category
+            // 
+            category.HeaderText = "Category";
+            category.Name = "category";
+            category.ReadOnly = true;
+            // 
             // UC_Archive_Books
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -176,6 +190,8 @@
         private DataGridView BookArchGrid;
         private DataGridViewTextBoxColumn bookTitle;
         private DataGridViewTextBoxColumn bookAuthor;
+        private DataGridViewTextBoxColumn publisher;
         private DataGridViewTextBoxColumn bookDatePublished;
+        private DataGridViewTextBoxColumn category;
     }
 }

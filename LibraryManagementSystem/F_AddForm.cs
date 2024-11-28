@@ -23,25 +23,30 @@ namespace LibraryManagementSystem
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
-            String[] record =
-            {   
-                txtID.Text,
-                txtTitle.Text,
-                txtAuthor.Text,
-                txtPublisher.Text,
-                txtYear.Text,
-                txtISBN.Text,
-                cbCategory.SelectedItem.ToString(),
-                txtEdition.Text,
-                txtQuantity.Text
-            };
+            
             try
             {
+                String[] record =
+                {
+                    txtID.Text,
+                    txtTitle.Text,
+                    txtAuthor.Text,
+                    txtPublisher.Text,
+                    txtYear.Text,
+                    txtISBN.Text,
+                    cbCategory.SelectedItem.ToString(),
+                    txtEdition.Text,
+                    txtQuantity.Text
+                };
                 add.addBook(record);
                 BookNotifier._NewBookAdded();
                 this.Close();
             }
             catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            catch (NullReferenceException ex)
             {
                 MessageBox.Show(ex.ToString());
             }

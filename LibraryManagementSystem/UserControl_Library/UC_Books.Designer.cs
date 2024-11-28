@@ -181,7 +181,7 @@
             // 
             // edit
             // 
-            edit.HeaderText = "Edit";
+            edit.HeaderText = "Edit?";
             edit.Name = "edit";
             edit.ReadOnly = true;
             edit.Text = "EDIT";
@@ -189,7 +189,7 @@
             // 
             // delete
             // 
-            delete.HeaderText = "Archive";
+            delete.HeaderText = "Archive?";
             delete.Name = "delete";
             delete.ReadOnly = true;
             delete.Text = "ARCHIVE";

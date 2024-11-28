@@ -54,7 +54,8 @@ namespace LibraryManagementSystem.General_Class
                 for (int i = 0; i < copy; i++)
                 {
                     string accessionNumber = $"A{bookid:D4}{i:D4}";
-                    string query = "INSERT INTO copies(book_id, accession_number, status, created_by, updated_by) VALUES(@id, @number, @status, NOW(), NOW())";
+                    string query = "INSERT INTO copies(book_id, accession_number, status, created_by, updated_by) " +
+                        "VALUES(@id, @number, @status, NOW(), NOW())";
                     cmd = new MySqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@id", bookid);
                     cmd.Parameters.AddWithValue("@number", accessionNumber);

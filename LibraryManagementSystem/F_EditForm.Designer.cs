@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnAddBook = new Button();
+            btnEditBook = new Button();
             cbCategory = new ComboBox();
             txtQuantity = new TextBox();
             txtEdition = new TextBox();
@@ -49,20 +49,19 @@
             label1 = new Label();
             SuspendLayout();
             // 
-            // btnAddBook
+            // btnEditBook
             // 
-            btnAddBook.Location = new Point(237, 380);
-            btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(216, 43);
-            btnAddBook.TabIndex = 41;
-            btnAddBook.Text = "Update book";
-            btnAddBook.UseVisualStyleBackColor = true;
+            btnEditBook.Location = new Point(237, 380);
+            btnEditBook.Name = "btnEditBook";
+            btnEditBook.Size = new Size(216, 43);
+            btnEditBook.TabIndex = 41;
+            btnEditBook.Text = "Update book";
+            btnEditBook.UseVisualStyleBackColor = true;
+            btnEditBook.Click += btnEditBook_Click;
             // 
             // cbCategory
             // 
-            cbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
             cbCategory.FormattingEnabled = true;
-            cbCategory.Items.AddRange(new object[] { "Biography and Memoir", "History", "Science and Nature", "Self-Help and Personal Development", "Travel and Adventure", "Religion and Spirituality", "Cookbooks and Food", "Health and Wellness", "Technology and Programming", "STEM", "Social Sciences", "Humanities", "Business and Management", "Law and Legal Studies", "Medicine and Health Science", "Education", "Reference Materials", "Thesis", "Academic Journals" });
             cbCategory.Location = new Point(429, 208);
             cbCategory.Name = "cbCategory";
             cbCategory.Size = new Size(226, 33);
@@ -227,7 +226,7 @@
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(683, 443);
-            Controls.Add(btnAddBook);
+            Controls.Add(btnEditBook);
             Controls.Add(cbCategory);
             Controls.Add(txtQuantity);
             Controls.Add(txtEdition);
@@ -260,7 +259,7 @@
 
         #endregion
 
-        private Button btnAddBook;
+        private Button btnEditBook;
         private ComboBox cbCategory;
         private TextBox txtQuantity;
         private TextBox txtEdition;
