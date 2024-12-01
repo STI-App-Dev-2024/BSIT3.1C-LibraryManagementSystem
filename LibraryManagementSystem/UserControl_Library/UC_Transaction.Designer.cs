@@ -31,35 +31,43 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            txt_Email = new TextBox();
-            label1 = new Label();
+            txtEmail = new TextBox();
             StudentDetailContainerPanel = new Panel();
             StudentEmailContainerPanel = new Panel();
             StudentEmailPanel = new Panel();
             StudentNameAndNumberPanel = new TableLayoutPanel();
-            StudentNumberPanel = new Panel();
-            txt_Fullname = new TextBox();
             StudentNamePanel = new Panel();
-            txt_StuNo = new TextBox();
+            txtLastName = new TextBox();
+            StudentNumberPanel = new Panel();
+            txtStuNo = new TextBox();
+            panel1 = new Panel();
+            txtFirstName = new TextBox();
+            label5 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            CheckoutPanel = new Panel();
+            tableLayoutPanel2 = new TableLayoutPanel();
             btn_Checkout = new Button();
-            dataGridView1 = new DataGridView();
+            cartGrid = new DataGridView();
+            copyid = new DataGridViewTextBoxColumn();
+            accessNum = new DataGridViewTextBoxColumn();
             Title = new DataGridViewTextBoxColumn();
             Author = new DataGridViewTextBoxColumn();
-            YearPublished = new DataGridViewTextBoxColumn();
-            TransactionContentPanel = new Panel();
+            status = new DataGridViewTextBoxColumn();
             LabelBookPanel = new Panel();
-            CheckoutPanel = new Panel();
-            ScannedBookPanel = new Panel();
+            txtBarcode = new TextBox();
+            label1 = new Label();
             StudentDetailContainerPanel.SuspendLayout();
             StudentEmailContainerPanel.SuspendLayout();
             StudentEmailPanel.SuspendLayout();
             StudentNameAndNumberPanel.SuspendLayout();
-            StudentNumberPanel.SuspendLayout();
             StudentNamePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            TransactionContentPanel.SuspendLayout();
-            LabelBookPanel.SuspendLayout();
+            StudentNumberPanel.SuspendLayout();
+            panel1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             CheckoutPanel.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)cartGrid).BeginInit();
+            LabelBookPanel.SuspendLayout();
             SuspendLayout();
             // 
             // label4
@@ -67,7 +75,7 @@
             label4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F);
-            label4.Location = new Point(16, 6);
+            label4.Location = new Point(16, 10);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(150, 25);
@@ -91,36 +99,23 @@
             label2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F);
-            label2.Location = new Point(16, 5);
+            label2.Location = new Point(16, 11);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(97, 25);
+            label2.Size = new Size(100, 25);
             label2.TabIndex = 13;
-            label2.Text = "Full Name";
+            label2.Text = "Last Name";
             // 
-            // txt_Email
+            // txtEmail
             // 
-            txt_Email.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_Email.Font = new Font("Segoe UI", 14.25F);
-            txt_Email.Location = new Point(113, 41);
-            txt_Email.Margin = new Padding(4);
-            txt_Email.Multiline = true;
-            txt_Email.Name = "txt_Email";
-            txt_Email.Size = new Size(607, 43);
-            txt_Email.TabIndex = 10;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F);
-            label1.Location = new Point(14, 4);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(62, 25);
-            label1.TabIndex = 9;
-            label1.Text = "Books";
-            label1.Click += label1_Click;
+            txtEmail.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtEmail.Font = new Font("Segoe UI", 14.25F);
+            txtEmail.Location = new Point(113, 41);
+            txtEmail.Margin = new Padding(4);
+            txtEmail.Multiline = true;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(607, 43);
+            txtEmail.TabIndex = 10;
             // 
             // StudentDetailContainerPanel
             // 
@@ -149,7 +144,7 @@
             // 
             StudentEmailPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             StudentEmailPanel.Controls.Add(label3);
-            StudentEmailPanel.Controls.Add(txt_Email);
+            StudentEmailPanel.Controls.Add(txtEmail);
             StudentEmailPanel.Location = new Point(21, 16);
             StudentEmailPanel.Name = "StudentEmailPanel";
             StudentEmailPanel.Size = new Size(834, 92);
@@ -159,88 +154,183 @@
             // 
             StudentNameAndNumberPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             StudentNameAndNumberPanel.AutoSize = true;
-            StudentNameAndNumberPanel.ColumnCount = 2;
-            StudentNameAndNumberPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            StudentNameAndNumberPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            StudentNameAndNumberPanel.Controls.Add(StudentNumberPanel, 1, 0);
+            StudentNameAndNumberPanel.ColumnCount = 3;
+            StudentNameAndNumberPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            StudentNameAndNumberPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            StudentNameAndNumberPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             StudentNameAndNumberPanel.Controls.Add(StudentNamePanel, 0, 0);
+            StudentNameAndNumberPanel.Controls.Add(StudentNumberPanel, 2, 0);
+            StudentNameAndNumberPanel.Controls.Add(panel1, 1, 0);
             StudentNameAndNumberPanel.Location = new Point(3, 20);
             StudentNameAndNumberPanel.Margin = new Padding(0, 0, 5, 5);
             StudentNameAndNumberPanel.Name = "StudentNameAndNumberPanel";
             StudentNameAndNumberPanel.Padding = new Padding(0, 0, 5, 5);
             StudentNameAndNumberPanel.RowCount = 1;
-            StudentNameAndNumberPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            StudentNameAndNumberPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             StudentNameAndNumberPanel.Size = new Size(873, 110);
             StudentNameAndNumberPanel.TabIndex = 16;
             // 
-            // StudentNumberPanel
-            // 
-            StudentNumberPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            StudentNumberPanel.Controls.Add(txt_Fullname);
-            StudentNumberPanel.Controls.Add(label4);
-            StudentNumberPanel.Location = new Point(439, 9);
-            StudentNumberPanel.Margin = new Padding(5);
-            StudentNumberPanel.Name = "StudentNumberPanel";
-            StudentNumberPanel.Size = new Size(424, 86);
-            StudentNumberPanel.TabIndex = 17;
-            // 
-            // txt_Fullname
-            // 
-            txt_Fullname.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_Fullname.Font = new Font("Segoe UI", 14.25F);
-            txt_Fullname.Location = new Point(4, 34);
-            txt_Fullname.Margin = new Padding(4);
-            txt_Fullname.Multiline = true;
-            txt_Fullname.Name = "txt_Fullname";
-            txt_Fullname.Size = new Size(416, 41);
-            txt_Fullname.TabIndex = 11;
-            // 
             // StudentNamePanel
             // 
-            StudentNamePanel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            StudentNamePanel.Controls.Add(txt_StuNo);
+            StudentNamePanel.Controls.Add(txtLastName);
             StudentNamePanel.Controls.Add(label2);
-            StudentNamePanel.Location = new Point(5, 11);
+            StudentNamePanel.Dock = DockStyle.Fill;
+            StudentNamePanel.Location = new Point(5, 5);
             StudentNamePanel.Margin = new Padding(5);
             StudentNamePanel.Name = "StudentNamePanel";
-            StudentNamePanel.Size = new Size(424, 83);
+            StudentNamePanel.Size = new Size(279, 95);
             StudentNamePanel.TabIndex = 17;
             // 
-            // txt_StuNo
+            // txtLastName
             // 
-            txt_StuNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txt_StuNo.Font = new Font("Segoe UI", 14.25F);
-            txt_StuNo.Location = new Point(4, 33);
-            txt_StuNo.Margin = new Padding(4);
-            txt_StuNo.Multiline = true;
-            txt_StuNo.Name = "txt_StuNo";
-            txt_StuNo.Size = new Size(416, 40);
-            txt_StuNo.TabIndex = 12;
+            txtLastName.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtLastName.Font = new Font("Segoe UI", 14.25F);
+            txtLastName.Location = new Point(4, 39);
+            txtLastName.Margin = new Padding(4);
+            txtLastName.Multiline = true;
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(271, 40);
+            txtLastName.TabIndex = 12;
+            // 
+            // StudentNumberPanel
+            // 
+            StudentNumberPanel.Controls.Add(txtStuNo);
+            StudentNumberPanel.Controls.Add(label4);
+            StudentNumberPanel.Dock = DockStyle.Fill;
+            StudentNumberPanel.Location = new Point(583, 5);
+            StudentNumberPanel.Margin = new Padding(5);
+            StudentNumberPanel.Name = "StudentNumberPanel";
+            StudentNumberPanel.Size = new Size(280, 95);
+            StudentNumberPanel.TabIndex = 17;
+            // 
+            // txtStuNo
+            // 
+            txtStuNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtStuNo.Font = new Font("Segoe UI", 14.25F);
+            txtStuNo.Location = new Point(4, 38);
+            txtStuNo.Margin = new Padding(4);
+            txtStuNo.Multiline = true;
+            txtStuNo.Name = "txtStuNo";
+            txtStuNo.Size = new Size(272, 41);
+            txtStuNo.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(txtFirstName);
+            panel1.Controls.Add(label5);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(294, 5);
+            panel1.Margin = new Padding(5);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(279, 95);
+            panel1.TabIndex = 17;
+            // 
+            // txtFirstName
+            // 
+            txtFirstName.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtFirstName.Font = new Font("Segoe UI", 14.25F);
+            txtFirstName.Location = new Point(4, 39);
+            txtFirstName.Margin = new Padding(4);
+            txtFirstName.Multiline = true;
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(271, 40);
+            txtFirstName.TabIndex = 12;
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14.25F);
+            label5.Location = new Point(16, 11);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(102, 25);
+            label5.TabIndex = 13;
+            label5.Text = "First Name";
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(CheckoutPanel, 0, 2);
+            tableLayoutPanel1.Controls.Add(cartGrid, 0, 1);
+            tableLayoutPanel1.Controls.Add(LabelBookPanel, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 262);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 75F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
+            tableLayoutPanel1.Size = new Size(880, 418);
+            tableLayoutPanel1.TabIndex = 20;
+            // 
+            // CheckoutPanel
+            // 
+            CheckoutPanel.Controls.Add(tableLayoutPanel2);
+            CheckoutPanel.Dock = DockStyle.Fill;
+            CheckoutPanel.Location = new Point(3, 357);
+            CheckoutPanel.Name = "CheckoutPanel";
+            CheckoutPanel.Size = new Size(874, 58);
+            CheckoutPanel.TabIndex = 24;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.Controls.Add(btn_Checkout, 1, 0);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(0, 0);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel2.Size = new Size(874, 58);
+            tableLayoutPanel2.TabIndex = 0;
             // 
             // btn_Checkout
             // 
-            btn_Checkout.Anchor = AnchorStyles.None;
+            btn_Checkout.Dock = DockStyle.Fill;
             btn_Checkout.Font = new Font("Segoe UI", 14.25F);
-            btn_Checkout.Location = new Point(341, 10);
+            btn_Checkout.Location = new Point(222, 4);
             btn_Checkout.Margin = new Padding(4);
             btn_Checkout.Name = "btn_Checkout";
-            btn_Checkout.Size = new Size(215, 37);
-            btn_Checkout.TabIndex = 16;
-            btn_Checkout.Text = "Checkout";
+            btn_Checkout.Size = new Size(429, 50);
+            btn_Checkout.TabIndex = 17;
+            btn_Checkout.Text = "Verify and Checkout";
             btn_Checkout.UseVisualStyleBackColor = true;
+            btn_Checkout.Click += btn_Checkout_Click_1;
             // 
-            // dataGridView1
+            // cartGrid
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Title, Author, YearPublished });
-            dataGridView1.Location = new Point(27, 73);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(828, 280);
-            dataGridView1.TabIndex = 17;
+            cartGrid.AllowUserToAddRows = false;
+            cartGrid.AllowUserToDeleteRows = false;
+            cartGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            cartGrid.Columns.AddRange(new DataGridViewColumn[] { copyid, accessNum, Title, Author, status });
+            cartGrid.Dock = DockStyle.Fill;
+            cartGrid.Location = new Point(3, 44);
+            cartGrid.Name = "cartGrid";
+            cartGrid.ReadOnly = true;
+            cartGrid.Size = new Size(874, 307);
+            cartGrid.TabIndex = 23;
+            cartGrid.CellContentClick += cartGrid_CellContentClick;
+            // 
+            // copyid
+            // 
+            copyid.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            copyid.HeaderText = "Copy ID";
+            copyid.Name = "copyid";
+            copyid.ReadOnly = true;
+            copyid.Width = 75;
+            // 
+            // accessNum
+            // 
+            accessNum.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            accessNum.HeaderText = "Accession Number";
+            accessNum.Name = "accessNum";
+            accessNum.ReadOnly = true;
             // 
             // Title
             // 
@@ -261,56 +351,51 @@
             Author.Name = "Author";
             Author.ReadOnly = true;
             // 
-            // YearPublished
+            // status
             // 
-            YearPublished.HeaderText = "Year Published";
-            YearPublished.MinimumWidth = 10;
-            YearPublished.Name = "YearPublished";
-            YearPublished.ReadOnly = true;
-            // 
-            // TransactionContentPanel
-            // 
-            TransactionContentPanel.AutoSize = true;
-            TransactionContentPanel.Controls.Add(LabelBookPanel);
-            TransactionContentPanel.Controls.Add(CheckoutPanel);
-            TransactionContentPanel.Controls.Add(dataGridView1);
-            TransactionContentPanel.Controls.Add(ScannedBookPanel);
-            TransactionContentPanel.Dock = DockStyle.Fill;
-            TransactionContentPanel.Location = new Point(0, 262);
-            TransactionContentPanel.Name = "TransactionContentPanel";
-            TransactionContentPanel.Size = new Size(880, 418);
-            TransactionContentPanel.TabIndex = 20;
+            status.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            status.HeaderText = "Status";
+            status.Name = "status";
+            status.ReadOnly = true;
             // 
             // LabelBookPanel
             // 
             LabelBookPanel.AutoSize = true;
+            LabelBookPanel.Controls.Add(txtBarcode);
             LabelBookPanel.Controls.Add(label1);
-            LabelBookPanel.Location = new Point(24, 19);
+            LabelBookPanel.Dock = DockStyle.Fill;
+            LabelBookPanel.Location = new Point(3, 3);
             LabelBookPanel.Name = "LabelBookPanel";
-            LabelBookPanel.Size = new Size(834, 37);
-            LabelBookPanel.TabIndex = 18;
+            LabelBookPanel.Size = new Size(874, 35);
+            LabelBookPanel.TabIndex = 22;
             // 
-            // CheckoutPanel
+            // txtBarcode
             // 
-            CheckoutPanel.Controls.Add(btn_Checkout);
-            CheckoutPanel.Dock = DockStyle.Bottom;
-            CheckoutPanel.Location = new Point(0, 359);
-            CheckoutPanel.Name = "CheckoutPanel";
-            CheckoutPanel.Size = new Size(880, 59);
-            CheckoutPanel.TabIndex = 19;
+            txtBarcode.Dock = DockStyle.Right;
+            txtBarcode.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBarcode.Location = new Point(559, 0);
+            txtBarcode.Name = "txtBarcode";
+            txtBarcode.Size = new Size(315, 29);
+            txtBarcode.TabIndex = 10;
+            txtBarcode.KeyDown += txtBarcode_KeyDown_1;
             // 
-            // ScannedBookPanel
+            // label1
             // 
-            ScannedBookPanel.Location = new Point(24, 62);
-            ScannedBookPanel.Name = "ScannedBookPanel";
-            ScannedBookPanel.Size = new Size(834, 348);
-            ScannedBookPanel.TabIndex = 20;
+            label1.Dock = DockStyle.Left;
+            label1.Font = new Font("Segoe UI", 14.25F);
+            label1.Location = new Point(0, 0);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(185, 35);
+            label1.TabIndex = 9;
+            label1.Text = "Books";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // UC_Transaction
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(TransactionContentPanel);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(StudentDetailContainerPanel);
             Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
@@ -322,16 +407,19 @@
             StudentEmailPanel.ResumeLayout(false);
             StudentEmailPanel.PerformLayout();
             StudentNameAndNumberPanel.ResumeLayout(false);
-            StudentNumberPanel.ResumeLayout(false);
-            StudentNumberPanel.PerformLayout();
             StudentNamePanel.ResumeLayout(false);
             StudentNamePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            TransactionContentPanel.ResumeLayout(false);
-            TransactionContentPanel.PerformLayout();
+            StudentNumberPanel.ResumeLayout(false);
+            StudentNumberPanel.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            CheckoutPanel.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)cartGrid).EndInit();
             LabelBookPanel.ResumeLayout(false);
             LabelBookPanel.PerformLayout();
-            CheckoutPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -340,24 +428,30 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private TextBox txt_Email;
-        private Label label1;
+        private TextBox txtEmail;
         private Panel StudentDetailContainerPanel;
-        private Button btn_Checkout;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Title;
-        private DataGridViewTextBoxColumn Author;
-        private DataGridViewTextBoxColumn YearPublished;
-        private Panel TransactionContentPanel;
-        private TextBox txt_StuNo;
-        private TextBox txt_Fullname;
+        private TextBox txtLastName;
+        private TextBox txtStuNo;
         private TableLayoutPanel StudentNameAndNumberPanel;
         private Panel StudentNamePanel;
         private Panel StudentNumberPanel;
         private Panel StudentEmailContainerPanel;
-        private Panel LabelBookPanel;
-        private Panel CheckoutPanel;
-        private Panel ScannedBookPanel;
         private Panel StudentEmailPanel;
+        private Panel panel1;
+        private TextBox txtFirstName;
+        private Label label5;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel LabelBookPanel;
+        private TextBox txtBarcode;
+        private Label label1;
+        private DataGridView cartGrid;
+        private DataGridViewTextBoxColumn copyid;
+        private DataGridViewTextBoxColumn accessNum;
+        private DataGridViewTextBoxColumn Title;
+        private DataGridViewTextBoxColumn Author;
+        private DataGridViewTextBoxColumn status;
+        private Panel CheckoutPanel;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Button btn_Checkout;
     }
 }
