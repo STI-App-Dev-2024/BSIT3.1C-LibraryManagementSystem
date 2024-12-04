@@ -16,12 +16,14 @@ namespace LibraryManagementSystem
         UC_Books book;
         UC_Archive_Books books;
         UC_Archive_Student student;
+        showLibrarian lib;
 
-        public F_Library()
+        public F_Library(int id)
         {
             InitializeComponent();
             dashboard = new UC_Dashboard();
             addUC.addUserControl(dashboard, panel2);
+            lib = new showLibrarian(lbl_Name, id);
         }
         
 

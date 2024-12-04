@@ -36,8 +36,9 @@ namespace LibraryManagementSystem.General_Class
 
                 if (result.Read())
                 {
-                    openForm(result.GetString(1).ToLower());
                     int id = result.GetInt32(0);
+                    openForm(result.GetString(1).ToLower(), id);
+                    
                     connection.Close();
                     logHistory(id);
                 }
@@ -52,7 +53,7 @@ namespace LibraryManagementSystem.General_Class
             }
         }
 
-        public void openForm(string userLevel)
+        public void openForm(string userLevel, int id)
         {
             Form target;
             F_Login form = new F_Login();
@@ -63,7 +64,7 @@ namespace LibraryManagementSystem.General_Class
                     target = new F_Admin();
                     break;
                 case "librarian":
-                    target = new F_Library();
+                    target = new F_Library(id);
                     break;
                 default:
                     return;

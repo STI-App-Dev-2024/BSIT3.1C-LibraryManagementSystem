@@ -36,7 +36,7 @@
             btnLogOut = new Button();
             btnDashboard = new Button();
             panel1 = new Panel();
-            label1 = new Label();
+            lbl_Name = new Label();
             flowArchivePanel = new FlowLayoutPanel();
             btnBookArchive = new Button();
             btnTransactArchive = new Button();
@@ -117,7 +117,7 @@
             // panel1
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lbl_Name);
             panel1.Controls.Add(flowArchivePanel);
             panel1.Controls.Add(btnLogOut);
             panel1.Controls.Add(btnDashboard);
@@ -131,17 +131,16 @@
             panel1.Size = new Size(356, 681);
             panel1.TabIndex = 6;
             // 
-            // label1
+            // lbl_Name
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(87, 65);
-            label1.Name = "label1";
-            label1.Size = new Size(175, 25);
-            label1.TabIndex = 6;
-            label1.Text = "Welcome, Mr. Yator";
+            lbl_Name.AutoSize = true;
+            lbl_Name.BackColor = Color.Transparent;
+            lbl_Name.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Name.ForeColor = Color.WhiteSmoke;
+            lbl_Name.Location = new Point(87, 65);
+            lbl_Name.Name = "lbl_Name";
+            lbl_Name.Size = new Size(0, 25);
+            lbl_Name.TabIndex = 6;
             // 
             // flowArchivePanel
             // 
@@ -237,6 +236,6 @@
         private FlowLayoutPanel flowArchivePanel;
         private Button btnTransactArchive;
         private Button btnBookArchive;
-        private Label label1;
+        private Label lbl_Name;
     }
 }

@@ -31,16 +31,17 @@
             DashboardStatusPanel = new TableLayoutPanel();
             StudentBorrowedPanel = new Panel();
             label2 = new Label();
-            label1 = new Label();
+            lbl_Borrowed = new Label();
             NearDueDatePanel = new Panel();
             label3 = new Label();
-            label4 = new Label();
+            lbl_Due = new Label();
             OverdueStudentsPanel = new Panel();
             label5 = new Label();
-            label6 = new Label();
-            DataGridViewBookAvailable = new DataGridView();
-            Category = new DataGridViewTextBoxColumn();
-            Title = new DataGridViewTextBoxColumn();
+            lbl_Overdue = new Label();
+            dgvAvailable = new DataGridView();
+            category = new DataGridViewTextBoxColumn();
+            title = new DataGridViewTextBoxColumn();
+            author = new DataGridViewTextBoxColumn();
             DBUpperContentPanel = new Panel();
             AvailableBooksPanel = new Panel();
             AvailableBookLabel = new Label();
@@ -53,7 +54,7 @@
             StudentBorrowedPanel.SuspendLayout();
             NearDueDatePanel.SuspendLayout();
             OverdueStudentsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DataGridViewBookAvailable).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAvailable).BeginInit();
             DBUpperContentPanel.SuspendLayout();
             DBMiddleContentContainerPanel.SuspendLayout();
             AvailableBookLabelPanel.SuspendLayout();
@@ -86,7 +87,7 @@
             // 
             StudentBorrowedPanel.BackColor = Color.FromArgb(128, 255, 128);
             StudentBorrowedPanel.Controls.Add(label2);
-            StudentBorrowedPanel.Controls.Add(label1);
+            StudentBorrowedPanel.Controls.Add(lbl_Borrowed);
             StudentBorrowedPanel.Dock = DockStyle.Fill;
             StudentBorrowedPanel.Location = new Point(8, 8);
             StudentBorrowedPanel.Name = "StudentBorrowedPanel";
@@ -105,23 +106,22 @@
             label2.Text = "Student Borrowed";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lbl_Borrowed
             // 
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 14.25F);
-            label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(3, 0, 3, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(223, 130);
-            label1.TabIndex = 0;
-            label1.Text = "100";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_Borrowed.Dock = DockStyle.Top;
+            lbl_Borrowed.Font = new Font("Segoe UI", 14.25F);
+            lbl_Borrowed.Location = new Point(0, 0);
+            lbl_Borrowed.Margin = new Padding(3, 0, 3, 15);
+            lbl_Borrowed.Name = "lbl_Borrowed";
+            lbl_Borrowed.Size = new Size(223, 130);
+            lbl_Borrowed.TabIndex = 0;
+            lbl_Borrowed.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NearDueDatePanel
             // 
             NearDueDatePanel.BackColor = Color.FromArgb(255, 255, 192);
             NearDueDatePanel.Controls.Add(label3);
-            NearDueDatePanel.Controls.Add(label4);
+            NearDueDatePanel.Controls.Add(lbl_Due);
             NearDueDatePanel.Dock = DockStyle.Fill;
             NearDueDatePanel.Location = new Point(237, 8);
             NearDueDatePanel.Name = "NearDueDatePanel";
@@ -140,23 +140,23 @@
             label3.Text = "Due Today";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lbl_Due
             // 
-            label4.Dock = DockStyle.Top;
-            label4.Font = new Font("Segoe UI", 14.25F);
-            label4.Location = new Point(0, 0);
-            label4.Margin = new Padding(3, 0, 3, 15);
-            label4.Name = "label4";
-            label4.Size = new Size(223, 130);
-            label4.TabIndex = 0;
-            label4.Text = "100";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_Due.Dock = DockStyle.Top;
+            lbl_Due.Font = new Font("Segoe UI", 14.25F);
+            lbl_Due.Location = new Point(0, 0);
+            lbl_Due.Margin = new Padding(3, 0, 3, 15);
+            lbl_Due.Name = "lbl_Due";
+            lbl_Due.Size = new Size(223, 130);
+            lbl_Due.TabIndex = 0;
+            lbl_Due.Text = "100";
+            lbl_Due.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // OverdueStudentsPanel
             // 
             OverdueStudentsPanel.BackColor = Color.FromArgb(255, 128, 128);
             OverdueStudentsPanel.Controls.Add(label5);
-            OverdueStudentsPanel.Controls.Add(label6);
+            OverdueStudentsPanel.Controls.Add(lbl_Overdue);
             OverdueStudentsPanel.Dock = DockStyle.Fill;
             OverdueStudentsPanel.Location = new Point(468, 10);
             OverdueStudentsPanel.Margin = new Padding(5);
@@ -178,40 +178,52 @@
             label5.Text = "Overdue Students";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lbl_Overdue
             // 
-            label6.Dock = DockStyle.Top;
-            label6.Font = new Font("Segoe UI", 14.25F);
-            label6.Location = new Point(5, 5);
-            label6.Margin = new Padding(3, 0, 3, 15);
-            label6.Name = "label6";
-            label6.Size = new Size(209, 123);
-            label6.TabIndex = 0;
-            label6.Text = "100";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_Overdue.Dock = DockStyle.Top;
+            lbl_Overdue.Font = new Font("Segoe UI", 14.25F);
+            lbl_Overdue.Location = new Point(5, 5);
+            lbl_Overdue.Margin = new Padding(3, 0, 3, 15);
+            lbl_Overdue.Name = "lbl_Overdue";
+            lbl_Overdue.Size = new Size(209, 123);
+            lbl_Overdue.TabIndex = 0;
+            lbl_Overdue.Text = "100";
+            lbl_Overdue.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // DataGridViewBookAvailable
+            // dgvAvailable
             // 
-            DataGridViewBookAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DataGridViewBookAvailable.Columns.AddRange(new DataGridViewColumn[] { Category, Title });
-            DataGridViewBookAvailable.Dock = DockStyle.Fill;
-            DataGridViewBookAvailable.Location = new Point(0, 0);
-            DataGridViewBookAvailable.Margin = new Padding(0);
-            DataGridViewBookAvailable.Name = "DataGridViewBookAvailable";
-            DataGridViewBookAvailable.Size = new Size(895, 437);
-            DataGridViewBookAvailable.TabIndex = 1;
+            dgvAvailable.AllowUserToAddRows = false;
+            dgvAvailable.AllowUserToDeleteRows = false;
+            dgvAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAvailable.Columns.AddRange(new DataGridViewColumn[] { category, title, author });
+            dgvAvailable.Dock = DockStyle.Fill;
+            dgvAvailable.Location = new Point(0, 0);
+            dgvAvailable.Margin = new Padding(0);
+            dgvAvailable.Name = "dgvAvailable";
+            dgvAvailable.ReadOnly = true;
+            dgvAvailable.Size = new Size(895, 437);
+            dgvAvailable.TabIndex = 1;
             // 
-            // Category
+            // category
             // 
-            Category.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Category.HeaderText = "Category";
-            Category.Name = "Category";
+            category.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            category.HeaderText = "Category";
+            category.Name = "category";
+            category.ReadOnly = true;
             // 
-            // Title
+            // title
             // 
-            Title.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Title.HeaderText = "Title";
-            Title.Name = "Title";
+            title.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            title.HeaderText = "Title";
+            title.Name = "title";
+            title.ReadOnly = true;
+            // 
+            // author
+            // 
+            author.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            author.HeaderText = "Author";
+            author.Name = "author";
+            author.ReadOnly = true;
             // 
             // DBUpperContentPanel
             // 
@@ -253,6 +265,7 @@
             AvailableBookSearch.Size = new Size(411, 29);
             AvailableBookSearch.TabIndex = 3;
             AvailableBookSearch.Text = "Search Book";
+            AvailableBookSearch.TextChanged += AvailableBookSearch_TextChanged;
             // 
             // DBMiddleContentContainerPanel
             // 
@@ -291,7 +304,7 @@
             // 
             // DataGridViewAvailableContainerPanel
             // 
-            DataGridViewAvailableContainerPanel.Controls.Add(DataGridViewBookAvailable);
+            DataGridViewAvailableContainerPanel.Controls.Add(dgvAvailable);
             DataGridViewAvailableContainerPanel.Dock = DockStyle.Fill;
             DataGridViewAvailableContainerPanel.Location = new Point(0, 244);
             DataGridViewAvailableContainerPanel.Name = "DataGridViewAvailableContainerPanel";
@@ -314,7 +327,7 @@
             StudentBorrowedPanel.ResumeLayout(false);
             NearDueDatePanel.ResumeLayout(false);
             OverdueStudentsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)DataGridViewBookAvailable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAvailable).EndInit();
             DBUpperContentPanel.ResumeLayout(false);
             DBUpperContentPanel.PerformLayout();
             DBMiddleContentContainerPanel.ResumeLayout(false);
@@ -332,16 +345,14 @@
         private TableLayoutPanel DashboardStatusPanel;
         private Panel StudentBorrowedPanel;
         private Label label2;
-        private Label label1;
+        private Label lbl_Borrowed;
         private Panel NearDueDatePanel;
         private Label label3;
-        private Label label4;
+        private Label lbl_Due;
         private Panel OverdueStudentsPanel;
         private Label label5;
-        private Label label6;
-        private DataGridView DataGridViewBookAvailable;
-        private DataGridViewTextBoxColumn Category;
-        private DataGridViewTextBoxColumn Title;
+        private Label lbl_Overdue;
+        private DataGridView dgvAvailable;
         private Panel DBUpperContentPanel;
         private Panel AvailableBooksPanel;
         private Label AvailableBookLabel;
@@ -350,5 +361,8 @@
         private Panel AvailableBookLabelPanel;
         private Panel AvailableBookSearchPanel;
         private Panel DataGridViewAvailableContainerPanel;
+        private DataGridViewTextBoxColumn category;
+        private DataGridViewTextBoxColumn title;
+        private DataGridViewTextBoxColumn author;
     }
 }
