@@ -35,6 +35,8 @@
             StuNo = new DataGridViewTextBoxColumn();
             StuName = new DataGridViewTextBoxColumn();
             dateBorrow = new DataGridViewTextBoxColumn();
+            status = new DataGridViewTextBoxColumn();
+            showItems = new DataGridViewButtonColumn();
             tableLayoutPanel1 = new TableLayoutPanel();
             Filterbtn = new Button();
             searchBtxt = new TextBox();
@@ -50,7 +52,7 @@
             SystemPanel2.Dock = DockStyle.Top;
             SystemPanel2.Location = new Point(0, 0);
             SystemPanel2.Name = "SystemPanel2";
-            SystemPanel2.Size = new Size(912, 134);
+            SystemPanel2.Size = new Size(912, 106);
             SystemPanel2.TabIndex = 0;
             // 
             // label1
@@ -59,10 +61,10 @@
             label1.Font = new Font("Segoe UI", 14.25F);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(912, 96);
+            label1.Size = new Size(912, 103);
             label1.TabIndex = 0;
             label1.Text = "Student Transaction History";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TransacPanel
             // 
@@ -70,10 +72,10 @@
             TransacPanel.Controls.Add(TransacGrid);
             TransacPanel.Controls.Add(tableLayoutPanel1);
             TransacPanel.Dock = DockStyle.Fill;
-            TransacPanel.Location = new Point(0, 134);
+            TransacPanel.Location = new Point(0, 106);
             TransacPanel.Margin = new Padding(0);
             TransacPanel.Name = "TransacPanel";
-            TransacPanel.Size = new Size(912, 577);
+            TransacPanel.Size = new Size(912, 605);
             TransacPanel.TabIndex = 1;
             // 
             // TransacGrid
@@ -81,12 +83,12 @@
             TransacGrid.AllowUserToAddRows = false;
             TransacGrid.AllowUserToDeleteRows = false;
             TransacGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TransacGrid.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow });
+            TransacGrid.Columns.AddRange(new DataGridViewColumn[] { StuNo, StuName, dateBorrow, status, showItems });
             TransacGrid.Dock = DockStyle.Fill;
             TransacGrid.Location = new Point(0, 43);
             TransacGrid.Name = "TransacGrid";
             TransacGrid.ReadOnly = true;
-            TransacGrid.Size = new Size(912, 534);
+            TransacGrid.Size = new Size(912, 562);
             TransacGrid.TabIndex = 0;
             // 
             // StuNo
@@ -109,6 +111,22 @@
             dateBorrow.HeaderText = "Borrowing Date";
             dateBorrow.Name = "dateBorrow";
             dateBorrow.ReadOnly = true;
+            // 
+            // status
+            // 
+            status.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            status.HeaderText = "Status";
+            status.Name = "status";
+            status.ReadOnly = true;
+            // 
+            // showItems
+            // 
+            showItems.HeaderText = "Show Borrowed";
+            showItems.Name = "showItems";
+            showItems.ReadOnly = true;
+            showItems.Resizable = DataGridViewTriState.True;
+            showItems.SortMode = DataGridViewColumnSortMode.Automatic;
+            showItems.Text = "Books";
             // 
             // tableLayoutPanel1
             // 
@@ -135,6 +153,7 @@
             Filterbtn.TabIndex = 1;
             Filterbtn.Text = "Filter by";
             Filterbtn.UseVisualStyleBackColor = true;
+            Filterbtn.Click += Filterbtn_Click;
             // 
             // searchBtxt
             // 
@@ -146,6 +165,7 @@
             searchBtxt.Size = new Size(700, 33);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Student Number or Name";
+            searchBtxt.TextChanged += searchBtxt_TextChanged;
             searchBtxt.Enter += searchBtxt_Enter;
             searchBtxt.Leave += searchBtxt_Leave;
             // 
@@ -176,9 +196,11 @@
         private Button Filterbtn;
         private TextBox searchBtxt;
         private DataGridView TransacGrid;
+        private TableLayoutPanel tableLayoutPanel1;
         private DataGridViewTextBoxColumn StuNo;
         private DataGridViewTextBoxColumn StuName;
         private DataGridViewTextBoxColumn dateBorrow;
-        private TableLayoutPanel tableLayoutPanel1;
+        private DataGridViewTextBoxColumn status;
+        private DataGridViewButtonColumn showItems;
     }
 }

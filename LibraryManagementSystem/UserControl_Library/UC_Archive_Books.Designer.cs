@@ -31,7 +31,6 @@
             BookArchPanel = new Panel();
             BookArchGrid = new DataGridView();
             BookArchiveSearchAndFilterPanel = new TableLayoutPanel();
-            Filterbtn = new Button();
             searchBtxt = new TextBox();
             SystemPanel = new Panel();
             label1 = new Label();
@@ -51,10 +50,10 @@
             BookArchPanel.Controls.Add(BookArchGrid);
             BookArchPanel.Controls.Add(BookArchiveSearchAndFilterPanel);
             BookArchPanel.Dock = DockStyle.Fill;
-            BookArchPanel.Location = new Point(0, 134);
+            BookArchPanel.Location = new Point(0, 99);
             BookArchPanel.Margin = new Padding(0);
             BookArchPanel.Name = "BookArchPanel";
-            BookArchPanel.Size = new Size(880, 546);
+            BookArchPanel.Size = new Size(880, 581);
             BookArchPanel.TabIndex = 3;
             BookArchPanel.Paint += panel2_Paint;
             // 
@@ -68,15 +67,13 @@
             BookArchGrid.Location = new Point(0, 51);
             BookArchGrid.Name = "BookArchGrid";
             BookArchGrid.ReadOnly = true;
-            BookArchGrid.Size = new Size(880, 495);
+            BookArchGrid.Size = new Size(880, 530);
             BookArchGrid.TabIndex = 0;
             // 
             // BookArchiveSearchAndFilterPanel
             // 
-            BookArchiveSearchAndFilterPanel.ColumnCount = 2;
+            BookArchiveSearchAndFilterPanel.ColumnCount = 1;
             BookArchiveSearchAndFilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80.2800446F));
-            BookArchiveSearchAndFilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.7199535F));
-            BookArchiveSearchAndFilterPanel.Controls.Add(Filterbtn, 1, 0);
             BookArchiveSearchAndFilterPanel.Controls.Add(searchBtxt, 0, 0);
             BookArchiveSearchAndFilterPanel.Dock = DockStyle.Top;
             BookArchiveSearchAndFilterPanel.Location = new Point(0, 0);
@@ -86,17 +83,6 @@
             BookArchiveSearchAndFilterPanel.Size = new Size(880, 51);
             BookArchiveSearchAndFilterPanel.TabIndex = 2;
             // 
-            // Filterbtn
-            // 
-            Filterbtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            Filterbtn.Font = new Font("Segoe UI", 14.25F);
-            Filterbtn.Location = new Point(709, 10);
-            Filterbtn.Name = "Filterbtn";
-            Filterbtn.Size = new Size(168, 30);
-            Filterbtn.TabIndex = 1;
-            Filterbtn.Text = "Filter by";
-            Filterbtn.UseVisualStyleBackColor = true;
-            // 
             // searchBtxt
             // 
             searchBtxt.Anchor = AnchorStyles.Left | AnchorStyles.Right;
@@ -104,7 +90,7 @@
             searchBtxt.Location = new Point(3, 11);
             searchBtxt.Multiline = true;
             searchBtxt.Name = "searchBtxt";
-            searchBtxt.Size = new Size(700, 29);
+            searchBtxt.Size = new Size(874, 29);
             searchBtxt.TabIndex = 0;
             searchBtxt.Text = "Enter Title or Author";
             // 
@@ -114,7 +100,7 @@
             SystemPanel.Dock = DockStyle.Top;
             SystemPanel.Location = new Point(0, 0);
             SystemPanel.Name = "SystemPanel";
-            SystemPanel.Size = new Size(880, 134);
+            SystemPanel.Size = new Size(880, 99);
             SystemPanel.TabIndex = 2;
             // 
             // label1
@@ -123,7 +109,7 @@
             label1.Font = new Font("Segoe UI", 14.25F);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(880, 65);
+            label1.Size = new Size(880, 96);
             label1.TabIndex = 0;
             label1.Text = "Book Archive";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -144,6 +130,7 @@
             // 
             // publisher
             // 
+            publisher.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             publisher.HeaderText = "Publisher";
             publisher.Name = "publisher";
             publisher.ReadOnly = true;
@@ -157,6 +144,7 @@
             // 
             // category
             // 
+            category.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             category.HeaderText = "Category";
             category.Name = "category";
             category.ReadOnly = true;
@@ -182,7 +170,6 @@
         #endregion
 
         private Panel BookArchPanel;
-        private Button Filterbtn;
         private TextBox searchBtxt;
         private Panel SystemPanel;
         private Label label1;
