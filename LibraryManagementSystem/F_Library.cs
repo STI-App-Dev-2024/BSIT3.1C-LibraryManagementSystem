@@ -25,7 +25,7 @@ namespace LibraryManagementSystem
             addUC.addUserControl(dashboard, panel2);
             lib = new showLibrarian(lbl_Name, id);
         }
-        
+
 
         //This is the transition for submenu in Archive. It also move the location of the Logout button
         private void archiveTimer_Tick(object sender, EventArgs e)
@@ -51,11 +51,11 @@ namespace LibraryManagementSystem
                 }
             }
         }
-        
+
         //Loading dashboard first
         private void LBMSSidebarForm_Load(object sender, EventArgs e)
         {
-            
+
         }
         //When clicked, it shows the transaction page
         private void btnTransaction_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace LibraryManagementSystem
             dashboard = new UC_Dashboard();
             addUC.addUserControl(dashboard, panel2);
         }
-        
+
         //When clicked, it shows the Book Archive page
         private void btnBookArchive_Click(object sender, EventArgs e)
         {
@@ -96,6 +96,14 @@ namespace LibraryManagementSystem
         {
             student = new UC_Archive_Student();
             addUC.addUserControl(student, panel2);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            F_Login login = new F_Login();
+            login.Show();
+            this.Close();
+            
         }
     }
 }

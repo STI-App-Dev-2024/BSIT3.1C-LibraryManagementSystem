@@ -83,11 +83,11 @@ namespace LibraryManagementSystem.UserControl_Library
                     string column = grid_Inventory.Columns[e.ColumnIndex].HeaderText;
                     int id = Convert.ToInt32(grid_Inventory.Rows[e.RowIndex].Cells["bookID"].Value);
 
-                    if (column == "Edit")
+                    if (column == "Edit?")
                     {
                         EditBook(id);
                     }
-                    else if (column == "Archive")
+                    else if (column == "Archive?")
                     {
                         ArchiveBook(id);
                     }

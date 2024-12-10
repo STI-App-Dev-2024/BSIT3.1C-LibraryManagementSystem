@@ -100,6 +100,8 @@ namespace LibraryManagementSystem
             };
             int[] copies = {copy_initial, Convert.ToInt32(txtQuantity.Text) };
             edit.EditBook(input, copies, bookID);
+            MessageBox.Show("Update success!");
+            this.Close();
         }
     }
 }

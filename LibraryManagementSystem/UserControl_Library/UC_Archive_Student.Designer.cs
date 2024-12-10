@@ -90,6 +90,7 @@
             TransacGrid.ReadOnly = true;
             TransacGrid.Size = new Size(912, 562);
             TransacGrid.TabIndex = 0;
+            TransacGrid.CellClick += TransacGrid_CellClick;
             // 
             // StuNo
             // 
@@ -126,7 +127,8 @@
             showItems.ReadOnly = true;
             showItems.Resizable = DataGridViewTriState.True;
             showItems.SortMode = DataGridViewColumnSortMode.Automatic;
-            showItems.Text = "Books";
+            showItems.Text = "Show";
+            showItems.UseColumnTextForButtonValue = true;
             // 
             // tableLayoutPanel1
             // 

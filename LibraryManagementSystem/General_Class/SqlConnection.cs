@@ -56,7 +56,6 @@ namespace LibraryManagementSystem.General_Class
         public void openForm(string userLevel, int id)
         {
             Form target;
-            F_Login form = new F_Login();
 
             switch (userLevel)
             {
@@ -69,9 +68,7 @@ namespace LibraryManagementSystem.General_Class
                 default:
                     return;
             }
-
-            form.Hide();
-            target.ShowDialog();
+            target.Show();
         }
 
         public void logHistory(int id)

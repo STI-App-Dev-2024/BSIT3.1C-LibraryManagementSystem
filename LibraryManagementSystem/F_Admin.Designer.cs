@@ -34,17 +34,10 @@
             pictureBox1 = new PictureBox();
             ButtonsPanel = new TableLayoutPanel();
             panel7 = new Panel();
-            picHistory = new PictureBox();
-            lblHistory = new Label();
             panel6 = new Panel();
-            picArchive = new PictureBox();
-            lblArchive = new Label();
             panel5 = new Panel();
-            picLogout = new PictureBox();
-            lblLogout = new Label();
             panel4 = new Panel();
-            picAccnt = new PictureBox();
-            lblAccnt = new Label();
+            btnManage = new Button();
             panel1 = new Panel();
             label6 = new Label();
             label5 = new Label();
@@ -55,18 +48,17 @@
             panel2 = new Panel();
             label3 = new Label();
             label4 = new Label();
+            btnLogout = new Button();
+            btnArchive = new Button();
+            btnHistory = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ButtonsPanel.SuspendLayout();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picHistory).BeginInit();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picArchive).BeginInit();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picLogout).BeginInit();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picAccnt).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             PendingBarPanel.SuspendLayout();
@@ -129,8 +121,7 @@
             // panel7
             // 
             panel7.BackColor = Color.DarkSeaGreen;
-            panel7.Controls.Add(picHistory);
-            panel7.Controls.Add(lblHistory);
+            panel7.Controls.Add(btnHistory);
             panel7.Dock = DockStyle.Fill;
             panel7.Location = new Point(652, 295);
             panel7.Margin = new Padding(20);
@@ -138,35 +129,10 @@
             panel7.Size = new Size(592, 234);
             panel7.TabIndex = 1;
             // 
-            // picHistory
-            // 
-            picHistory.Dock = DockStyle.Bottom;
-            picHistory.Image = (Image)resources.GetObject("picHistory.Image");
-            picHistory.Location = new Point(0, 0);
-            picHistory.Name = "picHistory";
-            picHistory.Size = new Size(592, 129);
-            picHistory.SizeMode = PictureBoxSizeMode.Zoom;
-            picHistory.TabIndex = 3;
-            picHistory.TabStop = false;
-            picHistory.Click += picHistory_Click;
-            // 
-            // lblHistory
-            // 
-            lblHistory.Dock = DockStyle.Bottom;
-            lblHistory.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblHistory.Location = new Point(0, 129);
-            lblHistory.Name = "lblHistory";
-            lblHistory.Size = new Size(592, 105);
-            lblHistory.TabIndex = 3;
-            lblHistory.Text = "Log in History";
-            lblHistory.TextAlign = ContentAlignment.MiddleCenter;
-            lblHistory.Click += label9_Click;
-            // 
             // panel6
             // 
             panel6.BackColor = Color.DeepSkyBlue;
-            panel6.Controls.Add(picArchive);
-            panel6.Controls.Add(lblArchive);
+            panel6.Controls.Add(btnArchive);
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(652, 20);
             panel6.Margin = new Padding(20);
@@ -174,35 +140,10 @@
             panel6.Size = new Size(592, 235);
             panel6.TabIndex = 1;
             // 
-            // picArchive
-            // 
-            picArchive.Dock = DockStyle.Bottom;
-            picArchive.Image = (Image)resources.GetObject("picArchive.Image");
-            picArchive.Location = new Point(0, 0);
-            picArchive.Name = "picArchive";
-            picArchive.Size = new Size(592, 139);
-            picArchive.SizeMode = PictureBoxSizeMode.Zoom;
-            picArchive.TabIndex = 1;
-            picArchive.TabStop = false;
-            picArchive.Click += picArchive_Click;
-            // 
-            // lblArchive
-            // 
-            lblArchive.Dock = DockStyle.Bottom;
-            lblArchive.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblArchive.Location = new Point(0, 139);
-            lblArchive.Name = "lblArchive";
-            lblArchive.Size = new Size(592, 96);
-            lblArchive.TabIndex = 4;
-            lblArchive.Text = "Archives";
-            lblArchive.TextAlign = ContentAlignment.MiddleCenter;
-            lblArchive.Click += label10_Click;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.MediumPurple;
-            panel5.Controls.Add(picLogout);
-            panel5.Controls.Add(lblLogout);
+            panel5.Controls.Add(btnLogout);
             panel5.Dock = DockStyle.Fill;
             panel5.Location = new Point(20, 295);
             panel5.Margin = new Padding(20);
@@ -210,35 +151,10 @@
             panel5.Size = new Size(592, 234);
             panel5.TabIndex = 1;
             // 
-            // picLogout
-            // 
-            picLogout.Dock = DockStyle.Bottom;
-            picLogout.Image = (Image)resources.GetObject("picLogout.Image");
-            picLogout.Location = new Point(0, 0);
-            picLogout.Name = "picLogout";
-            picLogout.Size = new Size(592, 129);
-            picLogout.SizeMode = PictureBoxSizeMode.Zoom;
-            picLogout.TabIndex = 2;
-            picLogout.TabStop = false;
-            picLogout.Click += picLogout_Click;
-            // 
-            // lblLogout
-            // 
-            lblLogout.Dock = DockStyle.Bottom;
-            lblLogout.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblLogout.Location = new Point(0, 129);
-            lblLogout.Name = "lblLogout";
-            lblLogout.Size = new Size(592, 105);
-            lblLogout.TabIndex = 2;
-            lblLogout.Text = "Log out";
-            lblLogout.TextAlign = ContentAlignment.MiddleCenter;
-            lblLogout.Click += lblLogout_Click;
-            // 
             // panel4
             // 
             panel4.BackColor = Color.DarkOrange;
-            panel4.Controls.Add(picAccnt);
-            panel4.Controls.Add(lblAccnt);
+            panel4.Controls.Add(btnManage);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(20, 20);
             panel4.Margin = new Padding(20);
@@ -247,29 +163,19 @@
             panel4.TabIndex = 0;
             panel4.Click += panel4_Click;
             // 
-            // picAccnt
+            // btnManage
             // 
-            picAccnt.Dock = DockStyle.Bottom;
-            picAccnt.Image = (Image)resources.GetObject("picAccnt.Image");
-            picAccnt.Location = new Point(0, 0);
-            picAccnt.Name = "picAccnt";
-            picAccnt.Size = new Size(592, 139);
-            picAccnt.SizeMode = PictureBoxSizeMode.Zoom;
-            picAccnt.TabIndex = 0;
-            picAccnt.TabStop = false;
-            picAccnt.Click += pictureBox4_Click;
-            // 
-            // lblAccnt
-            // 
-            lblAccnt.Dock = DockStyle.Bottom;
-            lblAccnt.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAccnt.Location = new Point(0, 139);
-            lblAccnt.Name = "lblAccnt";
-            lblAccnt.Size = new Size(592, 96);
-            lblAccnt.TabIndex = 1;
-            lblAccnt.Text = "Manage Librarian Account";
-            lblAccnt.TextAlign = ContentAlignment.MiddleCenter;
-            lblAccnt.Click += label7_Click;
+            btnManage.BackColor = Color.DarkOrange;
+            btnManage.Dock = DockStyle.Fill;
+            btnManage.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnManage.Image = Properties.Resources.icon_BOOKS;
+            btnManage.Location = new Point(0, 0);
+            btnManage.Name = "btnManage";
+            btnManage.Size = new Size(592, 235);
+            btnManage.TabIndex = 0;
+            btnManage.Text = "Manage Accounts";
+            btnManage.TextAlign = ContentAlignment.BottomCenter;
+            btnManage.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -397,6 +303,48 @@
             label4.Text = "Total Books (Duplicate not included)";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.MediumPurple;
+            btnLogout.Dock = DockStyle.Fill;
+            btnLogout.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogout.Image = Properties.Resources.icon_LOGOUT;
+            btnLogout.Location = new Point(0, 0);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(592, 234);
+            btnLogout.TabIndex = 0;
+            btnLogout.Text = "Logout";
+            btnLogout.TextAlign = ContentAlignment.BottomCenter;
+            btnLogout.UseVisualStyleBackColor = false;
+            // 
+            // btnArchive
+            // 
+            btnArchive.BackColor = Color.DeepSkyBlue;
+            btnArchive.Dock = DockStyle.Fill;
+            btnArchive.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnArchive.Image = Properties.Resources.icon_ARCHIVE_BOOKS;
+            btnArchive.Location = new Point(0, 0);
+            btnArchive.Name = "btnArchive";
+            btnArchive.Size = new Size(592, 235);
+            btnArchive.TabIndex = 1;
+            btnArchive.Text = "Archive";
+            btnArchive.TextAlign = ContentAlignment.BottomCenter;
+            btnArchive.UseVisualStyleBackColor = false;
+            // 
+            // btnHistory
+            // 
+            btnHistory.BackColor = Color.DarkSeaGreen;
+            btnHistory.Dock = DockStyle.Fill;
+            btnHistory.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnHistory.Image = Properties.Resources.icon_HISTORY1;
+            btnHistory.Location = new Point(0, 0);
+            btnHistory.Name = "btnHistory";
+            btnHistory.Size = new Size(592, 234);
+            btnHistory.TabIndex = 1;
+            btnHistory.Text = "Login History";
+            btnHistory.TextAlign = ContentAlignment.BottomCenter;
+            btnHistory.UseVisualStyleBackColor = false;
+            // 
             // F_Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -417,13 +365,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ButtonsPanel.ResumeLayout(false);
             panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picHistory).EndInit();
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picArchive).EndInit();
             panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picLogout).EndInit();
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picAccnt).EndInit();
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             PendingBarPanel.ResumeLayout(false);
@@ -440,14 +384,6 @@
         private Panel panel6;
         private Panel panel5;
         private Panel panel4;
-        private PictureBox picAccnt;
-        private PictureBox picHistory;
-        private PictureBox picArchive;
-        private PictureBox picLogout;
-        private Label lblAccnt;
-        private Label lblHistory;
-        private Label lblArchive;
-        private Label lblLogout;
         private Panel panel1;
         private Panel panel3;
         private TableLayoutPanel PendingBarPanel;
@@ -458,5 +394,9 @@
         private Panel panel2;
         private Label label3;
         private Label label4;
+        private Button btnManage;
+        private Button btnHistory;
+        private Button btnArchive;
+        private Button btnLogout;
     }
 }

@@ -10,25 +10,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 
 namespace LibraryManagementSystem
 {
     public partial class F_Login : Form
     {
-        _forUserControl user;
-        UC_Login login;
+        SqlConnection connect = new SqlConnection();
+        
         public F_Login()
         {
             InitializeComponent();
-            login = new UC_Login();
-            user  = new _forUserControl();
-            user.addUserControl(login, panelLogin);
         }
 
         private void F_Login_Load(object sender, EventArgs e)
         {
-            
+
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            connect.Login(txtEmail.Text, txtPassword.Text);
+            this.Hide();
+        }
+
+        private void linkReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        
     }
 }
